@@ -1,0 +1,279 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+.mobil-photo {
+    display: none;
+}
+
+.photo {
+    padding: 0;
+
+}
+
+.photo>img {
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.contents {
+    background-color: hsl(0, 0%, 100%);
+    padding: 50px 50px 0 50px;
+
+}
+
+
+
+h2 {
+    color: hsl(228, 12%, 48%);
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 10px;
+    font-weight: 500;
+
+
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-size: 56px;
+    line-height: 60px;
+    padding-bottom: 30px;
+
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    padding-bottom: 40px;
+
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.after {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 60px;
+}
+
+.before {
+    font-family: 'Fraunces', serif;
+    color: hsl(228, 12%, 48%);
+    padding-left: 50px;
+    text-decoration: line-through;
+
+}
+
+button {
+    display: block;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+button>img {
+    width: 40px;
+    padding-right: 15px;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 23%);
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .photo>img {
+        width: auto;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .price {
+        margin-bottom: 50px;
+    }
+
+    .after {
+        font-size: 50px;
+    }
+
+    .before {
+        padding-left: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        max-width: 700px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .price {
+        margin-bottom: 60px;
+        flex-direction: column;
+
+    }
+
+    .after {
+        font-size: 40px;
+    }
+
+    .before {
+        padding-left: 10px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .container {
+        padding: 30px 20px 20px 20px;
+        border-radius: 0;
+    }
+
+    .row{
+        border: 1px solid transparent;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .contents {
+        padding: 20px 20px 0 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+        letter-spacing: 5px;
+        padding-bottom: 5px;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+    .price {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .after{
+        font-size: 30px;
+    }
+
+    .before{
+        font-size: 12px;
+    }
+
+    button{
+        padding: 10px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    button > img{
+        width: 18px;
+        padding-right: 5px;
+    }
+
+    .mobil-photo {
+        display: block;
+        padding: 0;
+    }
+
+    .mobil-photo>img {
+        width: 100%;
+    }
+
+    .photo {
+        display: none;
+    }
+}
