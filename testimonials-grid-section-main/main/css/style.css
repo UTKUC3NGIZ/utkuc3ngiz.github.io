@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(210, 46%, 95%, 1);
+}
+
+body>div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introductory-section {
+    display: flex;
+    padding: 10px;
+
+
+}
+
+.section {
+    padding: 20px;
+    -webkit-box-shadow: 0px 12px 24px 2px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 12px 24px 2px rgba(0, 0, 0, 0.31);
+}
+
+.section-daniel {
+    border: 1px solid transparent;
+    border-radius: 1vw;
+    background-color: hsla(263, 55%, 52%, 1);
+}
+
+.section-jonathan {
+    border: 1px solid transparent;
+    border-radius: 1vw;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.section-jeanette {
+    border: 1px solid transparent;
+    border-radius: 1vw;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+
+}
+
+.section-patrick {
+    border: 1px solid transparent;
+    border-radius: 1vw;
+    background-color: hsl(219, 29%, 14%);
+
+}
+
+.section-kira {
+    border: 1px solid transparent;
+    border-radius: 1vw;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+
+}
+
+.promotion {
+    display: flex;
+}
+
+.promotion>img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 992px){
+    .section-kira{
+        margin: 12px;
+    }
+}
