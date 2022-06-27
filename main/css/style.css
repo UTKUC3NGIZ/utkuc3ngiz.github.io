@@ -64,6 +64,7 @@ border-color: #B57578;
 
 .my_info>h2 {
     color: #BE5D56;
+    text-align: center;
 }
 
 .down {
@@ -180,9 +181,22 @@ border-color: #B57578;
         font-size: 60px;
         
     }
+
+    .my_info>h1{
+        font-size: 100px;
+    }
 }
 @media only screen and (max-width: 576px){
     .down{
         bottom: 0;
+    }
+    .social_media{
+        margin: 6px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .my_info>h1{
+        font-size: 80px;
     }
 }
