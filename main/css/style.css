@@ -59,6 +59,7 @@ border-color: #B57578;
 .my_info>h1 {
     color: #BE5D56;
     font-size: 120px;
+    text-align: center;
 }
 
 .my_info>h2 {
@@ -161,3 +162,22 @@ border-color: #B57578;
 }
 
 
+@media only screen and (max-width: 1700px){
+.second_page > h1 {
+    writing-mode: horizontal-tb;
+    position: inherit;
+    
+}
+
+.second_page{
+    align-items: center;
+
+}
+}
+
+@media only screen and (max-width: 992px){
+    .second_page > h1 {
+        font-size: 60px;
+        
+    }
+}
