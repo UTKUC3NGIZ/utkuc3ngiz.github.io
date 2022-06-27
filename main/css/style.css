@@ -181,3 +181,8 @@ border-color: #B57578;
         
     }
 }
+@media only screen and (max-width: 576px){
+    .down{
+        bottom: 0;
+    }
+}
