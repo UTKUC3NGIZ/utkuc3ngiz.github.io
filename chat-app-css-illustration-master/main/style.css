@@ -1,0 +1,459 @@
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    z-index: 10;
+}
+
+body>div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.writing-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.writing-section>h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: hsl(271, 36%, 24%);
+}
+
+.writing-section>h3 {
+    font-size: 25px;
+    color: hsl(270, 7%, 64%);
+    font-weight: 400;
+}
+
+.phone {
+    border: 1px solid black;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 15px solid #fff;
+    box-shadow: 5px 6px 18px -2px rgba(0, 0, 0, 0.61);
+    height: 710px;
+    width: 350px;
+
+}
+
+
+.visual-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.upside {
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 20px;
+
+}
+
+.camera {
+    width: 50%;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.fa-angle-left {
+    margin: 0 20px;
+    color: #fff;
+
+}
+
+.upside>img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    margin-right: 20px;
+}
+
+.upside>div>h3 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
+
+.upside>div>p {
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+    color: hsl(276, 100%, 81%);
+}
+
+.fa-ellipsis-vertical {
+    position: absolute;
+    right: 20px;
+    color: #fff;
+}
+
+.messages {
+    background-color: hsl(270, 20%, 96%);
+}
+
+.messages-section-1 {
+    padding-top: 10px;
+    font-size: 12px;
+    padding-left: 3%;
+}
+
+.messages-section-1>p {
+    border: 1px solid transparent;
+    width: 60%;
+    border-radius: 10px;
+    padding: 6px;
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(272, 40%, 93%);
+
+}
+
+.messages-section-2 {
+    padding-top: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 3%;
+}
+
+.messages-section-2>div>img {
+    width: 65px;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+.messages-section-2>p {
+    border: 1px solid transparent;
+    max-width: 60%;
+    border-radius: 10px;
+    padding: 6px;
+    color: hsl(271, 15%, 43%);
+    background-color: #fff;
+    box-shadow: 0px 20px 24px -15px rgba(0, 0, 0, 0.05);
+
+}
+
+.messages-section-3 {
+    padding-top: 10px;
+    font-size: 12px;
+    padding-left: 3%;
+}
+
+.messages-section-3>p {
+    border: 1px solid transparent;
+    width: 60%;
+    border-radius: 10px;
+    padding: 6px;
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(272, 40%, 93%);
+
+}
+
+.messages-section-3-check {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    background-image: linear-gradient(hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    justify-content: space-between;
+    border-bottom-left-radius: 8px;
+
+
+}
+
+.messages-section-3-check>span {
+    width: 20px;
+    height: 20px;
+    border: 1px solid hsl(289, 100%, 72%);
+    margin-right: 10px;
+
+}
+
+.messages-section-3-check>p {
+    margin: 0;
+    margin-right: 30px;
+    color: hsl(300, 100%, 86%);
+}
+
+.messages-section-3-check>h1 {
+    font-size: 16px;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.send-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    padding-left: 30px;
+    padding-right: 5px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin: 15px 15px;
+    background-color: hsl(0, 0%, 100%);
+
+}
+
+.send-section>p {
+    margin: 0;
+    font-size: 12px;
+    color: hsl(270, 20%, 90%);
+
+}
+
+.send-section>i {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(271, 36%, 24%);
+    color: hsl(0, 0%, 100%);
+}
+
+.messages-bottom {
+    padding-top: 10px;
+}
+
+.left-pattern {
+    height: 92vh;
+    width: 31%;
+    position: absolute;
+    background-image: linear-gradient(hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    top: 0;
+    border-bottom-left-radius: 20vw;
+    border-bottom-right-radius: 20vw;
+    z-index: 1;
+}
+
+.right-pattern {
+    height: 92vh;
+    width: 31%;
+    position: absolute;
+    background-color: hsl(290, 38%, 98%);
+    bottom: 0;
+    right: -10%;
+    border-top-left-radius: 20vw;
+    border-top-right-radius: 20vw;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .writing-section {
+        margin-top: 50px;
+    }
+
+    .writing-section>h1 {
+        text-align: center;
+    }
+
+    .writing-section>h3 {
+        text-align: center;
+    }
+
+    .right-pattern {
+        display: none;
+    }
+
+    .left-pattern {
+        height: 70vh;
+        left: -70vw;
+        width: 100%;
+        border-bottom-left-radius: 30vw;
+        border-bottom-right-radius: 30vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    p {
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+
+    .writing-section>h1 {
+        font-size: 40px;
+    }
+
+    .writing-section>h3 {
+        font-size: 20px;
+    }
+
+    .phone {
+        height: 520px;
+        width: 270px;
+    }
+
+
+    .fa-angle-left {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .upside {
+        padding-bottom: 10px;
+    }
+
+    .camera {
+        height: 18px;
+    }
+
+    .upside>img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .upside>div>h3 {
+        font-size: 12px;
+    }
+
+    .upside>div>p {
+        font-size: 8px;
+    }
+
+    .fa-ellipsis-vertical {
+        right: 10px;
+        font-size: 12px;
+    }
+
+    .messages-section-2>div>img {
+        width: 50px;
+        border-radius: 10px;
+        padding: 2px;
+    }
+
+    .messages-section-3-check {
+        padding: 5px;
+    }
+
+    .messages-section-3-check>h1 {
+        font-size: 12px;
+    }
+
+    .send-section {
+        margin: 5px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+    }
+
+    .send-section>i {
+        width: 8px;
+        height: 8px;
+        padding: 8px;
+        font-size: 8px;
+    }
+
+    .send-section>p {
+        font-size: 8px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 330px) {
+
+    p {
+        font-size: 6px;
+        margin-bottom: 3px;
+    }
+
+    .writing-section>h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .writing-section>h3 {
+        font-size: 15px;
+    }
+
+    .phone {
+        height: 450px;
+        width: 220px;
+    }
+
+
+    .fa-angle-left {
+        font-size: 12px;
+        margin: 0 6px;
+    }
+
+    .upside {
+        padding-bottom: 6px;
+        padding-top: 20px;
+    }
+
+    .camera {
+        height: 12px;
+    }
+
+    .upside>img {
+        width: 25px;
+        height: 25px;
+        margin-right: 6px;
+    }
+
+    .upside>div>h3 {
+        font-size: 8px;
+    }
+
+    .upside>div>p {
+        font-size: 6px;
+    }
+
+    .fa-ellipsis-vertical {
+        right: 6px;
+        font-size: 8px;
+    }
+
+    .messages-section-2>div>img {
+        width: 40px;
+        border-radius: 6px;
+        padding: 2px;
+    }
+
+    .messages-section-3-check {
+        padding: 3px;
+    }
+
+    .messages-section-3-check>h1 {
+        font-size: 8px;
+    }
+
+    .left-pattern {
+        height: 60vh;
+    }
+
+
+
+}
