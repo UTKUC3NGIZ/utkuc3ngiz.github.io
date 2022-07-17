@@ -1,0 +1,24 @@
+.contact_text {
+    h2 {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 3.625rem;
+        line-height: 70px;
+        color: #cccccc;
+    }
+
+    a {
+        h2 {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 3.625rem;
+            line-height: 70px;
+            background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @media only screen and (max-width: 500px) {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

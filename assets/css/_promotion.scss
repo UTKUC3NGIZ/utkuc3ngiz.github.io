@@ -1,0 +1,34 @@
+.promotion {
+    .promotional-contents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .promotional_text {
+            h1 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-size: 3.625rem;
+                line-height: 70px;
+                color: #d9d9d9;
+
+                span {
+                    background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+
+        .promotional_img {
+            img {
+                width: 350px;
+                border-radius: 230px;
+                border: 9px solid transparent;
+                background: linear-gradient(180deg, #e70faa, #00c0fd) border-box;
+            }
+        }
+        @media only screen and (max-width: 660px) {
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+footer {
+    .container {
+        padding-bottom: 60px;
+    }
+    .footer_top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #42446e;
+        .footer_logo {
+            img {
+                @media only screen and (max-width: 1024px) {
+                    width: 14rem;
+                }
+            }
+        }
+
+        .footer_contact {
+            display: flex;
+            justify-content: flex-end;
+            a {
+                padding-right: 20px;
+
+                &:nth-child(1) {
+                    padding-right: 50px;
+                    font-weight: 400;
+                    font-size: 1.125rem;
+                    line-height: 26px;
+                    color: #a7a7a7;
+                    font-family: "DM Sans", sans-serif;
+                    @media only screen and (max-width: 505px) {
+                        display: none;
+                    }
+                }
+
+                &:nth-last-child(1) {
+                    padding: 0;
+                }
+                img {
+                    width: 1.875rem;
+                }
+            }
+        }
+    }
+
+    .footer_bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        .footer_button {
+            a {
+                padding-right: 50px;
+                font-weight: 400;
+                font-size: 1.125rem;
+                line-height: 26px;
+                color: #a7a7a7;
+                font-family: "DM Sans", sans-serif;
+                @media only screen and (max-width: 630px) {
+                    padding-right: 25px;
+                    &:nth-child(1),
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        display: none;
+                    }
+                    padding-right: 10px;
+                    
+                }
+            }
+        }
+
+        .footer_designer {
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 26px;
+            color: #a7a7a7;
+            text-align: right;
+
+            span {
+                background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}

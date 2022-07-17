@@ -1,0 +1,80 @@
+@import "./navbar";
+
+body {
+    background-color: #191919;
+}
+
+html {
+    box-sizing: border-box;
+    @media only screen and (max-width: 1024px) {
+        font-size: 12px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 10px;
+    }
+}
+
+.container {
+    padding: 0 120px 200px 120px;
+    max-width: 1400px;
+
+    @media only screen and (max-width: 1024px) {
+        padding: 0 60px 100px 60px;
+    }
+    @media only screen and (max-width: 768px) {
+        padding: 0 30px 100px 30px;
+    }
+    @media only screen and (max-width: 400px) {
+        padding: 0 10px 100px 10px;
+    }
+}
+
+.row{
+    justify-content: center;
+}
+
+.nav_logo {
+    a {
+        img {
+            @media only screen and (max-width: 1024px) {
+                width: 14rem;
+            }
+        }
+    }
+}
+
+.container_titles {
+    text-align: center;
+    padding-bottom: 140px;
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 26px;
+        color: #cccccc;
+        padding-bottom: 50px;
+    }
+
+    h3 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 26px;
+        color: #a7a7a7;
+    }
+    @media only screen and (max-width: 1024px) {
+        padding-bottom: 70px;
+
+        h2 {
+            padding-bottom: 25px;
+        }
+    }
+}
+
+.container_page {
+    padding-bottom: 0;
+}
+
+.pages_container_titles {
+    text-align: start;
+}

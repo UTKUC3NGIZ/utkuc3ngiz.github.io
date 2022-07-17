@@ -1,0 +1,8 @@
+.tech_stack_icon {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+    @media only screen and (max-width: 768px) {
+        justify-content: center;
+    }
+}

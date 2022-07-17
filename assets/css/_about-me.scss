@@ -1,0 +1,58 @@
+.about_me_text {
+    h3 {
+        font-size: 1.125rem;
+    }
+}
+
+.about_me_education_info {
+    .about_me_education_job {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+
+        h3 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 28px;
+            color: #cccccc;
+        }
+
+        span {
+            font-family: "Poppins", sans-serif;
+            background-color: #d7ffe0;
+            color: #018c0f;
+            border-radius: 100px;
+            padding: 6px;
+            text-align: center;
+            font-size: 0.56rem;
+            width: 80px;
+            height: 24px;
+        }
+    }
+    .about_me_education_school {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            &:nth-child(1) {
+                span {
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-size: 0.75rem;
+                    line-height: 28px;
+                    color: #a7a7a7;
+                }
+            }
+            &:nth-child(2) {
+                span {
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-size: 0.75rem;
+                    line-height: 28px;
+                    color: #a7a7a7;
+                }
+            }
+        }
+    }
+}
