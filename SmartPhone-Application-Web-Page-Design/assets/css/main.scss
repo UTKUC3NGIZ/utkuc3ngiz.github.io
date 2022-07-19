@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import "reboot";
 @import "navbar";
+@import "about-us";
 
 body {
     font-family: "Poppins", sans-serif;
@@ -10,10 +11,19 @@ body {
     align-items: center;
     padding-top: 30px;
     z-index: 10;
+    position: relative;
 
     div {
         &:nth-child(3) {
             z-index: 10;
         }
     }
+}
+
+.container{
+    padding-top: 200px;
+}
+
+nav .container{
+    padding-top:0 ;
 }

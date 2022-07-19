@@ -1,0 +1,93 @@
+.about_us {
+    position: relative;
+    .app_download_img {
+        &:nth-child(1) {
+            text-align: end;
+        }
+        &:nth-child(2) {
+            text-align: start;
+        }
+    }
+
+    .about_us_title {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        h2 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 5.625rem;
+            line-height: 113.5%;
+            color: #231f20;
+        }
+    }
+
+    .about_us_img {
+        div {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            img {
+                width: 500px;
+                z-index: 10;
+            }
+        }
+
+        span {
+            background-color: red;
+            position: absolute;
+            width: 90%;
+            height: 58%;
+            top: 20%;
+            background-image: linear-gradient(285.76deg, #d90c56 16.91%, #ffd109 112.79%);
+            box-shadow: -12px 12px 30px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+        }
+    }
+
+    .about_us_text {
+        h3 {
+            font-weight: 600;
+            font-size: 2.25rem;
+            line-height: 113.5%;
+            color: #231f20;
+            padding-bottom: 16px;
+        }
+        h4 {
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 124.5%;
+            color: #73686b;
+            padding-bottom: 30px;
+        }
+
+        button {
+            background: #121a27;
+            box-shadow: -12px 5px 30px 1px rgba(0, 0, 0, 0.25);
+            border-radius: 7px;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 30px;
+            color: #ffffff;
+            padding: 19px 55px;
+        }
+    }
+
+    .about_us_reverse-button {
+        button {
+            color: #121a27;
+            border: 2px solid #121a27;
+            background-color: #ffffff;
+        }
+    }
+
+    .about_us_ellipse_left {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .about_us_ellipse_right {
+        position: absolute;
+        bottom: -558px;
+        right: 0;
+    }
+}
