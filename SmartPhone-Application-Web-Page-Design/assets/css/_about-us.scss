@@ -1,6 +1,9 @@
-.about_us {
+.about_us , .download_app{
     position: relative;
     .app_download_img {
+        img{
+            max-width: 200px;
+        }
         &:nth-child(1) {
             text-align: end;
         }
@@ -12,27 +15,21 @@
     .about_us_title {
         padding-top: 100px;
         padding-bottom: 100px;
-        h2 {
-            text-align: center;
-            font-weight: 700;
-            font-size: 5.625rem;
-            line-height: 113.5%;
-            color: #231f20;
-        }
     }
 
-    .about_us_img {
+    .about_us_img , .download_app_img {
         div {
             display: flex;
             justify-content: center;
             position: relative;
             img {
-                width: 500px;
+                // width: 100%;
                 z-index: 10;
             }
         }
 
         span {
+            left: auto;
             background-color: red;
             position: absolute;
             width: 90%;
@@ -44,7 +41,7 @@
         }
     }
 
-    .about_us_text {
+    .about_us_text , .download_app_text {
         h3 {
             font-weight: 600;
             font-size: 2.25rem;
@@ -69,14 +66,28 @@
             line-height: 30px;
             color: #ffffff;
             padding: 19px 55px;
+            border: 2px solid #121a27;
+
+            &:hover{
+                background-color:#ffffff ;
+                color:#121a27 ;
+                transition: 0.4s;
+                border: 2px solid #da0f559e ;
+            }
         }
     }
 
     .about_us_reverse-button {
         button {
             color: #121a27;
-            border: 2px solid #121a27;
+            border: 2px solid #da0f559e;
             background-color: #ffffff;
+            &:hover{
+                background-color:#121a27 ;
+                color:#ffffff ;
+                transition: 0.4s;
+                border: 2px solid #121a27 ;
+            }
         }
     }
 
@@ -88,6 +99,11 @@
     .about_us_ellipse_right {
         position: absolute;
         bottom: -558px;
+        right: 0;
+    }
+    .about_us_line {
+        position: absolute;
+        top: 0;
         right: 0;
     }
 }

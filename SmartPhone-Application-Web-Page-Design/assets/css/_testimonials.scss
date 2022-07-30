@@ -1,0 +1,40 @@
+.teslimation_box {
+    padding: 10px;
+    > div {
+        background: #f2f2f2;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        padding: 40px 30px;
+        > h4 {
+            opacity: 0.6;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 113.5%;
+            color: #73686b;
+            padding-bottom: 15px;
+            margin-bottom: 0;
+        }
+        > div {
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            img {
+                padding-right: 25px;
+            }
+            div {
+                h4 {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    line-height: 113.5%;
+                    color: #231f20;
+                }
+                h5 {
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 113.5%;
+                    color: #231f20;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,210 @@
+html {
+    @media only screen and (max-width: 1400px) {
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 1024px) {
+        font-size: 12px;
+        .nav_links {
+            a {
+                margin-right: 2rem;
+            }
+        }
+
+        nav {
+            .promotion {
+                h2 {
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+
+        .phone_nav {
+            img {
+                &:first-child,
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 992px) {
+      nav{
+       > div{
+           > div{
+               > div{
+                    &:first-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+      }
+
+
+        .nav_membership, .nav_logo{
+            display: flex;
+            justify-content: center;
+        }
+
+        .about_us_img {
+            div {
+                span {
+                    left: 30px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .download_app_text {
+            text-align: center;
+            h2 {
+                font-size: 5.625rem !important;
+            }
+            div {
+                justify-content: center;
+            }
+        }
+
+        .download_app_img {
+            div {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .question_box {
+            max-width: 100% !important;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .nav_membership {
+            a {
+                &:last-child {
+                    padding: 4px;
+                }
+            }
+        }
+
+        .container {
+            padding-top: 100px;
+        }
+
+        nav {
+            .container {
+                padding-top: 0;
+            }
+        }
+        .about_us_text {
+            button {
+                padding: 10px 20px !important;
+            }
+        }
+    }
+    @media only screen and (max-width: 576px) {
+        font-size: 10px;
+
+        .container {
+            padding-top: 50px;
+        }
+
+        nav {
+            .container {
+                padding-top: 0;
+            }
+        }
+
+        .phone_nav {
+            img {
+                width: 100%;
+            }
+        }
+
+        .app_download_img {
+            padding-bottom: 10px;
+            text-align: center !important;
+            img {
+                width: 150px;
+            }
+        }
+
+        .download_app_img {
+            div {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .download_app_text {
+            div {
+                a {
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+
+        .about_us_img {
+            div {
+                span {
+                    width: 70% !important;
+                }
+            }
+        }
+
+        .container_title {
+            font-size: 4.5rem !important;
+        }
+
+        .download_app_text {
+            h2 {
+                font-size: 4.5rem !important;
+            }
+        }
+
+        .about_us_text {
+            h4 {
+                padding-bottom: 15px !important;
+            }
+        }
+    }
+    @media only screen and (max-width: 326px) {
+        font-size: 8px;
+
+        .promotion {
+            h1 {
+                font-size: 4.5rem !important;
+            }
+        }
+        .container_title {
+            font-size: 4rem !important;
+        }
+        .download_app_text {
+            h2 {
+                font-size: 4rem !important;
+            }
+        }
+
+        .download_app_text {
+            div {
+                flex-direction: column;
+                a {
+                    padding: 0 !important;
+                }
+            }
+        }
+
+        .our_clients_title_img {
+            div {
+                div {
+                    img {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}

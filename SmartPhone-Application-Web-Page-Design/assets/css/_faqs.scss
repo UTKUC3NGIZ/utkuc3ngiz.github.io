@@ -1,0 +1,34 @@
+.faqs {
+    position: relative;
+    .question_box {
+        display: flex;
+        align-items: center;
+        background-color: #ededed;
+        border-radius: 15px;
+        padding: 55px;
+        margin: auto;
+        max-width: 70%;
+        margin-top: 28px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        a {
+            padding-right: 40px;
+            color: #F99930 ;
+
+            i{
+                font-size: 60px;
+            }
+
+
+        }
+    }
+
+    .faqs_line {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

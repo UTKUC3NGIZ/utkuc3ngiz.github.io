@@ -1,0 +1,32 @@
+// using the codes of the @import "about-us";
+
+.download_app {
+    .download_app_text {
+        h2 {
+            color: #231f20;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 113.5%;
+        }
+
+        h4 {
+            color: #121a27;
+        }
+        div {
+            display: flex;
+            a {
+                &:first-child{
+                    padding-right: 23px;
+                }
+                img {
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+    .download_app_img {
+        div {
+            justify-content: flex-end;
+        }
+    }
+}
