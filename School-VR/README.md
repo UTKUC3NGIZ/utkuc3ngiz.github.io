@@ -1,0 +1,11 @@
+main.scss
+_common.scss
+_navbar-section.scss
+_promotion-section.scss
+_first-information-section.scss
+_second-information-section.scss
+_carousel-section.scss
+_third-information-section.scss
+_course-platform-section.scss
+_subscribe-section.scss
+_footer-section.scss

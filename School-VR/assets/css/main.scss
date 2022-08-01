@@ -1,0 +1,19 @@
+// Bootstrap Custom Variables
+@import "custom_scss/custom-variables";
+ 
+// Bootstrap 
+@import "library/bootstrap-5.2.0/scss/bootstrap.scss";
+
+// Custom Scss
+@import "custom_scss/common";
+@import "custom_scss/navbar-section";
+@import "custom_scss/promotion-section";
+@import "custom_scss/first-information-section";
+@import "custom_scss/second-information-section";
+@import "custom_scss/carousel-section";
+@import "custom_scss/third-information-section";
+@import "custom_scss/course-platform-section";
+@import "custom_scss/footer-section";
+
+
+ 

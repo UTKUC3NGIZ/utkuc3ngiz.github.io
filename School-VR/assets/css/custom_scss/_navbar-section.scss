@@ -1,0 +1,26 @@
+nav{
+    
+}
+
+.navbarUtku {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+
+    .nav_logo {
+    }
+    .nav_menu {
+        text-align: center;
+       a{
+        padding-right: 57px;
+
+        &:last-child {
+            padding-right: 0;
+           
+        }
+       }
+    }
+    .nav_login {
+        text-align: end;
+    }
+}
