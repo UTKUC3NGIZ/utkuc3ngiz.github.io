@@ -14,6 +14,24 @@ html {
     }
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #191919; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #13b0f5 -2.06%, #e70faa 100%); 
+  }
+  
+  /* Handle on hover */
+
+
 .container {
     padding: 0 120px 200px 120px;
     max-width: 1400px;
