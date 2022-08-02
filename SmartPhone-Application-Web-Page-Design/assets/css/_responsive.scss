@@ -77,6 +77,11 @@ html {
         .question_box {
             max-width: 100% !important;
         }
+
+        .question_box_title,
+        .question_box_text {
+            max-width: 85% !important;
+        }
     }
     @media only screen and (max-width: 768px) {
         .nav_membership {
@@ -99,6 +104,22 @@ html {
         .about_us_text {
             button {
                 padding: 10px 20px !important;
+            }
+        }
+
+        .question_box_title {
+            padding: 18px !important;
+            span {
+                padding-right: 12px !important;
+            }
+        }
+
+        .question_box_text {
+            padding: 18px !important;
+            .question_box_text_title {
+                span {
+                    padding-right: 12px !important;
+                }
             }
         }
     }
@@ -170,25 +191,6 @@ html {
                 padding-bottom: 15px !important;
             }
         }
-
-        .question_box_title {
-            padding: 18px !important;
-            span {
-                padding-right: 12px !important;
-
-
-            }
-        }
-
-        .question_box_text {
-            padding: 18px !important;
-            .question_box_text_title {
-                span {
-                    padding-right: 12px !important;
-
-                }
-            }
-        }
     }
     @media only screen and (max-width: 326px) {
         font-size: 8px;
@@ -228,8 +230,8 @@ html {
 
         .question_box_title {
             span {
-                i{
-                    font-size: 40px!important;
+                i {
+                    font-size: 40px !important;
                 }
             }
         }
@@ -237,8 +239,8 @@ html {
         .question_box_text {
             .question_box_text_title {
                 span {
-                    i{
-                        font-size: 25px!important;
+                    i {
+                        font-size: 25px !important;
                     }
                 }
             }
