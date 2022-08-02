@@ -12,6 +12,7 @@ footer {
                 @media only screen and (max-width: 1024px) {
                     width: 14rem;
                 }
+                
             }
         }
 
@@ -39,6 +40,13 @@ footer {
                 img {
                     width: 1.875rem;
                 }
+
+                &:hover {
+                    background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    
+                }
             }
         }
     }
@@ -63,6 +71,12 @@ footer {
                         display: none;
                     }
                     padding-right: 10px;
+                    
+                }
+                &:hover {
+                    background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                     
                 }
             }

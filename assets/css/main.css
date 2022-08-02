@@ -17,6 +17,10 @@ nav {
     color: #a7a7a7; }
     .nav_button a img {
       width: 1.875rem; }
+    .nav_button a:hover {
+      background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   @media only screen and (max-width: 630px) {
     .nav_button a {
       padding-right: 10px; }
@@ -247,6 +251,10 @@ footer .footer_top {
         padding: 0; }
       footer .footer_top .footer_contact a img {
         width: 1.875rem; }
+      footer .footer_top .footer_contact a:hover {
+        background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
 footer .footer_bottom {
   display: flex;
   justify-content: space-between;
@@ -264,6 +272,10 @@ footer .footer_bottom {
         padding-right: 10px; }
         footer .footer_bottom .footer_button a:nth-child(1), footer .footer_bottom .footer_button a:nth-child(3), footer .footer_bottom .footer_button a:nth-child(4) {
           display: none; } }
+    footer .footer_bottom .footer_button a:hover {
+      background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   footer .footer_bottom .footer_designer {
     font-weight: 400;
     font-size: 1.125rem;
