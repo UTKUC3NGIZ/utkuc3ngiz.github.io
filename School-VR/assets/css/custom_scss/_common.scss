@@ -1,0 +1,31 @@
+.container_space{
+    padding-bottom: 120px;
+}
+
+.top_index{
+z-index: 10;
+}
+
+.middle_index{
+z-index: 5;
+}
+
+.lower_index{
+z-index: 1;
+}
+
+.button{
+    display: inline-block;
+    background-color:#00D1FF;
+    border: 1px solid black;
+    padding-left: 7px;
+    padding-bottom: 5px;
+    border-top: 0;
+    
+    button {
+        color: #000000;
+        padding: 12px 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+    }
+}
