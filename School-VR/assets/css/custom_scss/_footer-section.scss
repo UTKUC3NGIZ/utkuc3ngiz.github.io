@@ -1,0 +1,30 @@
+.footer_section_logo {
+    img {
+        padding-bottom: 32px;
+    }
+}
+
+.footer_section_links {
+    display: flex;
+    justify-content: space-evenly;
+    ul {
+        li {
+            list-style: none;
+            font-weight: 250;
+            font-size: 1rem;
+            line-height: 34px;
+            color: #000000;
+
+            &:first-child {
+                font-weight: 700;
+                font-size: 1.5rem;
+                line-height: 34px;
+            }
+
+            a{
+                text-decoration: none;
+                color: #000000;
+            }
+        }
+    }
+}

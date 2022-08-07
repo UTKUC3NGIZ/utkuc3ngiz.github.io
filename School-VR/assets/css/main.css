@@ -271,7 +271,10 @@ nav {
     color: #000000; }
   .subscribe_section .container > div:nth-child(2) {
     position: absolute;
-    top: 0; }
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden; }
 
 form {
   align-items: center;
@@ -295,5 +298,25 @@ form {
   color: #ffffff;
   background-color: #00d1ff;
   border: 1.7px solid #000000; }
+
+.footer_section_logo img {
+  padding-bottom: 32px; }
+
+.footer_section_links {
+  display: flex;
+  justify-content: space-evenly; }
+  .footer_section_links ul li {
+    list-style: none;
+    font-weight: 250;
+    font-size: 1rem;
+    line-height: 34px;
+    color: #000000; }
+    .footer_section_links ul li:first-child {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 34px; }
+    .footer_section_links ul li a {
+      text-decoration: none;
+      color: #000000; }
 
 /*# sourceMappingURL=main.css.map */
