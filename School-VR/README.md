@@ -6,6 +6,7 @@ _first-information-section.scss
 _second-information-section.scss
 _carousel-section.scss
 _third-information-section.scss
+_fourth-information-section.scss
 _course-platform-section.scss
 _subscribe-section.scss
 _footer-section.scss

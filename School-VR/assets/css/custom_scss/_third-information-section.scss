@@ -1,0 +1,50 @@
+.third_information_section {
+    position: relative;
+
+    .container {
+        position: relative;
+        background: linear-gradient(99.58deg, #00d1ff 0%, #001aff 99.46%);
+
+        .third_information_section_info {
+            // display: flex;
+            padding: 50px;
+
+            h2 {
+                font-weight: 700;
+                font-size: 3.75rem;
+                line-height: 72px;
+                color: #ffffff;
+                padding-bottom: 20px;
+            }
+
+            h5 {
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 34px;
+                letter-spacing: 0.02em;
+                color: #ffffff;
+                padding-bottom: 50px;
+            }
+
+            div {
+                background-color: #ffffff;
+                button {
+                    background-color: #010101;
+                    color: #ffffff;
+                }
+            }
+        }
+       > div {
+            &:nth-child(2) {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            &:nth-child(3) {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}
