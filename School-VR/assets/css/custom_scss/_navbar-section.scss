@@ -1,5 +1,6 @@
 nav {
     background-color: #fdf6eb;
+    padding-top: 65px;
  
 }
 
@@ -24,26 +25,5 @@ nav {
             }
         }
     }
-    .nav_login {
-        position: relative;
-        border: 1px solid black;
-        text-align: end;
-        padding-left: 7px;
-        padding-bottom: 5px;
-       
- 
-        div {
 
-            padding: 12px 30px;
-            border: 1px solid #010101;
-            background-color: #010101;
-            
-            a {
-                font-weight: 700;
-                font-size: 1.25rem;
-                line-height: 24px;
-                color: #ffffff;
-            }
-        }
-    }
 }

@@ -20,12 +20,8 @@
             flex-direction: column;
             align-items: center;
             margin: 0 25px 100px 25px;
-            background: linear-gradient(
-                322.09deg,
-                #63e3ff 0%,
-                rgba(253, 246, 235, 0) 140.54%,
-                rgba(99, 227, 255, 0) 140.54%
-            );
+            background: rgba(99, 228, 255, 1);
+            background: linear-gradient(to top , rgba(99, 228, 255, 0.4), rgba(99, 228, 255, .05));
             img {
                 width: 70%;
                 padding-bottom: 45px;
@@ -52,6 +48,8 @@
 
 .second-information-section {
     background-color: #fdf6eb;
+    padding-bottom: 0;
+    margin-bottom: 120px;
 
     .container {
         padding-top: 130px;
@@ -59,6 +57,8 @@
 }
 
 .item {
+    margin-bottom: 10px;
+
     > div {
         padding: 0 17px;
         img {
@@ -70,13 +70,16 @@
             font-size: 2rem;
             line-height: 38px;
             color: #000000;
+            min-height: 100px;
         }
         h4 {
-            padding-bottom: 30px;
+            padding-bottom: 20px;
+            margin-top: -10px;
             font-weight: 250;
             font-size: 1.25rem;
             line-height: 43px;
             color: #000000;
+            min-height:200px;
         }
         div {
             display: flex;
@@ -92,33 +95,33 @@
     }
 }
 
-.owl-dots{
-    padding-top: 70px!important;
+.owl-dots {
+    padding-top: 70px !important;
 }
 
-.owl-dot{
-    padding: 5px!important;
-    border: 1px solid black!important;
-    margin: 0 10px!important;
+.owl-dot {
+    padding: 5px !important;
+    border: 1px solid black !important;
+    margin: 0 10px !important;
 
-    span{
-    border-radius: 0!important;
-    margin: 0!important;
-    width: 20px!important;
-    height: 20px!important;
+    span {
+        border-radius: 0 !important;
+        margin: 0 !important;
+        width: 20px !important;
+        height: 20px !important;
 
-    &:hover{
-        background: #000000!important;
-    }
-    }
-}
-
-.owl-dot.active{
-    span{
-        background: #000000!important;
+        &:hover {
+            background: #000000 !important;
+        }
     }
 }
 
-.owl-nav{
-    display: none!important;
+.owl-dot.active {
+    span {
+        background: #000000 !important;
+    }
+}
+
+.owl-nav {
+    display: none !important;
 }
