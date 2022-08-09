@@ -4,14 +4,13 @@ nav {
  
 }
 
-.navbarUtku {
+.navbar_section {
     display: flex;
     justify-content: space-between;
     align-items:center ;
     font-size: 1.25rem;
 
-    .nav_logo {
-    }
+
     .nav_menu {
         display: flex;
         text-align: center;

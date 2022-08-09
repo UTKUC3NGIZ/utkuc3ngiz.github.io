@@ -4,7 +4,7 @@
     .container {
         position: relative;
 
-        div {
+       > div {
             &:nth-child(2) {
                 position: absolute;
                 height: 100%;

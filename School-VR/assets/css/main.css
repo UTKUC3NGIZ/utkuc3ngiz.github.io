@@ -52,20 +52,20 @@ nav {
   background-color: #fdf6eb;
   padding-top: 65px; }
 
-.navbarUtku {
+.navbar_section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.25rem; }
-  .navbarUtku .nav_menu {
+  .navbar_section .nav_menu {
     display: flex;
     text-align: center; }
-    .navbarUtku .nav_menu a {
+    .navbar_section .nav_menu a {
       padding-right: 57px;
       font-size: 1.25rem;
       font-weight: 400;
       color: #010101; }
-      .navbarUtku .nav_menu a:last-child {
+      .navbar_section .nav_menu a:last-child {
         padding-right: 0; }
 
 .promotion_section {
@@ -73,12 +73,12 @@ nav {
   overflow: hidden; }
   .promotion_section .container {
     position: relative; }
-    .promotion_section .container div:nth-child(2) {
+    .promotion_section .container > div:nth-child(2) {
       position: absolute;
       height: 100%;
       bottom: 0;
       right: 0; }
-    .promotion_section .container div:nth-child(3) {
+    .promotion_section .container > div:nth-child(3) {
       position: absolute;
       right: 0;
       top: -200px; }
@@ -95,48 +95,49 @@ nav {
     color: #000000;
     padding-bottom: 55px; }
 
-.first-information-section .container {
+.first_information_section .container {
   padding-top: 130px; }
-  .first-information-section .container .row {
+  .first_information_section .container .row {
     align-items: center; }
-.first-information-section .first-information-section_button {
+.first_information_section .first_information_section_button {
   display: none; }
-.first-information-section .first-information-section_text h2 {
+.first_information_section .first_information_section_text h2 {
   font-weight: 700;
   font-size: 4rem;
   line-height: 77px;
   color: #000000; }
-.first-information-section .first-information-section_img img {
+.first_information_section .first_information_section_img img {
   width: 100%; }
 
-.second-information-section_information h2 {
+.second_information_section_information h2 {
   font-weight: 700;
   font-size: 4rem;
   line-height: 77px;
   color: #000000; }
-.second-information-section_information h3 {
+.second_information_section_information h3 {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 43px;
-  color: #000000; }
+  color: #000000;
+  padding-bottom: 40px; }
 
-.second-information-section_promotion div div {
+.second_information_section_promotion div div {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 25px 100px 25px;
   background: #63e4ff;
   background: linear-gradient(to top, rgba(99, 228, 255, 0.4), rgba(99, 228, 255, 0.05)); }
-  .second-information-section_promotion div div img {
+  .second_information_section_promotion div div img {
     width: 70%;
     padding-bottom: 45px; }
-  .second-information-section_promotion div div h4 {
+  .second_information_section_promotion div div h4 {
     padding-bottom: 25px;
     font-weight: 700;
     font-size: 1rem;
     line-height: 19px;
     color: #000000; }
-  .second-information-section_promotion div div h5 {
+  .second_information_section_promotion div div h5 {
     font-weight: 400;
     font-size: 0.813rem;
     line-height: 22px;
@@ -145,11 +146,11 @@ nav {
     padding: 0 35px;
     text-align: center; }
 
-.second-information-section {
+.second_information_section {
   background-color: #fdf6eb;
   padding-bottom: 0;
   margin-bottom: 120px; }
-  .second-information-section .container {
+  .second_information_section .container {
     padding-top: 130px; }
 
 .item {
@@ -372,7 +373,7 @@ form {
       line-height: normal !important; }
 
   .nav_menu a {
-    padding-right: 10px !important; }
+    padding: 0 2rem !important; }
 
   #email {
     padding: 15px 8px !important; }
@@ -381,20 +382,28 @@ form {
     padding: 5px 15px !important; }
 
   .fourth_information_users {
-    padding-top: 50px !important; } }
+    padding-top: 50px !important; }
+
+  .course_platform_section_img .row div img {
+    width: 100% !important; } }
 @media only screen and (max-width: 768px) {
   html {
     font-size: 12px; }
 
+  nav {
+    padding-top: 30px; }
+
   .container_space {
     padding-bottom: 40px; }
 
-  .navbarUtku {
+  .navbar_section {
     flex-direction: column; }
-    .navbarUtku .nav_logo {
+    .navbar_section .nav_logo {
       padding-bottom: 32px; }
-    .navbarUtku .nav_login {
+    .navbar_section .nav_login {
       display: none; }
+    .navbar_section .nav_menu a {
+      padding: 0 2.5rem !important; }
 
   .promotion_section {
     padding-bottom: 0; }
@@ -403,47 +412,44 @@ form {
       .promotion_section .container div:nth-child(2) img {
         width: 100%; }
     .promotion_section .container div:nth-child(3) {
-      bottom: -400px;
-      top: auto; }
-      .promotion_section .container div:nth-child(3) img {
-        width: auto; }
+      display: none; }
     .promotion_section .container .row {
       justify-content: center; }
       .promotion_section .container .row .promotion_contents .button {
         display: none; }
 
-  .first-information-section .container {
+  .first_information_section .container {
     padding-top: 40px; }
 
-  .first-information-section_button {
+  .first_information_section_button {
     display: flex !important;
     justify-content: center;
     padding-bottom: 100px; }
-    .first-information-section_button > div {
+    .first_information_section_button > div {
       width: 100%; }
-      .first-information-section_button > div button {
+      .first_information_section_button > div button {
         width: 100%; }
 
-  .first-information-section_img {
+  .first_information_section_img {
     padding-bottom: 40px; }
 
-  .second-information-section_information .button {
+  .second_information_section_information .button {
     width: 100%;
     margin-top: 40px;
     margin-bottom: 30px; }
-    .second-information-section_information .button button {
+    .second_information_section_information .button button {
       width: 100%; }
 
-  .second-information-section_promotion div div {
+  .second_information_section_promotion div div {
     margin: 10px 0; }
-    .second-information-section_promotion div div img {
+    .second_information_section_promotion div div img {
       padding-bottom: 25px; }
-    .second-information-section_promotion div div h4 {
+    .second_information_section_promotion div div h4 {
       padding-bottom: 10px; }
-    .second-information-section_promotion div div h5 {
+    .second_information_section_promotion div div h5 {
       padding: 0; }
 
-  .second-information-section .container {
+  .second_information_section .container {
     padding-top: 40px; }
 
   .owl-item h2,
@@ -469,7 +475,10 @@ form {
     .course_platform_section_img > div div:nth-child(3) {
       margin-left: -5vw; }
     .course_platform_section_img > div div:nth-child(4) {
-      margin-right: -5vw; } }
+      margin-right: -5vw; }
+
+  .footer_section_logo {
+    padding-top: 5px; } }
 @media only screen and (max-width: 576px) {
   html {
     font-size: 8px; }
@@ -479,11 +488,11 @@ form {
   .container {
     padding: 0 40px; }
 
-  .first-information-section_text {
+  .first_information_section_text {
     padding: 0 50px;
     text-align: center; }
-    .first-information-section_text h2 {
-      font-size: 1rem !important;
+    .first_information_section_text h2 {
+      font-size: 2rem !important;
       line-height: normal !important; }
 
   .fourth_information_info {
@@ -500,10 +509,11 @@ form {
   .promotion_contents h1 {
     padding-bottom: 12px !important;
     font-size: 4rem !important; }
-  .promotion_contents h1, .promotion_contents h3 {
+  .promotion_contents h1,
+  .promotion_contents h3 {
     text-align: center !important; }
 
-  .second-information-section_promotion div div h5 {
+  .second_information_section_promotion div div h5 {
     min-height: 30px; }
 
   .third_information_section .container > div:nth-child(3) {
