@@ -1,7 +1,10 @@
 .fourth_information_section {
     .fourth_information_section_img {
-        padding: 40px 75px;
-        background-color: #fdf6eb;
+        img {
+            width: 100%;
+            padding: 40px 75px;
+            background-color: #fdf6eb;
+        }
     }
     .fourth_information_info {
         padding-top: 40px;

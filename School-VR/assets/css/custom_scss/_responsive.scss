@@ -1,18 +1,33 @@
 @media only screen and (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
 }
 @media only screen and (max-width: 992px) {
+    html {
+        font-size: 10px;
+        h2,
+        h3,
+        h4,
+        h5 {
+            line-height: normal !important;
+        }
+    }
     .nav_menu {
         a {
             padding-right: 10px !important;
         }
     }
+    #email {
+        padding: 15px 8px !important;
+    }
+    #submit {
+        padding: 5px 15px !important;
+    }
 }
 @media only screen and (max-width: 768px) {
     html {
         font-size: 12px;
-        h2, h3,h4,h5{
-line-height: normal!important;
-        }
     }
     .container_space {
         padding-bottom: 40px;
@@ -93,9 +108,41 @@ line-height: normal!important;
             }
         }
     }
-    .second-information-section{
-        .container{
+    .second-information-section {
+        .container {
             padding-top: 0;
+        }
+    }
+    .owl-item {
+        h2,
+        h4 {
+            min-height: 0 !important;
+        }
+    }
+    .third_information_section_info {
+        padding: 0 50px 50px 0 !important;
+    }
+    .fourth_information_info {
+        h5 {
+            text-align: center !important;
+        }
+        div {
+            div {
+                padding-bottom: 30px;
+            }
+        }
+    }
+    .subscribe_section {
+        .container {
+            padding: 60px 50px !important;
+            .row {
+                div {
+                    &:nth-child(1) {
+                        text-align: center !important;
+                        padding-bottom: 30px !important;
+                    }
+                }
+            }
         }
     }
 }
@@ -113,6 +160,28 @@ line-height: normal!important;
             line-height: normal !important;
         }
     }
+    .fourth_information_info {
+        padding: 0 !important;
+        h2 {
+            text-align: center;
+        }
+    }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
+    .owl-item {
+        h2 {
+            min-height: 100px !important;
+        }
+        h4 {
+            min-height: 50px !important;
+        }
+        button {
+            padding: 4px 12px !important;
+        }
+    }
+    .subscribe_section {
+        .container {
+            padding: 30px 25px !important;
+        }
+    }
 }
