@@ -1,7 +1,23 @@
 .promotion_section {
     background-color: #fdf6eb;
-    position: relative;
     overflow: hidden;
+    .container {
+        position: relative;
+
+        div {
+            &:nth-child(2) {
+                position: absolute;
+                height: 100%;
+                bottom: 0;
+                right: 0;
+            }
+            &:nth-child(3) {
+                position: absolute;
+                right: 0;
+                top: -200px;
+            }
+        }
+    }
 
     .promotion_contents {
         h1 {
@@ -18,20 +34,6 @@
             line-height: 43px;
             color: #000000;
             padding-bottom: 55px;
-        }
-    }
-
-    > div {
-        &:nth-child(2) {
-            position: absolute;
-            height: 100%;
-            bottom: 0;
-            right: 0;
-        }
-        &:nth-child(3) {
-            position: absolute;
-            right: 0;
-            top: -200px;
         }
     }
 }

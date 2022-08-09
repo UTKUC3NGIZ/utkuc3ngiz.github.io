@@ -6,6 +6,7 @@
 @media only screen and (max-width: 992px) {
     html {
         font-size: 10px;
+        h1,
         h2,
         h3,
         h4,
@@ -23,6 +24,9 @@
     }
     #submit {
         padding: 5px 15px !important;
+    }
+    .fourth_information_users{
+        padding-top: 50px!important;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -42,22 +46,31 @@
         }
     }
     .promotion_section {
-        .row {
-            justify-content: center;
-
-            .promotion_contents {
-                .button {
-                    display: none;
+        padding-bottom: 0;
+        .container {
+            div {
+                &:nth-child(2) {
+                    position: static;
+                    img {
+                        width: 100%;
+                    }
+                }
+                &:nth-child(3) {
+                    bottom: -400px;
+                    top: auto;
+                    img {
+                        width: auto;
+                    }
                 }
             }
-        }
-        div {
-            &:nth-child(2) {
-                position: static;
-            }
-            &:nth-child(3) {
-                bottom: -400px;
-                top: auto;
+            .row {
+                justify-content: center;
+
+                .promotion_contents {
+                    .button {
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -110,7 +123,7 @@
     }
     .second-information-section {
         .container {
-            padding-top: 0;
+            padding-top: 40px;
         }
     }
     .owl-item {
@@ -145,9 +158,30 @@
             }
         }
     }
+    .course_platform_section_img {
+        > div {
+            div {
+                padding: 0 15px 15px 15px;
+                &:nth-child(3) {
+                    margin-left: -5vw;
+                }
+                &:nth-child(4) {
+                    margin-right: -5vw;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 576px) {
+    html {
+        font-size: 8px;
+        ul{
+            li{
+                line-height: 18px!important;
+            }
+        }
+    }
     .container {
         padding: 0 40px;
     }
@@ -164,6 +198,45 @@
         padding: 0 !important;
         h2 {
             text-align: center;
+            padding-top: 20px;
+        }
+    }
+    .course_platform_section_img {
+
+        .row {
+            padding: 22px 0px!important;
+            div {
+                img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .promotion_contents {
+        h1 {
+            padding-bottom: 12px !important;
+            font-size: 4rem!important;
+        }
+        h1,h3{
+            text-align: center!important;
+        }
+    }
+    .second-information-section_promotion {
+        div {
+            div {
+                h5 {
+                    min-height: 30px;
+                }
+            }
+        }
+    }
+    .third_information_section{
+        .container{
+           > div{
+                &:nth-child(3){
+                    left: 30vh;
+                }
+            }
         }
     }
 }

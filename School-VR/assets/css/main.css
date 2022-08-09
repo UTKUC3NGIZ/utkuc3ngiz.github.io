@@ -70,8 +70,18 @@ nav {
 
 .promotion_section {
   background-color: #fdf6eb;
-  position: relative;
   overflow: hidden; }
+  .promotion_section .container {
+    position: relative; }
+    .promotion_section .container div:nth-child(2) {
+      position: absolute;
+      height: 100%;
+      bottom: 0;
+      right: 0; }
+    .promotion_section .container div:nth-child(3) {
+      position: absolute;
+      right: 0;
+      top: -200px; }
   .promotion_section .promotion_contents h1 {
     color: #000000;
     font-weight: 700;
@@ -84,15 +94,6 @@ nav {
     line-height: 43px;
     color: #000000;
     padding-bottom: 55px; }
-  .promotion_section > div:nth-child(2) {
-    position: absolute;
-    height: 100%;
-    bottom: 0;
-    right: 0; }
-  .promotion_section > div:nth-child(3) {
-    position: absolute;
-    right: 0;
-    top: -200px; }
 
 .first-information-section .container {
   padding-top: 130px; }
@@ -285,18 +286,13 @@ nav {
 
 .course_platform_section_img > div {
   align-items: center;
+  text-align: center;
   justify-content: space-between;
   padding: 130px 0;
   border-top: 1px solid #555555;
   border-bottom: 1px solid #555555; }
   .course_platform_section_img > div img {
-    width: 100%; }
-  .course_platform_section_img > div div {
-    padding: 0 15px 15px 15px; }
-    .course_platform_section_img > div div:nth-child(3) {
-      margin-left: -5vw; }
-    .course_platform_section_img > div div:nth-child(4) {
-      margin-right: -5vw; }
+    width: auto; }
 
 .subscribe_section .container {
   position: relative;
@@ -368,6 +364,7 @@ form {
 @media only screen and (max-width: 992px) {
   html {
     font-size: 10px; }
+    html h1,
     html h2,
     html h3,
     html h4,
@@ -381,7 +378,10 @@ form {
     padding: 15px 8px !important; }
 
   #submit {
-    padding: 5px 15px !important; } }
+    padding: 5px 15px !important; }
+
+  .fourth_information_users {
+    padding-top: 50px !important; } }
 @media only screen and (max-width: 768px) {
   html {
     font-size: 12px; }
@@ -396,15 +396,21 @@ form {
     .navbarUtku .nav_login {
       display: none; }
 
-  .promotion_section .row {
-    justify-content: center; }
-    .promotion_section .row .promotion_contents .button {
-      display: none; }
-  .promotion_section div:nth-child(2) {
-    position: static; }
-  .promotion_section div:nth-child(3) {
-    bottom: -400px;
-    top: auto; }
+  .promotion_section {
+    padding-bottom: 0; }
+    .promotion_section .container div:nth-child(2) {
+      position: static; }
+      .promotion_section .container div:nth-child(2) img {
+        width: 100%; }
+    .promotion_section .container div:nth-child(3) {
+      bottom: -400px;
+      top: auto; }
+      .promotion_section .container div:nth-child(3) img {
+        width: auto; }
+    .promotion_section .container .row {
+      justify-content: center; }
+      .promotion_section .container .row .promotion_contents .button {
+        display: none; }
 
   .first-information-section .container {
     padding-top: 40px; }
@@ -438,7 +444,7 @@ form {
       padding: 0; }
 
   .second-information-section .container {
-    padding-top: 0; }
+    padding-top: 40px; }
 
   .owl-item h2,
   .owl-item h4 {
@@ -456,8 +462,20 @@ form {
     padding: 60px 50px !important; }
     .subscribe_section .container .row div:nth-child(1) {
       text-align: center !important;
-      padding-bottom: 30px !important; } }
+      padding-bottom: 30px !important; }
+
+  .course_platform_section_img > div div {
+    padding: 0 15px 15px 15px; }
+    .course_platform_section_img > div div:nth-child(3) {
+      margin-left: -5vw; }
+    .course_platform_section_img > div div:nth-child(4) {
+      margin-right: -5vw; } }
 @media only screen and (max-width: 576px) {
+  html {
+    font-size: 8px; }
+    html ul li {
+      line-height: 18px !important; }
+
   .container {
     padding: 0 40px; }
 
@@ -471,7 +489,25 @@ form {
   .fourth_information_info {
     padding: 0 !important; }
     .fourth_information_info h2 {
-      text-align: center; } }
+      text-align: center;
+      padding-top: 20px; }
+
+  .course_platform_section_img .row {
+    padding: 22px 0px !important; }
+    .course_platform_section_img .row div img {
+      width: 100% !important; }
+
+  .promotion_contents h1 {
+    padding-bottom: 12px !important;
+    font-size: 4rem !important; }
+  .promotion_contents h1, .promotion_contents h3 {
+    text-align: center !important; }
+
+  .second-information-section_promotion div div h5 {
+    min-height: 30px; }
+
+  .third_information_section .container > div:nth-child(3) {
+    left: 30vh; } }
 @media only screen and (max-width: 375px) {
   .owl-item h2 {
     min-height: 100px !important; }

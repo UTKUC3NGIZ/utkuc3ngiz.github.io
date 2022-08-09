@@ -1,22 +1,13 @@
 .course_platform_section_img {
     > div {
         align-items: center;
+        text-align: center;
         justify-content: space-between;
         padding: 130px 0;
         border-top: 1px solid #555555;
         border-bottom: 1px solid #555555;
         img {
-            width: 100%;
-        }
-        div{
-            
-            padding: 0 15px 15px 15px;
-            &:nth-child(3){
-                margin-left: -5vw;
-            }
-            &:nth-child(4){
-                margin-right: -5vw;
-            }
+            width: auto;
         }
     }
 }
