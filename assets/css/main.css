@@ -154,7 +154,8 @@ html {
       font-size: 1.75rem;
       line-height: 26px;
       color: #cccccc;
-      padding: 20px 0; }
+      padding: 20px 0;
+      min-height: 10rem; }
     .project_texts .project_article p {
       font-family: "Poppins", sans-serif;
       font-weight: 300;
