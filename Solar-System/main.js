@@ -2,6 +2,8 @@ const body = document.getElementsByTagName("body")[0]
 
 body.style.backgroundImage = "url(images/galaxy.gif)"
 body.style.fontFamily = "Montserrat"
+body.style.maxWidth = "1440px"
+body.style.margin = "auto"
 
 
 // 
@@ -28,7 +30,7 @@ title.style.color = "white"
 const input = document.getElementById("mass")
 
 input.style.padding = "8px 12px"
-input.style.width = "15%"
+input.style.width = "18%"
 
 
 // 
@@ -37,7 +39,7 @@ input.style.width = "15%"
 const selectDiv = document.getElementsByTagName("select")[0]
 
 selectDiv.style.padding = "8px 12px"
-selectDiv.style.width = "12%"
+selectDiv.style.width = "18%"
 
 
 // 
@@ -76,7 +78,7 @@ flexContainer.style.backgroundColor = "#99999966"
 
 const planetImg = document.getElementsByClassName("image")[0]
 
-planetImg.style.padding = "70px"
+planetImg.style.margin = "35px"
 
 
 // 
@@ -84,7 +86,7 @@ planetImg.style.padding = "70px"
 
 const planetInfo = document.getElementsByClassName("description")[0]
 
-planetInfo.style.padding = "70px"
+planetInfo.style.margin = "35px"
 planetInfo.style.color = "white"
 planetInfo.style.display = "flex"
 planetInfo.style.flexDirection = "column"
@@ -124,7 +126,7 @@ document.getElementsByClassName("description")[0].appendChild(infoN)
 const button = document.getElementsByTagName("button")[0]
 
 button.style.padding = "8px 12px"
-button.style.width = "12%"
+button.style.width = "18%"
 button.style.backgroundColor = "#9e9d9dbf"
 button.style.color = "white"
 
