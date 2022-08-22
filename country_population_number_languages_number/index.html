@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" sizes="32x32" href="C3.svg">
+
+    <title>Project | World Countries Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="title">
+        <h1>World Countries Data</h1>
+        <h2>Currently, we have <span id="coutryNumber"></span> countries</h2>
+    </div>
+    <div id="buttons">
+        <div>
+            <button onclick="population()" id="population_button">POPULATION</button>
+            <button onclick="languages()" id="languages_button">LANGUAGES</button>
+        </div>
+        <span id="buttons_title"></span>
+    </div>
+    <div id="tenMostPanelLanguages"></div>
+    <div id="tenMostPanelPopulation">
+    </div>
+    <script src="new_countries_data.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

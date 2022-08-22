@@ -1,0 +1,125 @@
+html,
+body {
+    padding: 0;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: orange;
+    font-weight: 200;
+}
+
+h2 {
+    font-weight: 200;
+    color: #313131;
+}
+
+h3 {
+    font-weight: 200;
+    min-width: 250px;
+}
+
+
+#title,
+#buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+#title {
+    background-color: #d5d5d52e;
+}
+
+#buttons {
+    box-shadow: inset 0px 0px 12px -4px rgba(0, 0, 0, 0.38);
+}
+
+#buttons>div {
+    padding-top: 20px;
+}
+
+#buttons>span {
+    padding: 10px;
+}
+
+#buttons>div>button {
+    margin: 0 .2rem;
+    background-color: rgb(253, 180, 44);
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    padding: 8px 16px;
+    color: #313131;
+}
+
+#buttons>div>button:hover {
+    background-color: rgb(240, 168, 36);
+
+}
+
+
+
+#tenMostPanelLanguages,#tenMostPanelPopulation{
+    background-color: #d5d5d52e;
+    box-shadow: rgb(0 0 0 / 38%) 0px 1px 10px 0px;
+}
+
+
+
+#tenMostPanelLanguages>div,
+#tenMostPanelPopulation>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+     border-bottom: 1px solid rgb(253, 180, 44);
+}
+
+#tenMostPanelLanguages>div>div,
+#tenMostPanelPopulation>div>div {
+    width: 70%;
+
+}
+
+
+
+#tenMostPanelLanguages>div>div>div,
+#tenMostPanelPopulation>div>div>div {
+    width: 0%;
+    height: 30px;
+    background-color: rgb(253, 180, 44);
+}
+
+#tenMostPanelPopulation>div>h3:last-child,#tenMostPanelLanguages>div>h3:last-child {
+    min-width:100px ;
+} 
+
+
+
+
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 12px;
+    }
+    #tenMostPanelLanguages>div,
+    #tenMostPanelPopulation>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid rgb(253, 180, 44);
+    }
+    h3{
+        text-align: center;
+    }
+    #tenMostPanelLanguages>div>div,
+#tenMostPanelPopulation>div>div {
+    border: 1px solid rgb(253, 180, 44);
+
+}
+}
+
