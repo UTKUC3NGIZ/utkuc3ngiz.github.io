@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.svg">
+
+    <title>Project | World Countries List</title>
+    
+</head>
+
+<body>
+
+    <div id="main_section">
+        <div id="title_section">
+            <h1>WORLD COUNTRİES LIST</h1>
+            <h2>Total Number Of Countries: <span id="number_of_country"></span></h2>
+            <h3>Countries start with <span id="entered_letter"></span> are <span id="number_of_results"></span></h3>
+        </div>
+        <div id="button_section">
+            <button onclick="startingWordButton()" id="starting_word">STARTING WORD</button>
+            <button onclick="searchWordButton()"  id="search_with_any_word">SEARCH WITH ANY WORD</button>
+            <button id="arrangement" onclick="arrangementSort()"><span class="material-symbols-outlined">
+                    sort_by_alpha
+                </span></button>
+        </div>
+        <div id="search_section">
+            <input  type="text" placeholder="Search Country...">
+            <button type="submit"><span class="material-symbols-outlined">search</span></button>
+        </div>
+    </div>
+    <div id="countries_section">
+    
+    </div>
+
+    <script src="countries.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>
+

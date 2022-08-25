@@ -1,0 +1,220 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#main_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #005b907d;
+    z-index: 0;
+}
+
+#main_section {
+    position: relative;
+    background-image: url(images/globe-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 150px 0;
+}
+
+#title_section {
+    color: #fff;
+    z-index: 10;
+   
+
+}
+
+#title_section>h1 {
+    font-size: 3.75rem;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+#title_section>h2 {
+    font-size: 1.56rem;
+    padding-bottom: 10px;
+}
+
+#title_section>h3 {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+#button_section {
+    padding-bottom: 10px;
+    z-index: 10;
+}
+
+#button_section>button {
+    background-color: #895be6;
+    border: transparent;
+    padding: 10px;
+    color: #fff;
+    font-size: .8rem;
+}
+
+#button_section>button>span {
+    color: #fff;
+    font-size: .8rem;
+}
+
+#button_section>button:hover {
+    background-color: #581cb8;
+}
+
+
+#search_section {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    z-index: 10;
+}
+
+#search_section>input {
+    width: 40vw;
+    padding: 10px;
+    border: transparent;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+#search_section>input:focus-visible {
+    outline: none;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+
+#search_section>button {
+    color: #fff;
+    border: transparent;
+    background-color: transparent;
+
+}
+
+#search_section>button>span {
+    font-size: 2rem;
+
+}
+
+
+
+#countries_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.countries_div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #005b907d;
+    z-index: 0;
+}
+
+.countries_div {
+    background-image: url(images/map_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 16rem;
+    height: 16rem;
+    margin: 10px;
+}
+
+
+
+
+.countries_div>h1 {
+    color: #fff;
+    z-index: 10;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* responsive */
+@media only screen and (max-width: 768px){
+    .countries_div{
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+html{
+    font-size: 12px;
+}
+#main_section{
+    padding: 50px 0;
+}
+#button_section{
+    display: flex;
+    flex-direction: column;
+    
+}
+#button_section > button{
+  margin: 0.5rem 0;
+}
+#arrangement > span{
+    font-size: 1.2rem!important;
+}
+#search_section{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1rem;
+}
+#search_section > input{
+    width: 100%;
+}
+
+.countries_div{
+    width: 12rem;
+    height: 12rem;
+}
+}
+
+
+@media only screen and (max-width: 328px) {
+html{
+    font-size: 0.7rem;
+}
+}
