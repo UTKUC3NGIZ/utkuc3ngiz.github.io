@@ -1,0 +1,151 @@
+body {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 12.5rem;
+}
+
+.title {
+    text-align: center;
+    color: #E5C9C5;
+}
+
+.form_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    border: 1px solid #E5C9C5;
+    padding: .2rem;
+    font-size: 1rem;
+    margin: 0 .3rem;
+    color: #E5C9C5;
+}
+
+.form:focus-visible,
+.form:hover {
+    outline: 1px solid #dfc3bf !important;
+}
+
+.form-button {
+    background-color: #E5C9C5;
+    color: #fff;
+    border: none;
+    padding: .5rem .8rem;
+    font-size: 1.2rem;
+
+}
+
+::placeholder {
+    color: #E5C9C5;
+}
+
+.form-button:hover {
+    background-color: #dfc3bf;
+}
+
+.form_div>span {
+    color: #ff0000;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    display: none;
+}
+
+/* data */
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E5C9C5;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h3,
+span {
+    color: #fff;
+    margin: 0;
+}
+
+.data_button {
+    background-color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 3.3rem;
+    height: 3.3rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.material-symbols-outlined {
+    color: #ff0000;
+    font-size: 1rem !important;
+    display: flex;
+    vertical-align: text-bottom;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        padding: 0 3rem;
+    }
+
+    .form_div {
+        justify-content: center;
+    }
+
+    form {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .form {
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .form-button {
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    .data > div > h3{
+        font-size: 1rem;
+    }
+    .data > div > span{
+        font-size: .8rem;
+    }
+    .data_button{
+        padding: 1rem;
+        width:2.8rem ;
+        height:2.8rem ;
+        font-size: 0.8rem;
+    }
+    .material-symbols-outlined{
+        font-size: 0.8rem!important;
+    }
+}
+
