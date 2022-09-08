@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+}
+html {
+    margin: auto;
+    scroll-behavior: smooth;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    background-color: #f3f2f2;
+    h1 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+        color: #efa42e;
+    }
+    span {
+        padding-bottom: 0.5rem;
+        font-size: 1.3rem;
+    }
+}
+#number_of_outputs {
+    color: #efa42e;
+    display: none;
+}
+
+.search_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.search {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    input {
+        font-size: 1.3rem;
+        color: #efa42e;
+        padding: 1.2rem;
+        width: 50%;
+        height: 2rem;
+        border: 1px solid #efeaea;
+        border-radius: 1rem;
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    button {
+        font-size: 0.7rem;
+        font-weight: bold;
+        background-color: #efa42e;
+        padding: 0.6rem 3rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        margin: 0 2rem;
+    }
+    .material-symbols-outlined {
+        font-size: 3rem;
+        color: #efa42e;
+    }
+}
+
+#countries_data_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f3f2f2;
+    > div {
+        width: 9%;
+        padding: 2rem;
+        border: 1px solid transparent;
+        background-color: #ffffff;
+        margin: 1rem;
+
+        .countrie_top {
+            text-align: center;
+            img {
+                width: 100%;
+                height: 5vw;
+            }
+            h2 {
+                font-size: 1.2rem;
+                color: #efa42e;
+            }
+        }
+        .countrie_bottom {
+            display: flex;
+            flex-direction: column;
+            span {
+                padding: 0.1rem;
+                color: #927e7e;
+                line-break: anywhere;
+                
+                .data_number {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// tablo
+
+.tablo {
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+        color: orange;
+        font-weight: 200;
+    }
+
+    h2 {
+        font-weight: 200;
+        color: #313131;
+    }
+
+    h3 {
+        font-weight: 200;
+        min-width: 250px;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #buttons {
+        // box-shadow: inset 0px 0px 12px -4px rgba(0, 0, 0, 0.38);
+    }
+
+    #buttons {
+        div {
+            padding-top: 20px;
+        }
+    }
+
+    #buttons {
+        span {
+            padding: 10px;
+        }
+    }
+
+    #buttons {
+        div {
+            button {
+                margin: 0 0.2rem;
+                background-color: rgb(253, 180, 44);
+                border: 1px solid transparent;
+                border-radius: 0.5rem;
+                padding: 8px 16px;
+                color: #313131;
+            }
+        }
+    }
+
+    #buttons {
+        div {
+            button {
+                &:hover {
+                    background-color: rgb(240, 168, 36);
+                }
+            }
+        }
+    }
+
+    #tenMostPanelLanguages,
+    #tenMostPanelPopulation {
+        background-color: #d5d5d52e;
+        // box-shadow: rgb(0 0 0 / 38%) 0px 1px 10px 0px;
+    }
+
+    #tenMostPanelLanguages,
+    #tenMostPanelPopulation {
+        > div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid rgb(253, 180, 44);
+        }
+    }
+
+    #tenMostPanelLanguages,
+    #tenMostPanelPopulation {
+        div {
+            div {
+                width: 70%;
+            }
+        }
+    }
+
+    #tenMostPanelLanguages,
+    #tenMostPanelPopulation {
+        div {
+            div {
+                div {
+                    width: 0%;
+                    height: 30px;
+                    background-color: rgb(253, 180, 44);
+                }
+            }
+        }
+    }
+
+    #tenMostPanelLanguages,
+    #tenMostPanelPopulation {
+        div {
+            h3 {
+                &:last-child {
+                    min-width: 100px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        html {
+            font-size: 12px;
+        }
+        #tenMostPanelLanguages > div,
+        #tenMostPanelPopulation > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 1px solid rgb(253, 180, 44);
+        }
+        h3 {
+            text-align: center;
+        }
+        #tenMostPanelLanguages > div > div,
+        #tenMostPanelPopulation > div > div {
+            border: 1px solid rgb(253, 180, 44);
+        }
+    }
+}
+
+// scroll Up
+
+.scroll_up {
+    position: fixed;
+    bottom: 3vw;
+    right: 3vw;
+    button {
+        background-color: transparent;
+        border: none;
+        display: none;
+
+        span {
+            font-size: 4rem;
+            color: #efa42e;
+            border: 1px solid #efa42e;
+            border-radius: 50%;
+            background-color: #ffffff96;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #countries_data_div {
+        > div {
+            width: 20%;
+            padding: 1rem;
+
+            .countrie_top {
+                img {
+                    height: 12vw;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .buttons {
+        button {
+            margin: 0 0.9rem;
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+    .buttons {
+        flex-direction: column;
+        button {
+            margin: 0 0.5rem;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    #countries_data_div {
+        > div {
+            width: 33%;
+
+            .countrie_top {
+                img {
+                    height: 18vw;
+                }
+            }
+        }
+    }
+}

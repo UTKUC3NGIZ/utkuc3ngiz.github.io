@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" sizes="32x32" href="C3.svg">
+
+    <title>Project | World Countries Data</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="title">
+        <h1>World Countries Data</h1>
+        <span>Currently, we have <span id="number_of_countries"></span> countries</span>
+        <span id="number_of_outputs"></span>
+    </div>
+    <div class="search_div">
+        <div class="search">
+            <input type="search" name="search" id="search">
+        </div>
+        <div class="buttons" id="buttons">
+            <button onclick="name_sort()">NAME</button>
+            <button onclick="capital_sort()">CAPITAL</button>
+            <button onclick="population_sort()">POPULATION</button>
+            <a href="#table">
+                <span class="material-symbols-outlined">
+                    insert_chart
+                </span>
+            </a>
+        </div>
+    </div>
+    <div id="countries_data_div">
+    </div>
+    <div class="tablo" id="table">
+        <div id="buttons">
+            <div>
+                <button onclick="population()" id="population_button">POPULATION</button>
+                <button onclick="languages()" id="languages_button">LANGUAGES</button>
+            </div>
+            <span id="buttons_title"></span>
+        </div>
+        <div id="tenMostPanelLanguages"></div>
+        <div id="tenMostPanelPopulation">
+        </div>
+    </div>
+    <div class="scroll_up">
+        <button onclick="topFunction()" id="scroll_up">
+            <span class="material-symbols-outlined">
+                arrow_upward
+            </span>
+        </button>
+    </div>
+
+    <script src="assets/js/countries_data.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tablo.js"></script>
+</body>
+
+</html>
