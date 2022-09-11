@@ -17,20 +17,19 @@ html {
 /* width */
 ::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #191919; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #13b0f5 -2.06%, #e70faa 100%); 
-  }
-  
-  /* Handle on hover */
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #191919;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #13b0f5 -2.06%, #e70faa 100%);
+}
+
+/* Handle on hover */
 
 .container {
     padding: 0 120px 200px 120px;
@@ -47,7 +46,7 @@ html {
     }
 }
 
-.row{
+.row {
     justify-content: center;
 }
 
@@ -95,4 +94,23 @@ html {
 
 .pages_container_titles {
     text-align: start;
+}
+
+.scroll_to_the_top {
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    display: none;
+    a {
+        display: flex;
+        font-size: 3rem;
+        background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:hover {
+            background: linear-gradient(90deg, #e70faa  -2.06%, #13b0f5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
 }

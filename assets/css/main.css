@@ -100,6 +100,22 @@ html {
 .pages_container_titles {
   text-align: start; }
 
+.scroll_to_the_top {
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  display: none; }
+  .scroll_to_the_top a {
+    display: flex;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+    .scroll_to_the_top a:hover {
+      background: linear-gradient(90deg, #e70faa -2.06%, #13b0f5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
 .promotion .promotional-contents {
   display: flex;
   justify-content: space-between;
