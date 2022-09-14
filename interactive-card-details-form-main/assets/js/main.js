@@ -111,16 +111,14 @@ fname.addEventListener("input", () => {
 number.addEventListener("input", () => {
 
     val = number.value
-    val = val.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
-    console.log(val)
     non_letter(numberCart, numberError, number)
     if (val.length < 1) {
         numberError.innerHTML = "Can't be blank"
-    } else if (val.length <= 18) {
-        numberError.innerHTML = "must be at least 12 digits"
+    } else if (val.length <= 15) {
         number.classList.add("error_border")
         button.style.backgroundColor = "hsl(279, 6%, 55%)"
     }
+    numberCart.innerHTML = numberCart.innerHTML.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
 
 })
 
@@ -131,7 +129,6 @@ MM.addEventListener("input", () => {
     if (val.length < 1) {
         MMError.innerHTML = "Can't be blank"
     } else if (val.length <= 1) {
-        MMError.innerHTML = "must be at least 2 digits"
         MM.classList.add("error_border")
         button.style.backgroundColor = "hsl(279, 6%, 55%)"
     }
@@ -145,7 +142,6 @@ YY.addEventListener("input", () => {
     if (val.length < 1) {
         YYError.innerHTML = "Can't be blank"
     } else if (val.length <= 1) {
-        YYError.innerHTML = "must be at least 2 digits"
         YY.classList.add("error_border")
         button.style.backgroundColor = "hsl(279, 6%, 55%)"
     }
@@ -158,22 +154,19 @@ CVC.addEventListener("input", () => {
     if (val.length < 1) {
         CVCError.innerHTML = "Can't be blank"
     } else if (val.length <= 2) {
-        CVCError.innerHTML = "must be at least 3 digits"
         CVC.classList.add("error_border")
         button.style.backgroundColor = "hsl(279, 6%, 55%)"
     }
 })
 
 button.addEventListener("click", () => {
-    if (fname.value === "" || number.value === "" || MM.value === "" || YY.value === "" || CVC.value === "" || number.value.length !== 12 || MM.value.length !== 2 || YY.value.length !== 2 || CVC.value.length !== 3) {
+    if (fname.value === "" || number.value === "" || MM.value === "" || YY.value === "" || CVC.value === "" || number.value.length !== 16 || MM.value.length !== 2 || YY.value.length !== 2 || CVC.value.length !== 3) {
         button.style.backgroundColor = "hsl(279, 6%, 55%)"
-    } else {
+    } else if(MM.value.length === 2 && number.value.length === 16 &&  YY.value.length === 2 && CVC.value.length === 3) {
         button.style.backgroundColor = "#220930"
         form.style.display = "none"
         desktopCompleted.style.display = "flex"
-
     }
-
 })
 
 
