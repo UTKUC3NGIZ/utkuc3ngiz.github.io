@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+body {
+  margin: auto;
+  overflow: hidden;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+}
+html .mobil {
+  display: none;
+}
+
+.desktop {
+  display: flex;
+}
+
+.cards {
+  position: relative;
+}
+.cards > img {
+  height: 100vh;
+}
+.cards > div {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  right: 0;
+}
+.cards > div > div {
+  position: relative;
+}
+.cards > div > div > img {
+  width: 24.83rem;
+  box-shadow: 47px 36px 47px -8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+}
+.cards > div > div:first-child {
+  position: absolute;
+  right: -131px;
+  top: 20%;
+  max-height: 244.95px;
+}
+.cards > div > div:first-child > div {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards > div > div:first-child > div div:nth-child(1) {
+  padding: 1.4rem 0 0 1.4rem;
+}
+.cards > div > div:first-child > div div:nth-child(2) {
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  padding-top: 1rem;
+}
+.cards > div > div:first-child > div div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  padding: 0 2rem 2rem 2rem;
+}
+.cards > div > div:last-child {
+  position: absolute;
+  top: 51%;
+}
+.cards > div > div:last-child > div {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  right: 3rem;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+  top: -5px;
+}
+
+.form_div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6rem;
+}
+.form_div .card-form {
+  width: 26.5vw;
+}
+.form_div .card-form form {
+  display: flex;
+  flex-direction: column;
+}
+.form_div .card-form form label {
+  font-size: 0.7rem;
+  padding-bottom: 0.6rem;
+  color: #220930;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.form_div .card-form form input {
+  border: 1px solid hsl(270deg, 3%, 87%);
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+.form_div .card-form form input:hover, .form_div .card-form form input:focus-visible {
+  outline: none;
+  background: linear-gradient(white, white) padding-box, linear-gradient(160deg, rgb(100, 72, 254) 0%, rgb(96, 5, 148) 100%) border-box;
+  border: 1px solid transparent;
+}
+.form_div .card-form form input::-moz-placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.9rem;
+  color: hsl(270deg, 3%, 87%);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.form_div .card-form form input:-ms-input-placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.9rem;
+  color: hsl(270deg, 3%, 87%);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.form_div .card-form form input::placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.9rem;
+  color: hsl(270deg, 3%, 87%);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.form_div .card-form form > div {
+  display: flex;
+}
+.form_div .card-form form > div > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.form_div .card-form form > div > div:first-child {
+  margin-right: 0.5rem;
+}
+.form_div .card-form form > div > div:first-child div {
+  display: flex;
+}
+.form_div .card-form form > div > div:first-child div div {
+  display: flex;
+  flex-direction: column;
+}
+.form_div .card-form form > div > div:first-child div div input {
+  width: 50%;
+  margin-right: 0.5rem;
+}
+
+.mobil > div {
+  position: relative;
+}
+.mobil > div:first-child .mobil_carts > div:first-child {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 2.286rem;
+  right: 1.429rem;
+}
+.mobil > div:first-child .mobil_carts > div:first-child img {
+  width: 20rem;
+}
+.mobil > div:first-child .mobil_carts > div:first-child div {
+  position: absolute;
+  top: 4.571rem;
+  right: 2.786rem;
+}
+.mobil > div:first-child .mobil_carts > div:first-child div span {
+  font-size: 0.714rem;
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 0.8px;
+}
+.mobil > div:first-child .mobil_carts > div:last-child {
+  position: absolute;
+  display: flex;
+  bottom: -1.929rem;
+  left: 1.286rem;
+}
+.mobil > div:first-child .mobil_carts > div:last-child > img {
+  width: 20rem;
+  box-shadow: 47px 36px 47px -8px rgba(0, 0, 0, 0.1);
+}
+.mobil > div:first-child .mobil_carts > div:last-child > div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+.mobil > div:first-child .mobil_carts > div:last-child > div div {
+  color: hsl(0deg, 0%, 100%);
+}
+.mobil > div:first-child .mobil_carts > div:last-child > div div:nth-child(1) {
+  padding: 1.286rem 0 0 1.286rem;
+}
+.mobil > div:first-child .mobil_carts > div:last-child > div div:nth-child(1) img {
+  width: 4rem;
+}
+.mobil > div:first-child .mobil_carts > div:last-child > div div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  font-size: 1.286rem;
+  padding-top: 2.429rem;
+}
+.mobil > div:first-child .mobil_carts > div:last-child > div div:nth-child(2) span {
+  letter-spacing: 2px;
+}
+.mobil > div:first-child .mobil_carts > div:last-child > div div:nth-child(3) {
+  padding: 1.286rem 1.429rem 0 1.429rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.714rem;
+}
+.mobil > div:last-child {
+  padding: 0 2rem;
+  margin-top: 6rem;
+}
+.mobil > div:last-child form {
+  display: flex;
+  flex-direction: column;
+}
+.mobil > div:last-child form label {
+  font-size: 0.8rem;
+  padding-bottom: 0.6rem;
+  color: #220930;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.mobil > div:last-child form input {
+  border: 1px solid hsl(270deg, 3%, 87%);
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  font-size: 1.3rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+.mobil > div:last-child form input:hover, .mobil > div:last-child form input:focus-visible {
+  outline: none;
+  background: linear-gradient(white, white) padding-box, linear-gradient(160deg, rgb(100, 72, 254) 0%, rgb(96, 5, 148) 100%) border-box;
+  border: 1px solid transparent;
+}
+.mobil > div:last-child form input::-moz-placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.3rem;
+  color: hsl(270deg, 3%, 87%);
+}
+.mobil > div:last-child form input:-ms-input-placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.3rem;
+  color: hsl(270deg, 3%, 87%);
+}
+.mobil > div:last-child form input::placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.3rem;
+  color: hsl(270deg, 3%, 87%);
+}
+.mobil > div:last-child form > div {
+  display: flex;
+}
+.mobil > div:last-child form > div > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.mobil > div:last-child form > div > div:first-child {
+  margin-right: 0.5rem;
+}
+.mobil > div:last-child form > div > div:first-child div {
+  display: flex;
+}
+.mobil > div:last-child form > div > div:first-child div div {
+  display: flex;
+  flex-direction: column;
+}
+.mobil > div:last-child form > div > div:first-child div div input {
+  width: 50%;
+  margin-right: 0.5rem;
+}
+.mobil span {
+  letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .cards {
+    width: 60%;
+  }
+  .cards > img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .form_div .card-form {
+    width: 32.5vw;
+  }
+}
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  .form_div {
+    justify-content: flex-end;
+    margin: 0 3rem 0 6rem;
+  }
+  .cards div div:first-child {
+    right: -105px;
+    top: 27%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .cards {
+    width: 50%;
+  }
+  .cards div div:first-child {
+    top: 30%;
+  }
+  .form_div {
+    margin: 0;
+  }
+  .form_div .card-form {
+    width: 40.5vw;
+  }
+}
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobil {
+    display: block !important;
+  }
+  .mobil_bg img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 374px) {
+  html {
+    font-size: 12px;
+  }
+  .mobil > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobil > div:last-child {
+    margin-top: 7rem;
+  }
+  .mobil_carts {
+    position: absolute;
+    padding-top: 5rem;
+  }
+  .mobil_carts > div {
+    position: relative !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+  .mobil_carts > div:first-child {
+    left: -7% !important;
+  }
+  .mobil_carts > div:last-child {
+    top: -4rem !important;
+    left: 7% !important;
+  }
+  form {
+    width: 100%;
+  }
+}
+.error {
+  color: hsl(0deg, 100%, 66%);
+  font-size: 0.667rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.3rem;
+}
+
+.error_border {
+  border: 1px solid hsl(0deg, 100%, 66%) !important;
+}
+.error_border:hover, .error_border:focus-visible {
+  border: 1px solid hsl(0deg, 100%, 66%) !important;
+}
+
+#button,
+#mobilbutton {
+  background-color: hsl(279deg, 6%, 55%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Space Grotesk", sans-serif;
+  border: 1px solid transparent;
+}
+#button:hover, #button:focus-visible,
+#mobilbutton:hover,
+#mobilbutton:focus-visible {
+  outline: none;
+  background: hsl(279deg, 6%, 55%);
+}
+
+.completed {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.completed h2 {
+  letter-spacing: 0.222rem;
+  color: #220930;
+  padding-top: 1.778rem;
+  margin: 0;
+}
+.completed h4 {
+  margin: 0;
+  color: hsl(279deg, 6%, 55%);
+  padding-top: 1.111rem;
+}
+.completed input {
+  color: hsl(0deg, 0%, 100%);
+  background: #220930;
+  width: 100%;
+  border: 1px solid hsl(270deg, 3%, 87%);
+  padding: 0.9rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  font-family: "Space Grotesk", sans-serif;
+  margin-top: 1.944rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .completed h2 {
+    font-size: 2rem;
+  }
+  .completed h4 {
+    font-size: 1.2rem;
+  }
+  .completed input {
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */

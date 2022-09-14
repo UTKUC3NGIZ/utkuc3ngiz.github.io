@@ -1,40 +1,48 @@
 body {
   max-width: 992px;
-  background-color: #fdfaf6; }
+  background-color: #fdfaf6;
+}
 
 body,
 h1 {
   margin: auto;
   padding: 0;
-  color: #333; }
+  color: #333;
+}
 
 .title {
   padding-top: 1rem;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 form {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  form div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0.6rem;
-    box-sizing: border-box; }
-    form div label {
-      font-size: 1.5rem;
-      padding: 0.5rem 0; }
-    form div input {
-      width: 100%;
-      height: 2.5rem;
-      font-size: 1.5rem;
-      color: #333;
-      border: 1px solid #333;
-      border-radius: .5rem; }
-      form div input:focus-visible {
-        outline: 0px; }
+  align-items: center;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.6rem;
+  box-sizing: border-box;
+}
+form div label {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+form div input {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+}
+form div input:focus-visible {
+  outline: 0px;
+}
 
 .submit button {
   background-color: #5cc074;
@@ -44,7 +52,8 @@ form {
   padding: 1rem 3rem;
   font-size: 1.5rem;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .error {
   display: none;
@@ -52,41 +61,52 @@ form {
   text-align: center;
   padding-top: 1rem;
   font-weight: bold;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+}
 
 .successful {
-  border: 2px solid #5cc074; }
+  border: 2px solid #5cc074;
+}
 
 .unsuccessful {
-  border: 2px solid #ff0000; }
+  border: 2px solid #ff0000;
+}
 
 .grey_button {
-  background-color: #444444 !important; }
+  background-color: #444444 !important;
+}
 
 @media only screen and (max-width: 1200px) {
   body {
-    max-width: 768px; } }
+    max-width: 768px;
+  }
+}
 @media only screen and (max-width: 992px) {
   body {
-    max-width: 576px; }
-
+    max-width: 576px;
+  }
   html {
-    font-size: 12px; } }
+    font-size: 12px;
+  }
+}
 @media only screen and (max-width: 576px) {
   form {
-    margin-bottom: 1rem; }
-    form div {
-      align-items: center;
-      width: 80%; }
-      form div input {
-        font-size: 1.3rem; }
-
+    margin-bottom: 1rem;
+  }
+  form div {
+    align-items: center;
+    width: 80%;
+  }
+  form div input {
+    font-size: 1.3rem;
+  }
   .submit {
-    text-align: center; }
-    .submit button {
-      width: 80%; }
-
+    text-align: center;
+  }
+  .submit button {
+    width: 80%;
+  }
   .error {
-    font-size: 1rem; } }
-
-/*# sourceMappingURL=style.css.map */
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

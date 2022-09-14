@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/C3.svg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Project | Interactive card details form</title>
+
+</head>
+
+<body>
+
+
+  <div class="desktop">
+    <div class="cards">
+      <img src="assets/images/bg-main-desktop.png" alt="">
+      <div>
+        <div>
+          <img src="assets/images/bg-card-front.png" alt="">
+          <div>
+            <div><img src="assets/images/card-logo.svg" alt=""></div>
+            <div><span id="numberCart">0000 0000 0000 0000</span></div>
+            <div><span id="fnameCart">JANE APPLESEED</span><span><span id="dateCartMM">00</span>/<span
+                  id="dateCartYY">00</span></span></div>
+          </div>
+        </div>
+
+        <div>
+          <img src="assets/images/bg-card-back.png" alt="">
+          <div>
+            <span id="CVCCart">000</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="form_div">
+      <div class="card-form">
+        <form action="" id="desktopform">
+          <label for="fname">CARDHOLDER NAME</label>
+          <input type="text" id="fname" name="fname" placeholder="e.g. Jane Appleseed">
+          <span class="error" id="fnameError"></span>
+
+          <label for="number">CARD NUMBER</label>
+          <input type="text" id="number" name="number" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
+          <span class="error" id="numberError"></span>
+
+          <div>
+            <div>
+              <label for="date">EXP. DATE (MM/YY)</label>
+              <div>
+                <div>
+                  <input type="text" id="MM" name="date" placeholder="MM" maxlength="2">
+                  <span class="error" id="MMError"></span>
+                </div>
+                <div>
+                  <input type="text" id="YY" name="date" placeholder="YY" maxlength="2">
+                  <span class="error" id="YYError"></span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="CVC">CVC</label>
+              <input type="text" id="CVC" name="CVC" placeholder="e.gg 123" maxlength="3">
+              <span class="error" id="CVCError"></span>
+            </div>
+          </div>
+          <input type="button" id="button" name="button" value="Confirm">
+
+        </form>
+        <div class="completed" id="desktopCompleted">
+          <img src="assets/images/icon-complete.svg" alt="">
+          <h2>THANK YOU!</h2>
+          <h4>We've added your card details</h4>
+          <input type="button" name="button" value="Continue">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobil">
+    <div>
+      <div class="mobil_bg">
+        <img src="assets/images/bg-main-mobile.png" alt="">
+      </div>
+      <div class="mobil_carts">
+        <div>
+          <img src="assets/images/bg-card-back.png" alt="">
+          <div>
+            <span id="mobilCVCCart">000</span>
+          </div>
+        </div>
+        <div>
+          <img src="assets/images/bg-card-front.png" alt="">
+          <div>
+            <div><img src="assets/images/card-logo.svg" alt=""></div>
+            <div><span id="mobilnumberCart">0000 0000 0000 0000</span></div>
+            <div><span id="mobilfnameCart">JANE APPLESEED</span><span><span id="mobildateCartMM">00</span>/<span
+                  id="mobildateCartYY">00</span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <form action="" id="mobilform">
+        <label for="fname">CARDHOLDER NAME</label>
+        <input type="text" id="mobilfname" name="fname" placeholder="e.g. Jane Appleseed">
+        <span class="error" id="mobilfnameError"></span>
+
+        <label for="number">CARD NUMBER</label>
+        <input type="text" id="mobilnumber" name="number" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
+        <span class="error" id="mobilnumberError"></span>
+
+        <div>
+          <div>
+            <label for="date">EXP. DATE (MM/YY)</label>
+            <div>
+              <div>
+                <input type="text" id="mobilMM" name="date" placeholder="MM" maxlength="2">
+                <span class="error" id="mobilMMError"></span>
+              </div>
+
+              <div>
+                <input type="text" id="mobilYY" name="date" placeholder="YY" maxlength="2">
+                <span class="error" id="mobilYYError"></span>
+              </div>
+
+            </div>
+          </div>
+
+          <div>
+            <label for="CVC">CVC</label>
+            <input type="text" id="mobilCVC" name="CVC" placeholder="e.gg 123" maxlength="3">
+            <span class="error" id="mobilCVCError"></span>
+
+          </div>
+        </div>
+        <input type="button" id="mobilbutton" name="button" value="Confirm">
+
+      </form>
+      <div class="completed" id="mobilCompleted">
+        <img src="assets/images/icon-complete.svg" alt="">
+        <h2>THANK YOU!</h2>
+        <h4>We've added your card details</h4>
+        <input type="button" name="button" value="Continue">
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
