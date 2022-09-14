@@ -182,15 +182,15 @@ mobilfname.addEventListener("input", () => {
 mobilnumber.addEventListener("input", () => {
 
     val = mobilnumber.value
-    val = val.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
     non_letter(mobilnumberCart, mobilnumberError, mobilnumber)
     if (val.length < 1) {
         mobilnumberError.innerHTML = "Can't be blank"
-    } else if (val.length <= 18) {
-        mobilnumberError.innerHTML = "must be at least 12 digits"
+    } else if (val.length <= 15) { 
         mobilnumber.classList.add("error_border")
         mobilbutton.style.backgroundColor = "hsl(279, 6%, 55%)"
     }
+    mobilnumberCart.innerHTML = mobilnumberCart.innerHTML.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
+
 
 })
 
@@ -201,7 +201,6 @@ mobilMM.addEventListener("input", () => {
     if (val.length < 1) {
         mobilMMError.innerHTML = "Can't be blank"
     } else if (val.length <= 1) {
-        mobilMMError.innerHTML = "must be at least 2 digits"
         mobilMM.classList.add("error_border")
         mobilbutton.style.backgroundColor = "hsl(279, 6%, 55%)"
     }
@@ -215,7 +214,6 @@ mobilYY.addEventListener("input", () => {
     if (val.length < 1) {
         mobilYYError.innerHTML = "Can't be blank"
     } else if (val.length <= 1) {
-        mobilYYError.innerHTML = "must be at least 2 digits"
         mobilYY.classList.add("error_border")
         mobilbutton.style.backgroundColor = "hsl(279, 6%, 55%)"
     }
@@ -228,18 +226,17 @@ mobilCVC.addEventListener("input", () => {
     if (val.length < 1) {
         mobilCVCError.innerHTML = "Can't be blank"
     } else if (val.length <= 2) {
-        mobilCVCError.innerHTML = "must be at least 3 digits"
         mobilCVC.classList.add("error_border")
         mobilbutton.style.backgroundColor = "hsl(279, 6%, 55%)"
     }
 })
 
 mobilbutton.addEventListener("click", () => {
-    if (mobilfname.value === "" || mobilnumber.value === "" || mobilMM.value === "" || mobilYY.value === "" || mobilCVC.value === "") {
+    if (mobilfname.value === "" || mobilnumber.value === "" || mobilMM.value === "" || mobilYY.value === "" || mobilCVC.value === "" || mobilnumber.value.length !== 16 || mobilMM.value.length !== 2 || mobilYY.value.length !== 2 || mobilCVC.value.length !== 3) {
         mobilbutton.style.backgroundColor = "hsl(279, 6%, 55%)"
         mobilbutton.innerHTML = ""
 
-    } else {
+    } else if(mobilMM.value.length === 2 && mobilnumber.value.length === 16 &&  mobilYY.value.length === 2 && mobilCVC.value.length === 3) {
         mobilbutton.style.backgroundColor = "#220930"
         mobilform.style.display = "none"
         mobilCompleted.style.display = "flex"
