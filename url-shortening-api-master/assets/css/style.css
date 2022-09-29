@@ -189,7 +189,7 @@ header {
 
 .information_section {
   background-color: #f0f1f6;
-  padding: 11rem 9.333rem 12.4rem 9.333rem; }
+  padding: 6rem 9.333rem 12.4rem 9.333rem; }
   .information_section > div:first-child {
     display: flex;
     flex-direction: column;
