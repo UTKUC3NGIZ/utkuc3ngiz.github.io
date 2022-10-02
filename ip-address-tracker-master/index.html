@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="C3.svg" />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Libraries || Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+
+    <title>Project | IP Address Tracker</title>
+  </head>
+  <body>
+
+    <div class="login_div">
+      <div>
+        <img src="assets/images/pattern-bg.png" alt="" />
+        <div>
+          <div><h1>IP Address Tracker</h1></div>
+          <div>
+            <input
+              type="text"
+              placeholder="Search for any IP address or domain"
+              id="input_id"
+            />
+            <label for=""
+              ><img src="assets/images/icon-arrow.svg" alt=""
+            /></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div>
+        <div>
+          <div>
+            <h4>IP ADDRESS</h4>
+            <h2 id="ip_address"></h2>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h4>LOCATION</h4>
+            <h2 id="ip_location"></h2>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h4>TIMEZONE</h4>
+            <h2>UTC <span id="ip_timezone"></span></h2>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h4>ISP</h4>
+            <h2 id="ip_isp"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map_div" id="map"></div>
+
+
+
+    <!--Libraries || Leaflet-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin=""
+    ></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+
+</html>
