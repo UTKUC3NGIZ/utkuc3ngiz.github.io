@@ -40,7 +40,7 @@ $.get("https://www.cloudflare.com/cdn-cgi/trace", function (data) {
           var marker = L.marker([data.location.lat, data.location.lng], {
             icon: icon_location,
           }).addTo(map);
-          
+          console.log(data)
         },
       });
     });
