@@ -1,10 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
-  font-size: 18px;
+  font-size: 22px;
   font-family: "Rubik", sans-serif; }
+  @media only screen and (max-width: 1440px) {
+    html {
+      font-size: 18px; } }
+  @media only screen and (max-width: 1200px) {
+    html {
+      font-size: 14px; } }
+  @media only screen and (max-width: 992px) {
+    html {
+      font-size: 10px; } }
+  @media only screen and (max-width: 360px) {
+    html {
+      font-size: 16px !important; } }
 
 body {
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
   body h1,
   body h2,
   body h3,
@@ -43,7 +56,7 @@ body {
         border-bottom-left-radius: 0.922rem;
         font-size: 1rem;
         font-weight: 400;
-        color: #a5a4a4; }
+        color: #2b2b2b; }
         .login_div > div > div:nth-child(2) div:nth-child(2) input:focus-visible {
           outline: none; }
         .login_div > div > div:nth-child(2) div:nth-child(2) input::placeholder {
@@ -55,6 +68,8 @@ body {
         border: 1px solid transparent;
         border-top-right-radius: 0.922rem;
         border-bottom-right-radius: 0.922rem; }
+        .login_div > div > div:nth-child(2) div:nth-child(2) label:hover {
+          background-color: #3f3f3f; }
         .login_div > div > div:nth-child(2) div:nth-child(2) label img {
           padding: 1.167rem 1.278rem; }
 
@@ -69,7 +84,7 @@ body {
     display: flex;
     position: absolute;
     background-color: #feffff;
-    margin-top: 2rem;
+    margin-top: 6rem;
     border: 1px solid transparent;
     border-radius: 0.8rem; }
     .info > div > div {
@@ -95,6 +110,50 @@ body {
   z-index: 1; }
 
 #map {
-  height: 29.722rem; }
+  height: 30.6rem; }
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 18px; }
+
+  .login_div > div {
+    overflow: hidden; }
+    .login_div > div:nth-child(1) img {
+      width: auto; }
+    .login_div > div > div:nth-child(2) div:nth-child(1) h1 {
+      font-size: 1.389rem; }
+    .login_div > div > div:nth-child(2) div:nth-child(2) input {
+      width: 60%;
+      font-size: 0.7rem; }
+
+  .info > div {
+    flex-direction: column;
+    width: 73%;
+    text-align: center !important;
+    align-items: center !important;
+    margin-top: 11rem; }
+    .info > div > div {
+      border: none !important;
+      margin: 0 !important;
+      padding: 0.278rem !important;
+      padding-top: 1.222rem !important; }
+      .info > div > div:last-child {
+        padding-bottom: 1.222rem !important; }
+      .info > div > div div h4 {
+        font-size: 0.556rem !important; }
+      .info > div > div div h2 {
+        font-size: 1.111rem !important;
+        padding-top: 0.6rem !important; }
+
+  #map {
+    height: 100vh; } }
+@media only screen and (max-width: 576px) {
+  .info > div {
+    width: 76%; } }
+@media only screen and (max-width: 375px) {
+  .info > div {
+    width: 85%; } }
+.leaflet-control-container {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
