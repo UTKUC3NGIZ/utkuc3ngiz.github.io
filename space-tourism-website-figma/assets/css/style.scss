@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+// color
+
+body {
+  margin: 0;
+  font-family: "Bellefair";
+  font-weight: 400;
+  background-image: url(../img/desktop/stars.png), url(../img/desktop/world.png);
+  background-position: left, right;
+  background-repeat: no-repeat;
+  background-size: auto, auto;
+  height: 900px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    &:nth-child(1) {
+      margin: 4rem 4rem 4rem 3.438rem;
+      img {
+      }
+    }
+    &:nth-child(2) {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      span {
+        position: absolute;
+        margin: 4rem 0;
+        height: 2px;
+        width: 107%;
+        background-color: #ffffff;
+        opacity: 0.25;
+        z-index: 10;
+      }
+    }
+    &:nth-child(3) {
+      display: flex;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(40.7742px);
+
+      a {
+        padding: 2.438rem 0;
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+        margin-right: 3rem;
+        &:first-child {
+          margin-left: 7.688rem;
+        }
+        &:last-child {
+          margin-right: 10.313rem;
+        }
+        &:hover {
+          color: #fff;
+          border-bottom: 3px solid rgba($color: #fff, $alpha: 0.5);
+        }
+        span {
+          font-size: 1rem;
+          padding-right: 0.75rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+body {
+  margin: 0;
+  font-family: "Bellefair";
+  font-weight: 400;
+  background-image: url(../img/desktop/stars.png), url(../img/desktop/world.png);
+  background-position: left, right;
+  background-repeat: no-repeat;
+  background-size: auto, auto;
+  height: 900px; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  header div:nth-child(1) {
+    margin: 4rem 4rem 4rem 3.438rem; }
+  header div:nth-child(2) {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    header div:nth-child(2) span {
+      position: absolute;
+      margin: 4rem 0;
+      height: 2px;
+      width: 107%;
+      background-color: #ffffff;
+      opacity: 0.25;
+      z-index: 10; }
+  header div:nth-child(3) {
+    display: flex;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px); }
+    header div:nth-child(3) a {
+      padding: 2.438rem 0;
+      font-size: 1rem;
+      color: #fff;
+      text-decoration: none;
+      margin-right: 3rem; }
+      header div:nth-child(3) a:first-child {
+        margin-left: 7.688rem; }
+      header div:nth-child(3) a:last-child {
+        margin-right: 10.313rem; }
+      header div:nth-child(3) a:hover {
+        color: #fff;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5); }
+      header div:nth-child(3) a span {
+        font-size: 1rem;
+        padding-right: 0.75rem;
+        font-weight: 700; }
+
+/*# sourceMappingURL=style.css.map */
