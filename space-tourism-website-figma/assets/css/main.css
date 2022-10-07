@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
-body {
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
   background-image: url(../img/desktop/stars.png), url(../img/desktop/world.png);
   background-position: left, right;
   background-repeat: no-repeat;
   background-size: auto, auto;
-  height: 900px; }
+  height: 900px;
+  width: 100%;
+  z-index: -1; }
 
 .promotion_div {
   display: flex;
@@ -17,7 +22,7 @@ body {
     color: #d0d6f9;
     letter-spacing: 0.295rem;
     padding-bottom: 1.5rem;
-    font-family: 'Barlow Condensed', sans-serif; }
+    font-family: "Barlow Condensed", sans-serif; }
   .promotion_div div:nth-child(1) h1 {
     font-size: 9.375rem;
     color: #fff;
@@ -26,7 +31,7 @@ body {
     font-size: 1.125rem;
     color: #d0d6f9;
     white-space: pre-line;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     line-height: 32px; }
   .promotion_div div:nth-child(2) {
     padding: 7.375rem 3.938rem;
@@ -35,11 +40,34 @@ body {
     .promotion_div div:nth-child(2) span {
       font-size: 2rem; }
 
+@media only screen and (max-width: 768px) {
+  .promotion_div {
+    flex-direction: column; }
+    .promotion_div div:nth-child(1) {
+      text-align: center;
+      margin-bottom: 9.75rem; }
+      .promotion_div div:nth-child(1) h2 {
+        font-size: 1.25rem; }
+      .promotion_div div:nth-child(1) h1 {
+        font-size: 9.375rem;
+        color: #fff;
+        padding-bottom: 1.5rem; }
+      .promotion_div div:nth-child(1) p {
+        font-size: 1rem;
+        line-height: 28px; }
+    .promotion_div div:nth-child(2) {
+      padding: 6.438rem 2.938rem; } }
 body {
   margin: 0;
   font-family: "Bellefair";
   font-weight: 400; }
-  body h1, body h2, body h3, body h4, body h5, body p, body span {
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body p,
+  body span {
     font-weight: 400;
     margin: 0;
     padding: 0; }
@@ -72,7 +100,8 @@ header {
       font-size: 1rem;
       color: #fff;
       text-decoration: none;
-      margin-right: 3rem; }
+      margin-right: 3rem;
+      font-family: "Barlow Condensed", sans-serif; }
       header div:nth-child(3) a:first-child {
         margin-left: 7.688rem; }
       header div:nth-child(3) a:last-child {
@@ -87,5 +116,25 @@ header {
 
 .active-index {
   border-bottom: 3px solid #fff; }
+
+@media only screen and (max-width: 768px) {
+  header div:nth-child(1) {
+    margin: 1.5rem 1.5rem 1.5rem 2.438rem; }
+  header div:nth-child(2) {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    header div:nth-child(2) span {
+      display: none; }
+  header div:nth-child(3) a {
+    font-size: 0.875rem;
+    margin-right: 2.313rem; }
+    header div:nth-child(3) a:first-child {
+      margin-left: 3rem; }
+    header div:nth-child(3) a:last-child {
+      margin-right: 2.875rem; }
+    header div:nth-child(3) a span {
+      display: none; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 // pages
-@import 'page_styles/.desktop';
+@import "page_styles/.desktop";
 
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
@@ -9,7 +9,13 @@ body {
   margin: 0;
   font-family: "Bellefair";
   font-weight: 400;
-  h1,h2,h3,h4,h5,p,span{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  span {
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -52,6 +58,7 @@ header {
         color: #fff;
         text-decoration: none;
         margin-right: 3rem;
+        font-family: "Barlow Condensed", sans-serif;
         &:first-child {
           margin-left: 7.688rem;
         }
@@ -76,3 +83,39 @@ header {
   border-bottom: 3px solid #fff;
 }
 
+// Tablet
+@media only screen and (max-width: 768px) {
+  header {
+    div {
+      &:nth-child(1) {
+        margin: 1.5rem 1.5rem 1.5rem 2.438rem;
+      }
+      &:nth-child(2) {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        span {
+          display: none;
+        }
+      }
+      &:nth-child(3) {
+        a {
+          font-size: 0.875rem;
+          margin-right: 2.313rem;
+          &:first-child {
+            margin-left: 3rem;
+          }
+          &:last-child {
+            margin-right: 2.875rem;
+          }
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobil
