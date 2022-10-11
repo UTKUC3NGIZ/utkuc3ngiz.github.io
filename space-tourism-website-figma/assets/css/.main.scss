@@ -1,18 +1,18 @@
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
 
-// color 
+// color
 
 body {
   margin: 0;
   font-family: "Bellefair";
   font-weight: 400;
-  h1, 
+  h1,
   h2,
   h3,
   h4,
   h5,
-  p, 
+  p,
   span {
     font-weight: 400;
     margin: 0;
@@ -22,75 +22,91 @@ body {
     text-decoration: none;
     font-family: "Barlow Condensed", sans-serif;
   }
-} 
+}
 
 // desktop
-@media only screen and (max-width: 1440px) {
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    > div {
-      &:nth-child(1) {
-        margin: 4rem 4rem 4rem 3.438rem;
-        img {
-        }
-      }
-      &:nth-child(2) {
-        position: relative;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        span {
-          position: absolute;
-          margin: 4rem 0;
-          height: 2px;
-          width: 107%;
-          background-color: #ffffff;
-          opacity: 0.25;
-          z-index: 10;
-        }
-      }
-      &:nth-child(3) {
-        display: flex;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(40.7742px);
 
-        a {
-          padding: 2.438rem 0;
-          font-size: 1rem;
-          color: #fff;
-          margin-right: 3rem;
-          &:first-child {
-            margin-left: 7.688rem;
-          }
-          &:last-child {
-            margin-right: 10.313rem;
-          }
-          &:hover {
-            color: #fff;
-            border-bottom: 3px solid rgba($color: #fff, $alpha: 0.5);
-          }
-          span {
-            font-size: 1rem;
-            padding-right: 0.75rem;
-            font-weight: 700;
-          }
-        }
-      }
-      &:nth-child(4){
-        display: none;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  > div {
+    &:nth-child(1) {
+      margin: 4rem 4rem 4rem 3.438rem;
+      img {
       }
     }
-  }
+    &:nth-child(2) {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      span {
+        position: absolute;
+        margin: 4rem 0;
+        height: 2px;
+        width: 107%;
+        background-color: #ffffff;
+        opacity: 0.25;
+        z-index: 10;
+      }
+    }
+    &:nth-child(3) {
+      display: flex;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(40.7742px);
 
-  .active-index {
-    border-bottom: 3px solid #fff;
+      a {
+        padding: 2.438rem 0;
+        font-size: 1rem;
+        color: #fff;
+        margin-right: 3rem;
+        &:first-child {
+          margin-left: 7.688rem;
+        }
+        &:last-child {
+          margin-right: 10.313rem;
+        }
+        &:hover {
+          color: #fff;
+          border-bottom: 3px solid rgba($color: #fff, $alpha: 0.5);
+        }
+        span {
+          font-size: 1rem;
+          padding-right: 0.75rem;
+          font-weight: 700;
+        }
+      }
+    }
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+}
+
+.active-index {
+  border-bottom: 3px solid #fff;
+}
+
+// 1200px
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+// 992px
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 11px;
   }
 }
 
 // Tablet
 @media only screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
   header {
     div {
       &:nth-child(1) {
@@ -124,8 +140,18 @@ body {
   }
 }
 
+// 576px
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 // Mobil
 @media only screen and (max-width: 375px) {
+  html {
+    font-size: 16px;
+  }
   header {
     div {
       &:nth-child(1) {

@@ -1,7 +1,7 @@
 // pages
 @import "../.main";
 // desktop
-@media only screen and (max-width: 1440px) {
+
   body {
     &::before {
       content: "";
@@ -53,7 +53,7 @@
       }
     }
   }
-}
+
 
 // Tablet
 @media only screen and (max-width: 768px) {
