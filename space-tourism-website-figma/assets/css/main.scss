@@ -21,13 +21,17 @@ body {
     margin: 0;
     padding: 0;
   }
+  a {
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif;
+  }
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  div {
+  > div {
     &:nth-child(1) {
       margin: 4rem 4rem 4rem 3.438rem;
       img {
@@ -57,9 +61,7 @@ header {
         padding: 2.438rem 0;
         font-size: 1rem;
         color: #fff;
-        text-decoration: none;
         margin-right: 3rem;
-        font-family: "Barlow Condensed", sans-serif;
         &:first-child {
           margin-left: 7.688rem;
         }
@@ -123,7 +125,7 @@ header {
 @media only screen and (max-width: 375px) {
   header {
     div {
-      &:nth-child(1){
+      &:nth-child(1) {
         margin: 2.063rem 1.5rem;
       }
       &:nth-child(3) {
@@ -134,9 +136,44 @@ header {
         div {
           &:nth-child(1) {
             margin: 2.063rem 1.5rem;
+            // z-index: 1;
           }
           &:nth-child(2) {
-            display: none;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 67.73%;
+            // z-index: 10;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(40.7742px);
+            display: block;
+           > div {
+              display: flex;
+              flex-direction: column;
+              padding-top:7.375rem  ;
+              padding-left: 2rem;
+              margin: 0;
+              a {
+                font-size: 1rem;
+                color: #fff;
+                margin-bottom: 2rem;
+                display: flex;
+                letter-spacing: 0.169rem;
+                &:nth-child(1){
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  margin-top: 2.863rem;
+                  margin-right: 1.7rem;
+                }
+                span{
+                  display: block;
+                  padding-right: 0.688rem;
+                  font-weight: 700;
+                }
+              }
+            }
           }
         }
       }
@@ -147,11 +184,11 @@ header {
     margin-top: 2.375rem !important;
     div {
       &:nth-child(1) {
-        margin-bottom: 5.063rem!important;
+        margin-bottom: 5.063rem !important;
         h2 {
           font-size: 1rem !important;
           padding-bottom: 1rem !important;
-          letter-spacing: 0.169rem!important;
+          letter-spacing: 0.169rem !important;
         }
         h1 {
           font-size: 5rem !important;
@@ -159,15 +196,19 @@ header {
         }
         p {
           font-size: 0.938rem !important;
-          line-height: 25px!important;
+          line-height: 25px !important;
         }
       }
       &:nth-child(2) {
-        padding: 63px 28px!important;
-        span{
-          font-size:1.25rem!important ;
+        padding: 63px 28px !important;
+        span {
+          font-size: 1.25rem !important ;
         }
       }
     }
+  }
+  .active-index {
+    border-right: 3px solid #fff;
+    border-bottom: 0;
   }
 }
