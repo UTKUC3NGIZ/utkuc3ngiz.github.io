@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+body {
+  margin: 0;
+  font-family: "Bellefair";
+  font-weight: 400; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body p,
+  body span {
+    font-weight: 400;
+    margin: 0;
+    padding: 0; }
+  body a {
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif; }
+
+@media only screen and (max-width: 1440px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    header > div:nth-child(1) {
+      margin: 4rem 4rem 4rem 3.438rem; }
+    header > div:nth-child(2) {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center; }
+      header > div:nth-child(2) span {
+        position: absolute;
+        margin: 4rem 0;
+        height: 2px;
+        width: 107%;
+        background-color: #ffffff;
+        opacity: 0.25;
+        z-index: 10; }
+    header > div:nth-child(3) {
+      display: flex;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(40.7742px); }
+      header > div:nth-child(3) a {
+        padding: 2.438rem 0;
+        font-size: 1rem;
+        color: #fff;
+        margin-right: 3rem; }
+        header > div:nth-child(3) a:first-child {
+          margin-left: 7.688rem; }
+        header > div:nth-child(3) a:last-child {
+          margin-right: 10.313rem; }
+        header > div:nth-child(3) a:hover {
+          color: #fff;
+          border-bottom: 3px solid rgba(255, 255, 255, 0.5); }
+        header > div:nth-child(3) a span {
+          font-size: 1rem;
+          padding-right: 0.75rem;
+          font-weight: 700; }
+    header > div:nth-child(4) {
+      display: none; }
+
+  .active-index {
+    border-bottom: 3px solid #fff; } }
+@media only screen and (max-width: 768px) {
+  header div:nth-child(1) {
+    margin: 1.5rem 1.5rem 1.5rem 2.438rem; }
+  header div:nth-child(2) {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    header div:nth-child(2) span {
+      display: none; }
+  header div:nth-child(3) a {
+    font-size: 0.875rem;
+    margin-right: 2.313rem; }
+    header div:nth-child(3) a:first-child {
+      margin-left: 3rem; }
+    header div:nth-child(3) a:last-child {
+      margin-right: 2.875rem; }
+    header div:nth-child(3) a span {
+      display: none; } }
+@media only screen and (max-width: 375px) {
+  header div:nth-child(1) {
+    margin: 2.063rem 1.5rem; }
+  header div:nth-child(3) {
+    display: none; }
+  header div:nth-child(4) {
+    display: block; }
+    header div:nth-child(4) div:nth-child(1) {
+      margin: 2.063rem 1.5rem; }
+    header div:nth-child(4) div:nth-child(2) {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 67.73%;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(40.7742px);
+      display: none; }
+      header div:nth-child(4) div:nth-child(2) > div {
+        display: flex;
+        flex-direction: column;
+        padding-top: 7.375rem;
+        padding-left: 2rem;
+        margin: 0; }
+        header div:nth-child(4) div:nth-child(2) > div a {
+          font-size: 1rem;
+          color: #fff;
+          margin-bottom: 2rem;
+          display: flex;
+          letter-spacing: 0.169rem; }
+          header div:nth-child(4) div:nth-child(2) > div a:nth-child(1) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 2.863rem;
+            margin-right: 1.7rem; }
+          header div:nth-child(4) div:nth-child(2) > div a span {
+            display: block;
+            padding-right: 0.688rem;
+            font-weight: 700; }
+
+  .active-index {
+    border-right: 3px solid #fff;
+    border-bottom: 0; } }
+@media only screen and (max-width: 1440px) {
+  body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../../img/desktop/stars.png), url(../../img/desktop/world.png);
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    height: 900px;
+    width: 100%;
+    z-index: -1; }
+
+  .promotion_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10.313rem;
+    margin-top: 15.688rem; }
+    .promotion_div div:nth-child(1) h2 {
+      font-size: 1.75rem;
+      color: #d0d6f9;
+      letter-spacing: 0.295rem;
+      padding-bottom: 1.5rem;
+      font-family: "Barlow Condensed", sans-serif; }
+    .promotion_div div:nth-child(1) h1 {
+      font-size: 9.375rem;
+      color: #fff;
+      padding-bottom: 1.5rem; }
+    .promotion_div div:nth-child(1) p {
+      font-size: 1.125rem;
+      color: #d0d6f9;
+      white-space: pre-line;
+      font-family: "Barlow Condensed", sans-serif;
+      line-height: 32px; }
+    .promotion_div div:nth-child(2) {
+      padding: 7.375rem 3.938rem;
+      background-color: #fff;
+      border-radius: 50%; }
+      .promotion_div div:nth-child(2) span {
+        font-size: 2rem; } }
+@media only screen and (max-width: 768px) {
+  .promotion_div {
+    flex-direction: column; }
+    .promotion_div div:nth-child(1) {
+      text-align: center;
+      margin-bottom: 9.75rem; }
+      .promotion_div div:nth-child(1) h2 {
+        font-size: 1.25rem; }
+      .promotion_div div:nth-child(1) h1 {
+        font-size: 9.375rem;
+        color: #fff;
+        padding-bottom: 1.5rem; }
+      .promotion_div div:nth-child(1) p {
+        font-size: 1rem;
+        line-height: 28px; }
+    .promotion_div div:nth-child(2) {
+      padding: 6.438rem 2.938rem; } }
+@media only screen and (max-width: 375px) {
+  section {
+    margin: 0 !important;
+    margin-top: 2.375rem !important; }
+    section div:nth-child(1) {
+      margin-bottom: 5.063rem !important; }
+      section div:nth-child(1) h2 {
+        font-size: 1rem !important;
+        padding-bottom: 1rem !important;
+        letter-spacing: 0.169rem !important; }
+      section div:nth-child(1) h1 {
+        font-size: 5rem !important;
+        padding-bottom: 1rem !important; }
+      section div:nth-child(1) p {
+        font-size: 0.938rem !important;
+        line-height: 25px !important; }
+    section div:nth-child(2) {
+      padding: 63px 28px !important; }
+      section div:nth-child(2) span {
+        font-size: 1.25rem !important; } }
+
+/*# sourceMappingURL=home.css.map */
