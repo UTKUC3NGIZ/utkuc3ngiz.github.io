@@ -1,0 +1,43 @@
+// pages
+@import "../.main";
+
+body {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../../img/destination/destinaiton_wallpaper.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+// desktop
+
+.destination_section {
+  margin-left: 168px;
+  .destination_title {
+    color: #fff;
+    display: flex;
+    align-items: baseline;
+    font-family: "Barlow Condensed";
+    letter-spacing: 4.725px;
+    margin-bottom: 64px;
+
+    span {
+      font-size: 28px;
+      color: #ffffff;
+      opacity: 0.25;
+      padding-right: 28px;
+    }
+    h2 {
+      font-size: 28px;
+      color: #ffffff;
+    }
+  }
+  .destination_inner{
+    
+  }
+}
