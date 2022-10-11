@@ -3,6 +3,7 @@
 
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
 // color
 
 body {
@@ -119,3 +120,54 @@ header {
 }
 
 // Mobil
+@media only screen and (max-width: 375px) {
+  header {
+    div {
+      &:nth-child(1){
+        margin: 2.063rem 1.5rem;
+      }
+      &:nth-child(3) {
+        display: none;
+      }
+      &:nth-child(4) {
+        display: block;
+        div {
+          &:nth-child(1) {
+            margin: 2.063rem 1.5rem;
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  section {
+    margin: 0 !important;
+    margin-top: 2.375rem !important;
+    div {
+      &:nth-child(1) {
+        margin-bottom: 5.063rem!important;
+        h2 {
+          font-size: 1rem !important;
+          padding-bottom: 1rem !important;
+          letter-spacing: 0.169rem!important;
+        }
+        h1 {
+          font-size: 5rem !important;
+          padding-bottom: 1rem !important;
+        }
+        p {
+          font-size: 0.938rem !important;
+          line-height: 25px!important;
+        }
+      }
+      &:nth-child(2) {
+        padding: 63px 28px!important;
+        span{
+          font-size:1.25rem!important ;
+        }
+      }
+    }
+  }
+}

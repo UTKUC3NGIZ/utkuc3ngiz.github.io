@@ -136,5 +136,36 @@ header {
       margin-right: 2.875rem; }
     header div:nth-child(3) a span {
       display: none; } }
+@media only screen and (max-width: 375px) {
+  header div:nth-child(1) {
+    margin: 2.063rem 1.5rem; }
+  header div:nth-child(3) {
+    display: none; }
+  header div:nth-child(4) {
+    display: block; }
+    header div:nth-child(4) div:nth-child(1) {
+      margin: 2.063rem 1.5rem; }
+    header div:nth-child(4) div:nth-child(2) {
+      display: none; }
+
+  section {
+    margin: 0 !important;
+    margin-top: 2.375rem !important; }
+    section div:nth-child(1) {
+      margin-bottom: 5.063rem !important; }
+      section div:nth-child(1) h2 {
+        font-size: 1rem !important;
+        padding-bottom: 1rem !important;
+        letter-spacing: 0.169rem !important; }
+      section div:nth-child(1) h1 {
+        font-size: 5rem !important;
+        padding-bottom: 1rem !important; }
+      section div:nth-child(1) p {
+        font-size: 0.938rem !important;
+        line-height: 25px !important; }
+    section div:nth-child(2) {
+      padding: 63px 28px !important; }
+      section div:nth-child(2) span {
+        font-size: 1.25rem !important; } }
 
 /*# sourceMappingURL=main.css.map */
