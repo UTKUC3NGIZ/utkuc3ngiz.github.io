@@ -130,12 +130,10 @@ body {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../../img/desktop/stars.png), url(../../img/desktop/world.png);
-    background-position: left, right;
-    background-repeat: no-repeat;
-    background-size: auto, auto;
-    height: 900px;
+    background-image: url(../../img/desktop/home_wallpaper.jpg);
+    background-size: cover;
     width: 100%;
+    height: 100%;
     z-index: -1; }
 
   .promotion_div {
@@ -167,8 +165,12 @@ body {
       .promotion_div div:nth-child(2) span {
         font-size: 2rem; } }
 @media only screen and (max-width: 768px) {
+  body::before {
+    background-image: url(../../img/desktop/home_wallpaper_tablet.jpg); }
+
   .promotion_div {
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 6.625rem; }
     .promotion_div div:nth-child(1) {
       text-align: center;
       margin-bottom: 9.75rem; }
@@ -184,24 +186,26 @@ body {
     .promotion_div div:nth-child(2) {
       padding: 6.438rem 2.938rem; } }
 @media only screen and (max-width: 375px) {
-  section {
-    margin: 0 !important;
-    margin-top: 2.375rem !important; }
-    section div:nth-child(1) {
+  body::before {
+    background-image: url(../../img/desktop/home_wallpaper_mobil.jpg); }
+
+  .promotion_div {
+    margin: 0 !important; }
+    .promotion_div div:nth-child(1) {
       margin-bottom: 5.063rem !important; }
-      section div:nth-child(1) h2 {
+      .promotion_div div:nth-child(1) h2 {
         font-size: 1rem !important;
         padding-bottom: 1rem !important;
         letter-spacing: 0.169rem !important; }
-      section div:nth-child(1) h1 {
+      .promotion_div div:nth-child(1) h1 {
         font-size: 5rem !important;
         padding-bottom: 1rem !important; }
-      section div:nth-child(1) p {
+      .promotion_div div:nth-child(1) p {
         font-size: 0.938rem !important;
         line-height: 25px !important; }
-    section div:nth-child(2) {
+    .promotion_div div:nth-child(2) {
       padding: 63px 28px !important; }
-      section div:nth-child(2) span {
+      .promotion_div div:nth-child(2) span {
         font-size: 1.25rem !important; } }
 
 /*# sourceMappingURL=home.css.map */
