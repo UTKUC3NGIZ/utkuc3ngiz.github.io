@@ -16,28 +16,75 @@ body {
 
 // desktop
 
-.destination_section {
-  margin-left: 168px;
-  .destination_title {
-    color: #fff;
+#destination_section {
+  .destination_section_inner{
     display: flex;
-    align-items: baseline;
-    font-family: "Barlow Condensed";
-    letter-spacing: 4.725px;
-    margin-bottom: 64px;
-
-    span {
-      font-size: 28px;
-      color: #ffffff;
-      opacity: 0.25;
-      padding-right: 28px;
+    > div {
+      &:nth-child(1) {
+        margin-left: 230px;
+        img {
+        }
+      }
+      &:nth-child(2) {
+        margin-right: 163px;
+        margin-left: 157px;
+        div {
+          margin-bottom: 37px;
+          a {
+            margin-right: 36px;
+            font-family: "Barlow Condensed";
+            letter-spacing: 2.7px;
+            color: #d0d6f9;
+            font-size: 1rem;
+            padding-bottom: 12px;
+          }
+        }
+        h3 {
+          font-family: "Bellefair";
+          font-weight: 400;
+          font-size: 6.25rem;
+          color: #fff;
+          text-transform: uppercase;
+        }
+        p {
+          color: #d0d6f9;
+          font-family: "Barlow";
+          font-size: 1.125rem;
+          line-height: 32px;
+          padding-bottom: 54px;
+          border-bottom: 1px solid #383b4b;
+        }
+        > div {
+          display: flex;
+          div {
+            display: flex;
+            flex-direction: column;
+            margin-right: 79px;
+            &:nth-child(1),
+            &:nth-child(2) {
+              span {
+                text-transform: uppercase;
+                &:nth-child(1) {
+                  font-family: "Barlow Condensed";
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 17px;
+                  letter-spacing: 2.3625px;
+                  color: #d0d6f9;
+                  margin-bottom: 12px;
+                  margin-top: 28px;
+                }
+                &:nth-child(2) {
+                  font-family: "Bellefair";
+                  font-size: 28px;
+                  line-height: 32px;
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+        }
+      }
     }
-    h2 {
-      font-size: 28px;
-      color: #ffffff;
-    }
-  }
-  .destination_inner{
-    
   }
 }

@@ -6,12 +6,11 @@ let closeButton = document.getElementById("close-button");
 
 mobilMenu.addEventListener("click", () => {
   event.preventDefault();
-  mobilMenuContent.style.display = "block"
-
+  mobilMenuContent.style.display = "block";
 });
 
-closeButton.addEventListener("click",() =>{
-    event.preventDefault();
-    mobilMenuContent.style.display = "none"
+closeButton.addEventListener("click", () => {
+  event.preventDefault();
+  mobilMenuContent.style.display = "none";
+});
 
-})

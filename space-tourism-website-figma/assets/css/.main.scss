@@ -1,5 +1,5 @@
 // fonts
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
 
 // color
 
@@ -21,6 +21,10 @@ body {
   a {
     text-decoration: none;
     font-family: "Barlow Condensed", sans-serif;
+    &:hover {
+      color: #fff;
+      border-bottom: 3px solid rgba($color: #fff, $alpha: 0.5);
+    }
   }
 }
 
@@ -66,10 +70,6 @@ header {
         }
         &:last-child {
           margin-right: 10.313rem;
-        }
-        &:hover {
-          color: #fff;
-          border-bottom: 3px solid rgba($color: #fff, $alpha: 0.5);
         }
         span {
           font-size: 1rem;
@@ -213,3 +213,28 @@ header {
     border-bottom: 0;
   }
 }
+
+// custom className
+
+.title {
+  margin-left: 10.688rem;
+  color: #fff;
+  display: flex;
+  align-items: baseline;
+  font-family: "Barlow Condensed";
+  letter-spacing: 4.725px;
+  margin-bottom: 64px;
+  text-transform: uppercase;
+
+  span {
+    font-size: 28px;
+    color: #ffffff;
+    opacity: 0.25;
+    padding-right: 28px;
+  }
+  h2 {
+    font-size: 28px;
+    color: #ffffff;
+  }
+}
+ 

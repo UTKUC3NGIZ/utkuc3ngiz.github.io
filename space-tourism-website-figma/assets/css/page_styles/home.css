@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
 body {
   margin: 0;
   font-family: "Bellefair";
@@ -16,6 +16,9 @@ body {
   body a {
     text-decoration: none;
     font-family: "Barlow Condensed", sans-serif; }
+    body a:hover {
+      color: #fff;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.5); }
 
 header {
   display: flex;
@@ -49,9 +52,6 @@ header {
         margin-left: 7.688rem; }
       header > div:nth-child(3) a:last-child {
         margin-right: 10.313rem; }
-      header > div:nth-child(3) a:hover {
-        color: #fff;
-        border-bottom: 3px solid rgba(255, 255, 255, 0.5); }
       header > div:nth-child(3) a span {
         font-size: 1rem;
         padding-right: 0.75rem;
@@ -140,6 +140,24 @@ header {
   .active-index {
     border-right: 3px solid #fff;
     border-bottom: 0; } }
+.title {
+  margin-left: 10.688rem;
+  color: #fff;
+  display: flex;
+  align-items: baseline;
+  font-family: "Barlow Condensed";
+  letter-spacing: 4.725px;
+  margin-bottom: 64px;
+  text-transform: uppercase; }
+  .title span {
+    font-size: 28px;
+    color: #ffffff;
+    opacity: 0.25;
+    padding-right: 28px; }
+  .title h2 {
+    font-size: 28px;
+    color: #ffffff; }
+
 body::before {
   content: "";
   display: block;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
 body {
   margin: 0;
   font-family: "Bellefair";
@@ -16,6 +16,9 @@ body {
   body a {
     text-decoration: none;
     font-family: "Barlow Condensed", sans-serif; }
+    body a:hover {
+      color: #fff;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.5); }
 
 header {
   display: flex;
@@ -49,9 +52,6 @@ header {
         margin-left: 7.688rem; }
       header > div:nth-child(3) a:last-child {
         margin-right: 10.313rem; }
-      header > div:nth-child(3) a:hover {
-        color: #fff;
-        border-bottom: 3px solid rgba(255, 255, 255, 0.5); }
       header > div:nth-child(3) a span {
         font-size: 1rem;
         padding-right: 0.75rem;
@@ -140,6 +140,24 @@ header {
   .active-index {
     border-right: 3px solid #fff;
     border-bottom: 0; } }
+.title {
+  margin-left: 10.688rem;
+  color: #fff;
+  display: flex;
+  align-items: baseline;
+  font-family: "Barlow Condensed";
+  letter-spacing: 4.725px;
+  margin-bottom: 64px;
+  text-transform: uppercase; }
+  .title span {
+    font-size: 28px;
+    color: #ffffff;
+    opacity: 0.25;
+    padding-right: 28px; }
+  .title h2 {
+    font-size: 28px;
+    color: #ffffff; }
+
 body::before {
   content: "";
   display: block;
@@ -150,22 +168,56 @@ body::before {
   height: 100%;
   z-index: -1; }
 
-.destination_section {
-  margin-left: 168px; }
-  .destination_section .destination_title {
-    color: #fff;
-    display: flex;
-    align-items: baseline;
-    font-family: "Barlow Condensed";
-    letter-spacing: 4.725px;
-    margin-bottom: 64px; }
-    .destination_section .destination_title span {
-      font-size: 28px;
-      color: #ffffff;
-      opacity: 0.25;
-      padding-right: 28px; }
-    .destination_section .destination_title h2 {
-      font-size: 28px;
-      color: #ffffff; }
+#destination_section .destination_section_inner {
+  display: flex; }
+  #destination_section .destination_section_inner > div:nth-child(1) {
+    margin-left: 230px; }
+  #destination_section .destination_section_inner > div:nth-child(2) {
+    margin-right: 163px;
+    margin-left: 157px; }
+    #destination_section .destination_section_inner > div:nth-child(2) div {
+      margin-bottom: 37px; }
+      #destination_section .destination_section_inner > div:nth-child(2) div a {
+        margin-right: 36px;
+        font-family: "Barlow Condensed";
+        letter-spacing: 2.7px;
+        color: #d0d6f9;
+        font-size: 1rem;
+        padding-bottom: 12px; }
+    #destination_section .destination_section_inner > div:nth-child(2) h3 {
+      font-family: "Bellefair";
+      font-weight: 400;
+      font-size: 6.25rem;
+      color: #fff;
+      text-transform: uppercase; }
+    #destination_section .destination_section_inner > div:nth-child(2) p {
+      color: #d0d6f9;
+      font-family: "Barlow";
+      font-size: 1.125rem;
+      line-height: 32px;
+      padding-bottom: 54px;
+      border-bottom: 1px solid #383b4b; }
+    #destination_section .destination_section_inner > div:nth-child(2) > div {
+      display: flex; }
+      #destination_section .destination_section_inner > div:nth-child(2) > div div {
+        display: flex;
+        flex-direction: column;
+        margin-right: 79px; }
+        #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(1) span, #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(2) span {
+          text-transform: uppercase; }
+          #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(1) span:nth-child(1), #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(2) span:nth-child(1) {
+            font-family: "Barlow Condensed";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 2.3625px;
+            color: #d0d6f9;
+            margin-bottom: 12px;
+            margin-top: 28px; }
+          #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(1) span:nth-child(2), #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(2) span:nth-child(2) {
+            font-family: "Bellefair";
+            font-size: 28px;
+            line-height: 32px;
+            color: #ffffff; }
 
 /*# sourceMappingURL=destination.css.map */
