@@ -29,67 +29,55 @@ let planets = [
   },
 ];
 
-let destination_section = document.getElementById("destination_section")
+let destination_section = document.getElementById("destination_section");
 let moon = document.getElementById("moon");
 let mars = document.getElementById("mars");
 let europa = document.getElementById("europa");
 let titan = document.getElementById("titan");
 
+// planet change button
 
+let planet_buttons = document.getElementById("planet_buttons");
+let planet_button = planet_buttons.getElementsByClassName("planet_button");
 
-function planetİnner(number) {
-    let inner = `
-        <div class="destination_section_inner">
-        <div>
-          <img src="${planets[number].img}" alt="" />
-        </div>
-        <div>
-          <div>
-            <a href="" id="moon">Moon</a>
-            <a href="" id="mars">Mars</a>
-            <a href="" id="europa">EUROPA</a>
-            <a href="" id="titan">TITAN</a>
-          </div>
-          <h3>${planets[number].name}</h3>
-          <p>
-          ${planets[number].text}
-          </p>
-          <div>
-            <div>
-              <span>AVG. DISTANCE</span>
-              <span>${planets[number].distance}</span>
-            </div>
-            <div>
-              <span>EST. TRAVEL TIME</span>
-              <span>${planets[number].travelTime}</span>
-            </div>
-          </div>
-        </div>
-        </div>
-        `;
-        destination_section.innerHTML = inner
-
-  }
-
-
-  moon.addEventListener("click", () => {
-    event.preventDefault();
-    planetİnner(0)
-  
+for (let i = 0; i < planet_button.length; i++) {
+  planet_button[i].addEventListener("click", function () {
+    var active = planet_buttons.getElementsByClassName("active-index");
+    active[0].classList.remove("active-index");
+    this.className += " active-index";
   });
-  mars.addEventListener("click", () => {
-    event.preventDefault();
-    planetİnner(1)
-    console.log("planets")
-  
-  });
-  europa.addEventListener("click", () => {
-    event.preventDefault();
-    planetİnner(2)
-  
-  });
-  titan.addEventListener("click", () => {
-    event.preventDefault();
-    planetİnner(3)
-  
-  });
+}
+
+// planet change definition
+
+let planet_img = document.getElementById("planet_img");
+let planet_name = document.getElementById("planet_name");
+let planet_info = document.getElementById("planet_info");
+let planet_distance = document.getElementById("planet_distance");
+let planet_time = document.getElementById("planet_time");
+
+function planetChange(number) {
+  planet_img.src = planets[number].img;
+  planet_name.innerHTML = planets[number].name;
+  planet_info.innerHTML = planets[number].text;
+  planet_distance.innerHTML = planets[number].distance;
+  planet_time.innerHTML = planets[number].travelTime;
+}
+
+moon.addEventListener("click", () => {
+  event.preventDefault();
+  planetChange(0);
+});
+
+mars.addEventListener("click", () => {
+  event.preventDefault();
+  planetChange(1);
+});
+europa.addEventListener("click", () => {
+  event.preventDefault();
+  planetChange(2);
+});
+titan.addEventListener("click", () => {
+  event.preventDefault();
+  planetChange(3);
+});
