@@ -17,26 +17,30 @@ body {
 // desktop
 
 #destination_section {
-  .destination_section_inner{
+  .destination_section_inner {
     display: flex;
     > div {
       &:nth-child(1) {
-        margin-left: 230px;
+        margin-left: 14.375rem;
         img {
         }
       }
       &:nth-child(2) {
-        margin-right: 163px;
-        margin-left: 157px;
+        margin-right: 10.188rem;
+        margin-left: 9.813rem;
         div {
-          margin-bottom: 37px;
+          margin-bottom: 2.313rem;
           a {
-            margin-right: 36px;
+            margin-right: 2.25rem;
             font-family: "Barlow Condensed";
             letter-spacing: 2.7px;
             color: #d0d6f9;
             font-size: 1rem;
-            padding-bottom: 12px;
+            padding-bottom: 0.75rem;
+            &:hover{
+              border-bottom: 3px solid rgba(255, 255, 255, 0.5)!important;
+              border-right: 0;
+            }
           }
         }
         h3 {
@@ -51,7 +55,7 @@ body {
           font-family: "Barlow";
           font-size: 1.125rem;
           line-height: 32px;
-          padding-bottom: 54px;
+          padding-bottom: 3.375rem;
           border-bottom: 1px solid #383b4b;
         }
         > div {
@@ -59,7 +63,7 @@ body {
           div {
             display: flex;
             flex-direction: column;
-            margin-right: 79px;
+            margin-right: 4.938rem;
             &:nth-child(1),
             &:nth-child(2) {
               span {
@@ -67,16 +71,16 @@ body {
                 &:nth-child(1) {
                   font-family: "Barlow Condensed";
                   font-weight: 400;
-                  font-size: 14px;
+                  font-size: 0.875rem;
                   line-height: 17px;
                   letter-spacing: 2.3625px;
                   color: #d0d6f9;
-                  margin-bottom: 12px;
-                  margin-top: 28px;
+                  margin-bottom: 0.75rem;
+                  margin-top: 1.75rem;
                 }
                 &:nth-child(2) {
                   font-family: "Bellefair";
-                  font-size: 28px;
+                  font-size: 1.75rem;
                   line-height: 32px;
                   color: #ffffff;
                 }
@@ -89,3 +93,80 @@ body {
   }
 }
 
+// tablet
+@media only screen and (max-width: 768px) {
+  .destination_section_inner {
+    flex-direction: column;
+    > div {
+      &:nth-child(1) {
+        margin: 0 !important;
+        text-align: center;
+        padding-bottom: 3.313rem;
+        img {
+          width: 39%;
+        }
+      }
+      &:nth-child(2) {
+        display: flex;
+        margin: 0 !important;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 6.125rem;
+
+        h3 {
+          font-size: 5rem !important;
+        }
+        p {
+          font-size: 1rem !important;
+          text-align: center;
+          padding-bottom: 3.063rem !important;
+        }
+        div {
+          width: 100%;
+          justify-content: center;
+          div {
+            margin: 0 !important;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// mobil
+@media only screen and (max-width: 375px) {
+  .destination_section_inner {
+    > div {
+      &:nth-child(1) {
+        padding-bottom: 1.625rem !important ;
+        img {
+          width: 45.5%;
+        }
+      }
+      &:nth-child(2) {
+        display: flex;
+        margin: 0 !important;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1.5rem;
+
+        h3 {
+          font-size: 3.5rem !important;
+        }
+        p {
+          font-size: 0.938rem !important;
+          padding-bottom: 2rem !important;
+        }
+        .planet_calculation{
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+
+.distance-active-index {
+  border-bottom: 3px solid #fff;
+}

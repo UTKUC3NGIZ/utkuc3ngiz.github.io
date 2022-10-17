@@ -19,6 +19,10 @@ body {
     body a:hover {
       color: #fff;
       border-bottom: 3px solid rgba(255, 255, 255, 0.5); }
+      @media screen and (max-width: 375px) {
+        body a:hover {
+          border-right: 3px solid rgba(255, 255, 255, 0.5);
+          border-bottom: 0 !important; } }
 
 header {
   display: flex;
@@ -61,6 +65,10 @@ header {
 
 .active-index {
   border-bottom: 3px solid #fff; }
+  @media screen and (max-width: 375px) {
+    .active-index {
+      border-right: 3px solid #fff;
+      border-bottom: 0; } }
 
 @media only screen and (max-width: 1200px) {
   html {
@@ -89,7 +97,13 @@ header {
     header div:nth-child(3) a:last-child {
       margin-right: 2.875rem; }
     header div:nth-child(3) a span {
-      display: none; } }
+      display: none; }
+
+  .title {
+    margin: 2.5rem 0px 3.75rem 2.406rem !important; }
+    .title h2,
+    .title span {
+      font-size: 1.25rem !important; } }
 @media only screen and (max-width: 576px) {
   html {
     font-size: 12px; } }
@@ -137,9 +151,14 @@ header {
             padding-right: 0.688rem;
             font-weight: 700; }
 
-  .active-index {
-    border-right: 3px solid #fff;
-    border-bottom: 0; } }
+  .title {
+    margin: 2.5rem 4.75rem 3.75rem 4.75rem !important; }
+    .title h2,
+    .title span {
+      font-size: 1rem !important;
+      letter-spacing: 2.7px !important; }
+    .title span {
+      padding-right: 1.125rem !important; } }
 .title {
   margin-left: 10.688rem;
   color: #fff;
@@ -147,15 +166,15 @@ header {
   align-items: baseline;
   font-family: "Barlow Condensed";
   letter-spacing: 4.725px;
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
   text-transform: uppercase; }
   .title span {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #ffffff;
     opacity: 0.25;
-    padding-right: 28px; }
+    padding-right: 1.75rem; }
   .title h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #ffffff; }
 
 body::before {

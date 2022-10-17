@@ -42,9 +42,9 @@ let planet_button = planet_buttons.getElementsByClassName("planet_button");
 
 for (let i = 0; i < planet_button.length; i++) {
   planet_button[i].addEventListener("click", function () {
-    var active = planet_buttons.getElementsByClassName("active-index");
-    active[0].classList.remove("active-index");
-    this.className += " active-index";
+    var active = planet_buttons.getElementsByClassName("distance-active-index");
+    active[0].classList.remove("distance-active-index");
+    this.className += " distance-active-index";
   });
 }
 

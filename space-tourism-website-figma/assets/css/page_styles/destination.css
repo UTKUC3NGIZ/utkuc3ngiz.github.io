@@ -19,6 +19,10 @@ body {
     body a:hover {
       color: #fff;
       border-bottom: 3px solid rgba(255, 255, 255, 0.5); }
+      @media screen and (max-width: 375px) {
+        body a:hover {
+          border-right: 3px solid rgba(255, 255, 255, 0.5);
+          border-bottom: 0 !important; } }
 
 header {
   display: flex;
@@ -61,6 +65,10 @@ header {
 
 .active-index {
   border-bottom: 3px solid #fff; }
+  @media screen and (max-width: 375px) {
+    .active-index {
+      border-right: 3px solid #fff;
+      border-bottom: 0; } }
 
 @media only screen and (max-width: 1200px) {
   html {
@@ -89,7 +97,13 @@ header {
     header div:nth-child(3) a:last-child {
       margin-right: 2.875rem; }
     header div:nth-child(3) a span {
-      display: none; } }
+      display: none; }
+
+  .title {
+    margin: 2.5rem 0px 3.75rem 2.406rem !important; }
+    .title h2,
+    .title span {
+      font-size: 1.25rem !important; } }
 @media only screen and (max-width: 576px) {
   html {
     font-size: 12px; } }
@@ -137,9 +151,14 @@ header {
             padding-right: 0.688rem;
             font-weight: 700; }
 
-  .active-index {
-    border-right: 3px solid #fff;
-    border-bottom: 0; } }
+  .title {
+    margin: 2.5rem 4.75rem 3.75rem 4.75rem !important; }
+    .title h2,
+    .title span {
+      font-size: 1rem !important;
+      letter-spacing: 2.7px !important; }
+    .title span {
+      padding-right: 1.125rem !important; } }
 .title {
   margin-left: 10.688rem;
   color: #fff;
@@ -147,15 +166,15 @@ header {
   align-items: baseline;
   font-family: "Barlow Condensed";
   letter-spacing: 4.725px;
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
   text-transform: uppercase; }
   .title span {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #ffffff;
     opacity: 0.25;
-    padding-right: 28px; }
+    padding-right: 1.75rem; }
   .title h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #ffffff; }
 
 body::before {
@@ -171,19 +190,22 @@ body::before {
 #destination_section .destination_section_inner {
   display: flex; }
   #destination_section .destination_section_inner > div:nth-child(1) {
-    margin-left: 230px; }
+    margin-left: 14.375rem; }
   #destination_section .destination_section_inner > div:nth-child(2) {
-    margin-right: 163px;
-    margin-left: 157px; }
+    margin-right: 10.188rem;
+    margin-left: 9.813rem; }
     #destination_section .destination_section_inner > div:nth-child(2) div {
-      margin-bottom: 37px; }
+      margin-bottom: 2.313rem; }
       #destination_section .destination_section_inner > div:nth-child(2) div a {
-        margin-right: 36px;
+        margin-right: 2.25rem;
         font-family: "Barlow Condensed";
         letter-spacing: 2.7px;
         color: #d0d6f9;
         font-size: 1rem;
-        padding-bottom: 12px; }
+        padding-bottom: 0.75rem; }
+        #destination_section .destination_section_inner > div:nth-child(2) div a:hover {
+          border-bottom: 3px solid rgba(255, 255, 255, 0.5) !important;
+          border-right: 0; }
     #destination_section .destination_section_inner > div:nth-child(2) h3 {
       font-family: "Bellefair";
       font-weight: 400;
@@ -195,29 +217,77 @@ body::before {
       font-family: "Barlow";
       font-size: 1.125rem;
       line-height: 32px;
-      padding-bottom: 54px;
+      padding-bottom: 3.375rem;
       border-bottom: 1px solid #383b4b; }
     #destination_section .destination_section_inner > div:nth-child(2) > div {
       display: flex; }
       #destination_section .destination_section_inner > div:nth-child(2) > div div {
         display: flex;
         flex-direction: column;
-        margin-right: 79px; }
+        margin-right: 4.938rem; }
         #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(1) span, #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(2) span {
           text-transform: uppercase; }
           #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(1) span:nth-child(1), #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(2) span:nth-child(1) {
             font-family: "Barlow Condensed";
             font-weight: 400;
-            font-size: 14px;
+            font-size: 0.875rem;
             line-height: 17px;
             letter-spacing: 2.3625px;
             color: #d0d6f9;
-            margin-bottom: 12px;
-            margin-top: 28px; }
+            margin-bottom: 0.75rem;
+            margin-top: 1.75rem; }
           #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(1) span:nth-child(2), #destination_section .destination_section_inner > div:nth-child(2) > div div:nth-child(2) span:nth-child(2) {
             font-family: "Bellefair";
-            font-size: 28px;
+            font-size: 1.75rem;
             line-height: 32px;
             color: #ffffff; }
+
+@media only screen and (max-width: 768px) {
+  .destination_section_inner {
+    flex-direction: column; }
+    .destination_section_inner > div:nth-child(1) {
+      margin: 0 !important;
+      text-align: center;
+      padding-bottom: 3.313rem; }
+      .destination_section_inner > div:nth-child(1) img {
+        width: 39%; }
+    .destination_section_inner > div:nth-child(2) {
+      display: flex;
+      margin: 0 !important;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 6.125rem; }
+      .destination_section_inner > div:nth-child(2) h3 {
+        font-size: 5rem !important; }
+      .destination_section_inner > div:nth-child(2) p {
+        font-size: 1rem !important;
+        text-align: center;
+        padding-bottom: 3.063rem !important; }
+      .destination_section_inner > div:nth-child(2) div {
+        width: 100%;
+        justify-content: center; }
+        .destination_section_inner > div:nth-child(2) div div {
+          margin: 0 !important;
+          align-items: center; } }
+@media only screen and (max-width: 375px) {
+  .destination_section_inner > div:nth-child(1) {
+    padding-bottom: 1.625rem !important; }
+    .destination_section_inner > div:nth-child(1) img {
+      width: 45.5%; }
+  .destination_section_inner > div:nth-child(2) {
+    display: flex;
+    margin: 0 !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem; }
+    .destination_section_inner > div:nth-child(2) h3 {
+      font-size: 3.5rem !important; }
+    .destination_section_inner > div:nth-child(2) p {
+      font-size: 0.938rem !important;
+      padding-bottom: 2rem !important; }
+    .destination_section_inner > div:nth-child(2) .planet_calculation {
+      flex-direction: column; } }
+.distance-active-index {
+  border-bottom: 3px solid #fff; }
 
 /*# sourceMappingURL=destination.css.map */
