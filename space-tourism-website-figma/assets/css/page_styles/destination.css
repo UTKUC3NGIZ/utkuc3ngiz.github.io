@@ -152,7 +152,8 @@ header {
             font-weight: 700; }
 
   .title {
-    margin: 2.5rem 4.75rem 3.75rem 4.75rem !important; }
+    margin: 2.5rem 4.75rem 3.75rem 4.75rem !important;
+    text-align: center; }
     .title h2,
     .title span {
       font-size: 1rem !important;
@@ -202,7 +203,8 @@ body::before {
         letter-spacing: 2.7px;
         color: #d0d6f9;
         font-size: 1rem;
-        padding-bottom: 0.75rem; }
+        padding-bottom: 0.75rem;
+        text-transform: uppercase; }
         #destination_section .destination_section_inner > div:nth-child(2) div a:hover {
           border-bottom: 3px solid rgba(255, 255, 255, 0.5) !important;
           border-right: 0; }
@@ -242,7 +244,18 @@ body::before {
             line-height: 32px;
             color: #ffffff; }
 
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 11px; } }
+@media only screen and (max-width: 992px) {
+  .destination_section_inner > div:nth-child(1) {
+    margin-left: 8.375rem !important; }
+    .destination_section_inner > div:nth-child(1) img {
+      width: 300px; } }
 @media only screen and (max-width: 768px) {
+  html {
+    font-size: 16px; }
+
   .destination_section_inner {
     flex-direction: column; }
     .destination_section_inner > div:nth-child(1) {
@@ -269,7 +282,13 @@ body::before {
         .destination_section_inner > div:nth-child(2) div div {
           margin: 0 !important;
           align-items: center; } }
+@media only screen and (max-width: 496px) {
+  html {
+    font-size: 11px; } }
 @media only screen and (max-width: 375px) {
+  html {
+    font-size: 16px; }
+
   .destination_section_inner > div:nth-child(1) {
     padding-bottom: 1.625rem !important; }
     .destination_section_inner > div:nth-child(1) img {
@@ -280,6 +299,8 @@ body::before {
     flex-direction: column;
     align-items: center;
     padding: 0 1.5rem; }
+    .destination_section_inner > div:nth-child(2) #planet_buttons a {
+      margin: 0 1rem !important; }
     .destination_section_inner > div:nth-child(2) h3 {
       font-size: 3.5rem !important; }
     .destination_section_inner > div:nth-child(2) p {
