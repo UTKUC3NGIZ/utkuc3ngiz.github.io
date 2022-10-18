@@ -29,25 +29,6 @@ let planets = [
   },
 ];
 
-let destination_section = document.getElementById("destination_section");
-let moon = document.getElementById("moon");
-let mars = document.getElementById("mars");
-let europa = document.getElementById("europa");
-let titan = document.getElementById("titan");
-
-// planet change button
-
-let planet_buttons = document.getElementById("planet_buttons");
-let planet_button = planet_buttons.getElementsByClassName("planet_button");
-
-for (let i = 0; i < planet_button.length; i++) {
-  planet_button[i].addEventListener("click", function () {
-    var active = planet_buttons.getElementsByClassName("distance-active-index");
-    active[0].classList.remove("distance-active-index");
-    this.className += " distance-active-index";
-  });
-}
-
 // planet change definition
 
 let planet_img = document.getElementById("planet_img");
@@ -64,20 +45,17 @@ function planetChange(number) {
   planet_time.innerHTML = planets[number].travelTime;
 }
 
-moon.addEventListener("click", () => {
-  event.preventDefault();
-  planetChange(0);
-});
+// planet change button
 
-mars.addEventListener("click", () => {
-  event.preventDefault();
-  planetChange(1);
-});
-europa.addEventListener("click", () => {
-  event.preventDefault();
-  planetChange(2);
-});
-titan.addEventListener("click", () => {
-  event.preventDefault();
-  planetChange(3);
-});
+let planet_buttons = document.getElementById("planet_buttons");
+let planet_button = planet_buttons.getElementsByClassName("planet_button");
+
+for (let i = 0; i < planet_button.length; i++) {
+  planet_button[i].addEventListener("click", function () {
+    var active = planet_buttons.getElementsByClassName("distance-active-index");
+    active[0].classList.remove("distance-active-index");
+    this.className += " distance-active-index";
+    event.preventDefault()
+    planetChange(i);
+  });
+}
