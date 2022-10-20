@@ -196,27 +196,27 @@ body::before {
   margin-left: 166.5px; }
   .crew div:nth-child(1) {
     margin-top: 154px; }
-    .crew div:nth-child(1) h4 {
+    .crew div:nth-child(1) div:nth-child(1) h4 {
       font-size: 32px;
       color: #ffffff;
       opacity: 0.5;
       text-transform: uppercase;
       margin-bottom: 15px; }
-    .crew div:nth-child(1) h3 {
+    .crew div:nth-child(1) div:nth-child(1) h3 {
       font-family: "Bellefair";
       font-size: 56px;
       text-transform: uppercase;
       color: #ffffff;
       margin-bottom: 27px; }
-    .crew div:nth-child(1) p {
+    .crew div:nth-child(1) div:nth-child(1) p {
       width: 60%;
       font-family: "Barlow";
       font-size: 18px;
       color: #d0d6f9;
       margin-bottom: 120px; }
-    .crew div:nth-child(1) div {
+    .crew div:nth-child(1) div:nth-child(2) {
       display: flex; }
-      .crew div:nth-child(1) div span {
+      .crew div:nth-child(1) div:nth-child(2) span {
         margin-right: 24px;
         width: 15px;
         height: 15px;
@@ -224,12 +224,70 @@ body::before {
         border: 1px solid transparent;
         border-radius: 50%;
         opacity: 0.17; }
-        .crew div:nth-child(1) div span:hover {
+        .crew div:nth-child(1) div:nth-child(2) span:hover {
           opacity: 0.5; }
   .crew div:nth-child(2) img {
     width: auto; }
 
 .active-slider {
   opacity: 1 !important; }
+
+@media screen and (max-width: 768px) {
+  body::before {
+    background-image: url(../../img/crew/mobil-bg.jpg); }
+
+  .crew {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center; }
+    .crew div:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0; }
+      .crew div:nth-child(1) div:nth-child(1) h4 {
+        margin-bottom: 8px;
+        font-size: 24px; }
+      .crew div:nth-child(1) div:nth-child(1) h3 {
+        font-size: 40px;
+        margin-bottom: 16px; }
+      .crew div:nth-child(1) div:nth-child(1) p {
+        font-size: 16px;
+        margin-bottom: 40px; }
+      .crew div:nth-child(1) div:nth-child(2) {
+        margin-bottom: 40px; }
+        .crew div:nth-child(1) div:nth-child(2) span {
+          width: 10px;
+          height: 10px; }
+    .crew div:nth-child(2) {
+      text-align: center; }
+      .crew div:nth-child(2) img {
+        width: 80%; } }
+@media screen and (max-width: 375px) {
+  .crew {
+    flex-direction: column-reverse;
+    margin: 0 24px; }
+    .crew > div:nth-child(1) {
+      flex-direction: column-reverse; }
+      .crew > div:nth-child(1) div:nth-child(1) h4 {
+        font-size: 16px; }
+      .crew > div:nth-child(1) div:nth-child(1) h3 {
+        font-size: 24px; }
+      .crew > div:nth-child(1) div:nth-child(1) p {
+        font-size: 15px;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center; }
+      .crew > div:nth-child(1) div:nth-child(2) {
+        margin-bottom: 32px;
+        margin-top: 32px; }
+        .crew > div:nth-child(1) div:nth-child(2) span {
+          width: 10px;
+          height: 10px; }
+    .crew > div:nth-child(2) {
+      text-align: center; }
+      .crew > div:nth-child(2) img {
+        width: 80%;
+        border-bottom: 1px solid #383b4b; } }
 
 /*# sourceMappingURL=crew.css.map */

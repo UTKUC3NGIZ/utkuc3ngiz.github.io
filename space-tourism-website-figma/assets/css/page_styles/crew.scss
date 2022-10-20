@@ -24,39 +24,43 @@ body {
   div {
     &:nth-child(1) {
       margin-top: 154px;
-      h4 {
-        font-size: 32px;
-        color: #ffffff;
-        opacity: 0.5;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-      }
-      h3 {
-        font-family: "Bellefair";
-        font-size: 56px;
-        text-transform: uppercase;
-        color: #ffffff;
-        margin-bottom: 27px;
-      }
-      p {
-        width: 60%;
-        font-family: "Barlow";
-        font-size: 18px;
-        color: #d0d6f9;
-        margin-bottom: 120px;
-      }
       div {
-        display: flex;
-        span {
-          margin-right: 24px;
-          width: 15px;
-          height: 15px;
-          background-color: #ffffff;
-          border: 1px solid transparent;
-          border-radius: 50%;
-          opacity: 0.17;
-          &:hover {
+        &:nth-child(1) {
+          h4 {
+            font-size: 32px;
+            color: #ffffff;
             opacity: 0.5;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+          }
+          h3 {
+            font-family: "Bellefair";
+            font-size: 56px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 27px;
+          }
+          p {
+            width: 60%;
+            font-family: "Barlow";
+            font-size: 18px;
+            color: #d0d6f9;
+            margin-bottom: 120px;
+          }
+        }
+        &:nth-child(2) {
+          display: flex;
+          span {
+            margin-right: 24px;
+            width: 15px;
+            height: 15px;
+            background-color: #ffffff;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            opacity: 0.17;
+            &:hover {
+              opacity: 0.5;
+            }
           }
         }
       }
@@ -70,5 +74,102 @@ body {
 }
 
 .active-slider {
-  opacity: 1!important;
+  opacity: 1 !important;
+}
+
+// tablet
+
+@media screen and (max-width: 768px) {
+  body {
+    &::before {
+      background-image: url(../../img/crew/mobil-bg.jpg);
+    }
+  }
+
+  .crew {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    div {
+      &:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        div {
+          &:nth-child(1) {
+            h4 {
+              margin-bottom: 8px;
+              font-size: 24px;
+            }
+            h3 {
+              font-size: 40px;
+              margin-bottom: 16px;
+            }
+            p {
+              font-size: 16px;
+              margin-bottom: 40px;
+            }
+          }
+          &:nth-child(2) {
+            margin-bottom: 40px;
+            span {
+              width: 10px;
+              height: 10px;
+            }
+          }
+        }
+      }
+      &:nth-child(2) {
+        text-align: center;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+// Mobil
+@media screen and (max-width: 375px) {
+  .crew {
+    flex-direction: column-reverse;
+    margin: 0 24px;
+    > div {
+      &:nth-child(1) {
+        flex-direction: column-reverse;
+        div {
+          &:nth-child(1) {
+            h4 {
+              font-size: 16px;
+            }
+            h3 {
+              font-size: 24px;
+            }
+            p {
+              font-size: 15px;
+              margin-bottom: 0;
+              width: 100%;
+              text-align: center;
+            }
+          }
+          &:nth-child(2) {
+            margin-bottom: 32px;
+            margin-top: 32px;
+            span {
+              width: 10px;
+              height: 10px;
+            }
+          }
+        }
+      }
+      &:nth-child(2) {
+        text-align: center;
+        img {
+          width: 80%;
+          border-bottom: 1px solid #383b4b;
+        }
+      }
+    }
+  }
 }
