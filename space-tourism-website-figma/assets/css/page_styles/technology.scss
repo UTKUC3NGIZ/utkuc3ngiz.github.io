@@ -1,0 +1,17 @@
+// pages
+@import "../.main";
+
+// desktop
+
+body {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../../img/technology/bg_desktop.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
