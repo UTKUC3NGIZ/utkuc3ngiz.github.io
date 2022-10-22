@@ -14,46 +14,42 @@ body {
   }
 }
 
-.title {
-  margin: 0 0 0 166.5px;
-}
-
 .crew {
   display: flex;
-  margin-left: 166.5px;
+  margin-left: 10.406rem;
   div {
     &:nth-child(1) {
-      margin-top: 154px;
+      margin-top: 9.625rem;
       div {
         &:nth-child(1) {
           h4 {
-            font-size: 32px;
+            font-size: 2rem;
             color: #ffffff;
             opacity: 0.5;
             text-transform: uppercase;
-            margin-bottom: 15px;
+            margin-bottom: 0.938rem;
           }
           h3 {
             font-family: "Bellefair";
-            font-size: 56px;
+            font-size: 3.5rem;
             text-transform: uppercase;
             color: #ffffff;
-            margin-bottom: 27px;
+            margin-bottom: 1.688rem;
           }
           p {
             width: 60%;
             font-family: "Barlow";
-            font-size: 18px;
+            font-size: 1.125rem;
             color: #d0d6f9;
-            margin-bottom: 120px;
+            margin-bottom: 7.5rem;
           }
         }
         &:nth-child(2) {
           display: flex;
           span {
-            margin-right: 24px;
-            width: 15px;
-            height: 15px;
+            margin-right: 1.5rem;
+            width: 0.938rem;
+            height: 0.938rem;
             background-color: #ffffff;
             border: 1px solid transparent;
             border-radius: 50%;
@@ -99,23 +95,23 @@ body {
         div {
           &:nth-child(1) {
             h4 {
-              margin-bottom: 8px;
-              font-size: 24px;
+              margin-bottom: 0.5rem;
+              font-size: 1.5rem;
             }
             h3 {
-              font-size: 40px;
-              margin-bottom: 16px;
+              font-size: 2.5rem;
+              margin-bottom: 1rem;
             }
             p {
-              font-size: 16px;
-              margin-bottom: 40px;
+              font-size: 1rem;
+              margin-bottom: 2.5rem;
             }
           }
           &:nth-child(2) {
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
             span {
-              width: 10px;
-              height: 10px;
+              width: 0.625rem;
+              height: 0.625rem;
             }
           }
         }
@@ -134,31 +130,31 @@ body {
 @media screen and (max-width: 375px) {
   .crew {
     flex-direction: column-reverse;
-    margin: 0 24px;
+    margin: 0 1.5rem;
     > div {
       &:nth-child(1) {
         flex-direction: column-reverse;
         div {
           &:nth-child(1) {
             h4 {
-              font-size: 16px;
+              font-size: 1rem;
             }
             h3 {
-              font-size: 24px;
+              font-size: 1.5rem;
             }
             p {
-              font-size: 15px;
+              font-size: 0.938rem;
               margin-bottom: 0;
               width: 100%;
               text-align: center;
             }
           }
           &:nth-child(2) {
-            margin-bottom: 32px;
-            margin-top: 32px;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
             span {
-              width: 10px;
-              height: 10px;
+              width: 0.625rem;
+              height: 0.625rem;
             }
           }
         }
