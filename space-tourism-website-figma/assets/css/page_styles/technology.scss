@@ -16,7 +16,7 @@ body {
   }
 }
 
-.crew {
+.technology {
   display: flex;
   margin-left: 10.406rem;
   div {
@@ -89,11 +89,11 @@ body {
 @media screen and (max-width: 768px) {
   body {
     &::before {
-      background-image: url(../../img/crew/mobil-bg.jpg);
+      background-image: url(../../img/technology/mobil-bg.jpg);
     }
   }
 
-  .crew {
+  .technology {
     margin-left: 0;
     flex-direction: column;
     align-items: center;
@@ -139,7 +139,7 @@ body {
 
 // Mobil
 @media screen and (max-width: 375px) {
-  .crew {
+  .technology {
     flex-direction: column-reverse;
     margin: 0 1.5rem;
     > div {
@@ -183,7 +183,7 @@ body {
 
 // custom
 
-.crew {
+.technology {
   > div {
     &:nth-child(1) {
       display: flex;
@@ -240,7 +240,7 @@ body {
   }
 }
 @media screen and (max-width: 1200px) { 
-#crew_img{
+#technology_img{
   width: 25rem;
   height: 25rem;
 }
@@ -253,7 +253,7 @@ body {
     }
   }
 
-  .crew {
+  .technology {
     flex-direction: column-reverse;
     > div {
       &:nth-child(1) {
@@ -299,7 +299,7 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-  .crew {
+  .technology {
     margin: 0;
     > div {
       &:nth-child(1) {

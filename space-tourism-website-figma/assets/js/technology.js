@@ -1,4 +1,4 @@
-let employees = [
+let technology = [
   {
     task: "THE TERMINOLOGY…",
     name: "LAUNCH VEHICLE",
@@ -21,23 +21,23 @@ let employees = [
     tabletImg:"../img/technology/tablet3.jpg",
   },
 ];
-const crewTask = document.getElementById("crew_task");
-const crewName = document.getElementById("crew_name");
-const crewText = document.getElementById("crew_text");
-const crewImg = document.getElementById("crew_img");
-const tabletCrewImg = document.getElementById("tablet_img");
-let crew = document.getElementsByClassName("crew")
+const technologyTask = document.getElementById("technology_task");
+const technologyName = document.getElementById("technology_name");
+const technologyText = document.getElementById("technology_text");
+const technologyImg = document.getElementById("technology_img");
+const tablettechnologyImg = document.getElementById("tablet_img");
+let technology_animation = document.getElementsByClassName("technology")
 
 
 function employeeChange(number) {
-  crewTask.innerHTML = employees[number].task;
-  crewName.innerHTML = employees[number].name;
-  crewText.innerHTML = employees[number].text;
-  crewImg.src = employees[number].img;
-  tabletCrewImg.src = employees[number].tabletImg;
+  technologyTask.innerHTML = technology[number].task;
+  technologyName.innerHTML = technology[number].name;
+  technologyText.innerHTML = technology[number].text;
+  technologyImg.src = technology[number].img;
+  tablettechnologyImg.src = technology[number].tabletImg;
 }
 
-// crew slider
+// technology slider
 
 const slider = document.getElementById("slider");
 let slider_button = slider.getElementsByClassName("slider_button");
@@ -50,10 +50,10 @@ for (let i = 0; i < slider_button.length; i++) {
     employeeChange(i);
 
     
-    crew[0].classList.add("loading_animation")
+    technology_animation[0].classList.add("loading_animation")
 
     setTimeout(function(){
-      crew[0].classList.remove("loading_animation")
+      technology_animation[0].classList.remove("loading_animation")
 
     },1500)
 
