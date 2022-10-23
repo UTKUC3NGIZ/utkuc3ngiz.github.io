@@ -14,3 +14,5 @@ closeButton.addEventListener("click", () => {
   mobilMenuContent.style.display = "none";
 });
 
+
+let destination_section = document.getElementsByClassName("destination_section")

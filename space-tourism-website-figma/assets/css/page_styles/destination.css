@@ -179,6 +179,15 @@ header {
     font-size: 1.75rem;
     color: #ffffff; }
 
+.loading_animation {
+  animation-name: loading;
+  animation-duration: 1.5s; }
+
+@keyframes loading {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 body::before {
   content: "";
   display: block;
@@ -311,15 +320,5 @@ body::before {
       flex-direction: column; } }
 .distance-active-index {
   border-bottom: 3px solid #fff; }
-
-.loading_animation {
-  animation-name: example;
-  animation-duration: 1.5s; }
-
-@keyframes example {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 /*# sourceMappingURL=destination.css.map */

@@ -26,6 +26,8 @@ const crewName = document.getElementById("crew_name");
 const crewText = document.getElementById("crew_text");
 const crewImg = document.getElementById("crew_img");
 const tabletCrewImg = document.getElementById("tablet_img");
+let crew = document.getElementsByClassName("crew")
+
 
 function employeeChange(number) {
   crewTask.innerHTML = employees[number].task;
@@ -46,5 +48,14 @@ for (let i = 0; i < slider_button.length; i++) {
     active[0].classList.remove("active-slider");
     this.className += " active-slider";
     employeeChange(i);
+
+    
+    crew[0].classList.add("loading_animation")
+
+    setTimeout(function(){
+      crew[0].classList.remove("loading_animation")
+
+    },1500)
+
   });
 }
