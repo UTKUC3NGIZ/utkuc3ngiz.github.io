@@ -72,10 +72,10 @@ header {
 
 @media only screen and (max-width: 1200px) {
   html {
-    font-size: 14px; } }
+    font-size: 13px; } }
 @media only screen and (max-width: 992px) {
   html {
-    font-size: 11px; } }
+    font-size: 10px; } }
 @media only screen and (max-width: 768px) {
   html {
     font-size: 16px; }
@@ -214,14 +214,14 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 450px;
-    height: 450px; }
+    width: 28.125rem;
+    height: 28.125rem; }
     .promotion_div div:nth-child(2) div {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 274px;
-      height: 274px;
+      width: 17.125rem;
+      height: 17.125rem;
       background-color: #fff;
       border-radius: 50%; }
       .promotion_div div:nth-child(2) div span {
@@ -250,8 +250,10 @@ body::before {
       .promotion_div div:nth-child(1) p {
         font-size: 1rem;
         line-height: 28px; }
-    .promotion_div div:nth-child(2) {
-      padding: 6.438rem 2.938rem; } }
+    .promotion_div div:nth-child(2) div {
+      width: 15.125rem;
+      height: 15.125rem;
+      margin-bottom: 0; } }
 @media only screen and (max-width: 375px) {
   body::before {
     background-image: url(../../img/home/home_wallpaper_mobil.jpg); }
@@ -271,8 +273,13 @@ body::before {
         font-size: 0.938rem !important;
         line-height: 25px !important; }
     .promotion_div div:nth-child(2) {
-      padding: 63px 28px !important; }
-      .promotion_div div:nth-child(2) span {
-        font-size: 1.25rem !important; } }
+      width: 16.4rem;
+      height: 16.4rem; }
+      .promotion_div div:nth-child(2) div {
+        width: 9.375rem;
+        height: 9.375rem;
+        margin-bottom: 0 !important; }
+        .promotion_div div:nth-child(2) div span {
+          font-size: 1.25rem !important; } }
 
 /*# sourceMappingURL=home.css.map */

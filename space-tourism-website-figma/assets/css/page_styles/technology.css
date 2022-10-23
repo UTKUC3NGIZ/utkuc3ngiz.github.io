@@ -72,10 +72,10 @@ header {
 
 @media only screen and (max-width: 1200px) {
   html {
-    font-size: 14px; } }
+    font-size: 13px; } }
 @media only screen and (max-width: 992px) {
   html {
-    font-size: 11px; } }
+    font-size: 10px; } }
 @media only screen and (max-width: 768px) {
   html {
     font-size: 16px; }

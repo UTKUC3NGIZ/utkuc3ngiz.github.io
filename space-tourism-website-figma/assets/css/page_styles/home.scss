@@ -47,14 +47,14 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 450px;
-      height: 450px;
+      width: 28.125rem;
+      height: 28.125rem;
       div {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 274px;
-        height: 274px;
+        width: 17.125rem;
+        height: 17.125rem;
         background-color: #fff;
         border-radius: 50%;
         span {
@@ -99,7 +99,12 @@ body {
         }
       }
       &:nth-child(2) {
-        padding: 6.438rem 2.938rem;
+
+        div{
+          width: 15.125rem;
+          height: 15.125rem;
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -133,10 +138,17 @@ body {
         }
       }
       &:nth-child(2) {
-        padding: 63px 28px !important;
-        span {
-          font-size: 1.25rem !important ;
+        width:16.4rem ;
+        height:16.4rem ;
+        div{
+          width:9.375rem ;
+          height:9.375rem ;
+          margin-bottom: 0!important;
+          span {
+            font-size: 1.25rem !important ;
+          }
         }
+
       }
     }
   }
