@@ -36,6 +36,7 @@ let planet_name = document.getElementById("planet_name");
 let planet_info = document.getElementById("planet_info");
 let planet_distance = document.getElementById("planet_distance");
 let planet_time = document.getElementById("planet_time");
+let destination_section_inner = document.getElementsByClassName("destination_section_inner")
 
 function planetChange(number) {
   planet_img.src = planets[number].img;
@@ -43,6 +44,7 @@ function planetChange(number) {
   planet_info.innerHTML = planets[number].text;
   planet_distance.innerHTML = planets[number].distance;
   planet_time.innerHTML = planets[number].travelTime;
+
 }
 
 // planet change button
@@ -57,5 +59,15 @@ for (let i = 0; i < planet_button.length; i++) {
     this.className += " distance-active-index";
     event.preventDefault()
     planetChange(i);
+
+    destination_section_inner[0].classList.add("loading_animation")
+
+    setTimeout(function(){
+      destination_section_inner[0].classList.remove("loading_animation")
+
+    },1500)
+
   });
 }
+
+

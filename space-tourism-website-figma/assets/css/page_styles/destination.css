@@ -173,7 +173,8 @@ header {
     font-size: 1.75rem;
     color: #ffffff;
     opacity: 0.25;
-    padding-right: 1.75rem; }
+    padding-right: 1.75rem;
+    font-weight: 700; }
   .title h2 {
     font-size: 1.75rem;
     color: #ffffff; }
@@ -310,5 +311,15 @@ body::before {
       flex-direction: column; } }
 .distance-active-index {
   border-bottom: 3px solid #fff; }
+
+.loading_animation {
+  animation-name: example;
+  animation-duration: 1.5s; }
+
+@keyframes example {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=destination.css.map */

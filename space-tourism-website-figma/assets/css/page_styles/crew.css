@@ -173,7 +173,8 @@ header {
     font-size: 1.75rem;
     color: #ffffff;
     opacity: 0.25;
-    padding-right: 1.75rem; }
+    padding-right: 1.75rem;
+    font-weight: 700; }
   .title h2 {
     font-size: 1.75rem;
     color: #ffffff; }
