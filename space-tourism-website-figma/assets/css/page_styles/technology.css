@@ -327,7 +327,14 @@ body::before {
         border: 1px solid #ffffff;
         color: #fff;
         opacity: 1; }
+.crew > div:nth-child(2) {
+  display: flex;
+  align-items: center; }
 
+@media screen and (max-width: 1200px) {
+  #crew_img {
+    width: 25rem;
+    height: 25rem; } }
 @media screen and (max-width: 768px) {
   body::before {
     background-image: url(../../img/technology/bg_desktop.jpg); }
