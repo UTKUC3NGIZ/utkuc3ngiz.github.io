@@ -211,11 +211,25 @@ body::before {
     font-family: "Barlow Condensed", sans-serif;
     line-height: 32px; }
   .promotion_div div:nth-child(2) {
-    padding: 7.375rem 3.938rem;
-    background-color: #fff;
-    border-radius: 50%; }
-    .promotion_div div:nth-child(2) span {
-      font-size: 2rem; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 450px; }
+    .promotion_div div:nth-child(2) div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 274px;
+      height: 274px;
+      background-color: #fff;
+      border-radius: 50%; }
+      .promotion_div div:nth-child(2) div span {
+        font-size: 2rem; }
+    .promotion_div div:nth-child(2):hover {
+      background: rgba(255, 255, 255, 0.1);
+      mix-blend-mode: normal;
+      border-radius: 50%; }
 
 @media only screen and (max-width: 768px) {
   body::before {

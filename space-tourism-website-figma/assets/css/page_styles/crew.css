@@ -191,29 +191,29 @@ body::before {
 .crew {
   display: flex;
   margin-left: 10.406rem; }
-  .crew div:nth-child(1) {
+  .crew > div:nth-child(1) {
     margin-top: 9.625rem; }
-    .crew div:nth-child(1) div:nth-child(1) h4 {
+    .crew > div:nth-child(1) > div:nth-child(1) h4 {
       font-size: 2rem;
       color: #ffffff;
       opacity: 0.5;
       text-transform: uppercase;
       margin-bottom: 0.938rem; }
-    .crew div:nth-child(1) div:nth-child(1) h3 {
+    .crew > div:nth-child(1) > div:nth-child(1) h3 {
       font-family: "Bellefair";
       font-size: 3.5rem;
       text-transform: uppercase;
       color: #ffffff;
       margin-bottom: 1.688rem; }
-    .crew div:nth-child(1) div:nth-child(1) p {
+    .crew > div:nth-child(1) > div:nth-child(1) p {
       width: 60%;
       font-family: "Barlow";
       font-size: 1.125rem;
       color: #d0d6f9;
       margin-bottom: 7.5rem; }
-    .crew div:nth-child(1) div:nth-child(2) {
+    .crew > div:nth-child(1) > div:nth-child(2) {
       display: flex; }
-      .crew div:nth-child(1) div:nth-child(2) span {
+      .crew > div:nth-child(1) > div:nth-child(2) span {
         margin-right: 1.5rem;
         width: 0.938rem;
         height: 0.938rem;
@@ -221,9 +221,9 @@ body::before {
         border: 1px solid transparent;
         border-radius: 50%;
         opacity: 0.17; }
-        .crew div:nth-child(1) div:nth-child(2) span:hover {
+        .crew > div:nth-child(1) > div:nth-child(2) span:hover {
           opacity: 0.5; }
-  .crew div:nth-child(2) img {
+  .crew > div:nth-child(2) img {
     width: auto; }
 
 .active-slider {
