@@ -1,85 +1,146 @@
-// Reset
-body {
-  margin: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-p,
-a {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-// Fonts
-@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+.navbar {
+  margin: 2.5rem 0 0 3.438rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+  }
+  &__desktopMenu {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(2.548rem);
+    padding: 2.375rem 10.313rem 2.375rem 7.688rem;
+    a {
+      color: $white;
+      margin-right: 3rem;
+      padding: 2.375rem 0;
+      &:last-child {
+        margin-right: 0;
+      }
+      span {
+        font-weight: bold;
+        padding-right: 0.688rem;
+      }
 
-// Font Style
-.h1,
-.h2,
-.h3,
-.h4 {
-  font-family: "Bellefair", serif;
-  font-weight: 400;
+      &:hover {
+        border-bottom: 3px solid $white;
+        opacity: 0.5;
+      }
+    }
+  }
+  &__mobilMenu {
+    display: none;
+    &__inner {
+      display: none;
+    }
+  }
 }
 
-.h5,
-.s2,
-.nav_text {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
+.active {
+  border-bottom: 3px solid $white;
+  opacity: 1 !important;
 }
 
-.h1 {
-  font-size: 9.375rem;
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 11px;
+  }
 }
 
-.h2 {
-  font-size: 6.25rem;
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .navbar {
+    margin: 0 0 0 2.438rem;
+    &__desktopMenu {
+      padding: 2.438rem 0;
+      a {
+        margin-right: 2.313rem;
+        padding: 2.438rem 0;
+        font-size: 0.875rem;
+        &:first-child {
+          margin-left: 3rem;
+        }
+        &:last-child {
+          margin-right: 3rem;
+        }
+        span {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
-.h3 {
-  font-size: 3.5rem;
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 10px;
+  }
+  .navbar {
+    &__logo {
+      img {
+        width: 40px;
+      }
+    }
+  }
 }
 
-.h4 {
-  font-size: 2rem;
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 16px;
+  }
+  .navbar {
+    margin: 1.5rem;
+
+    &__desktopMenu {
+      display: none;
+    }
+    &__mobilMenu {
+      display: block;
+
+      &__inner {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(2.548rem);
+        padding: 7.375rem 0 0 2rem;
+        height: 100%;
+        width: 15.875rem;
+        box-sizing: border-box;
+        &--closed {
+          position: absolute;
+          right: 1.625rem;
+          top: 2.063rem;
+        }
+        &--buttons {
+          display: flex;
+          flex-direction: column;
+          a {
+            margin-bottom: 2rem;
+            color: $white;
+            span {
+              padding-right: 0.688rem;
+              font-weight: bold;
+            }
+            &:hover {
+              border-right: 4px solid $white;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+  .active {
+    border-bottom: none;
+    border-right: 4px solid $white;
+    opacity: 1 !important;
+  }
 }
-
-.h5 {
-  font-size: 1.75rem;
-  letter-spacing: 0.297rem;
-}
-
-.s1 {
-  font-size: 1.75rem;
-}
-
-.s2 {
-  font-size: 0.875rem;
-  letter-spacing: 0.147rem;
-}
-
-.nav_text {
-  font-size: 1rem;
-  letter-spacing: 0.169rem;
-}
-
-.p {
-  font-family: "Barlow", sans-serif;
-  font-weight: 400;
-  font-size: 1.125rem;
-}
-
-// Colors
-$dark: #0b0d17;
-$lilac: #d0d6f9;
-$white: #ffffff;
-
-
-

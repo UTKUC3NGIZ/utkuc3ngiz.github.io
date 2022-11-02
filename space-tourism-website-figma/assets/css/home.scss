@@ -1,1 +1,12 @@
-@import '.main';
+@import ".design_system";
+@import ".main";
+
+.background {
+  background-image: url(../img/home/bg.jpg);
+}
+
+@media only screen and (max-width: 768px) {
+  .background {
+    background-image: url(../img/home/bg_mobil.jpg);
+  }
+}
