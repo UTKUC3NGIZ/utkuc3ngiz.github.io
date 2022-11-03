@@ -34,9 +34,9 @@
   }
   &__mobilMenu {
     display: none;
-    &__inner {
-      display: none;
-    }
+  }
+  &__inner {
+    display: none;
   }
 }
 
@@ -102,37 +102,36 @@
     }
     &__mobilMenu {
       display: block;
-
-      &__inner {
-        display: none;
+    }
+    &__inner {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(2.548rem);
+      padding: 7.375rem 0 0 2rem;
+      height: 100%;
+      width: 15.875rem;
+      box-sizing: border-box;
+      &--closed {
         position: absolute;
-        right: 0;
-        top: 0;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(2.548rem);
-        padding: 7.375rem 0 0 2rem;
-        height: 100%;
-        width: 15.875rem;
-        box-sizing: border-box;
-        &--closed {
-          position: absolute;
-          right: 1.625rem;
-          top: 2.063rem;
-        }
-        &--buttons {
-          display: flex;
-          flex-direction: column;
-          a {
-            margin-bottom: 2rem;
-            color: $white;
-            span {
-              padding-right: 0.688rem;
-              font-weight: bold;
-            }
-            &:hover {
-              border-right: 4px solid $white;
-              opacity: 0.5;
-            }
+        right: 1.625rem;
+        top: 2.063rem;
+      }
+      &--buttons {
+        display: flex;
+        flex-direction: column;
+        a {
+          margin-bottom: 2rem;
+          color: $white;
+          span {
+            padding-right: 0.688rem;
+            font-weight: bold;
+          }
+          &:hover {
+            border-right: 4px solid $white;
+            opacity: 0.5;
           }
         }
       }

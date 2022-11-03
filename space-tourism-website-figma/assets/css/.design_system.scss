@@ -74,9 +74,90 @@ a {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
+  line-height: 2rem;
 }
 
 // Colors
-$dark: #0b0d17;
+$black: #0b0d17;
 $lilac: #d0d6f9;
 $white: #ffffff;
+
+@media only screen and (max-width: 768px) {
+  .h1 {
+    // font-size: 9.375rem;
+  }
+
+  .h2 {
+    // font-size: 6.25rem;
+  }
+
+  .h3 {
+    // font-size: 3.5rem;
+  }
+
+  .h5 {
+    font-size: 1.25rem;
+    letter-spacing: 0.211rem;
+  }
+
+  .s1 {
+    // font-size: 1.75rem;
+  }
+
+  .s2 {
+    // font-size: 0.875rem;
+    // letter-spacing: 0.147rem;
+  } 
+
+  .nav_text {
+    font-size: 0.875rem;
+    letter-spacing: 0.148rem;
+  }
+
+  .p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .h1 {
+    font-size: 5rem;
+  }
+
+  .h2 {
+    // font-size: 6.25rem;
+  }
+
+  .h3 {
+    // font-size: 3.5rem;
+  }
+
+  .h4 {
+    font-size: 1.25rem;
+  }
+
+  .h5 {
+    font-size: 1rem;
+    letter-spacing: 0.169rem;
+  }
+
+  .s1 {
+    // font-size: 1.75rem;
+  }
+
+  .s2 {
+    // font-size: 0.875rem;
+    // letter-spacing: 0.147rem;
+  }
+
+  .nav_text {
+    // font-size: 0.875rem;
+    // letter-spacing: 0.148rem;
+  }
+
+  .p {
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+  }
+}

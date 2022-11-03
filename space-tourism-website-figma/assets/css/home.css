@@ -58,8 +58,35 @@ a {
 .p {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  line-height: 2rem; }
 
+@media only screen and (max-width: 768px) {
+  .h5 {
+    font-size: 1.25rem;
+    letter-spacing: 0.211rem; }
+
+  .nav_text {
+    font-size: 0.875rem;
+    letter-spacing: 0.148rem; }
+
+  .p {
+    font-size: 1rem;
+    line-height: 1.75rem; } }
+@media only screen and (max-width: 375px) {
+  .h1 {
+    font-size: 5rem; }
+
+  .h4 {
+    font-size: 1.25rem; }
+
+  .h5 {
+    font-size: 1rem;
+    letter-spacing: 0.169rem; }
+
+  .p {
+    font-size: 0.938rem;
+    line-height: 1.563rem; } }
 .background {
   background-repeat: no-repeat;
   background-size: cover; }
@@ -87,8 +114,8 @@ a {
         opacity: 0.5; }
   .navbar__mobilMenu {
     display: none; }
-    .navbar__mobilMenu__inner {
-      display: none; }
+  .navbar__inner {
+    display: none; }
 
 .active {
   border-bottom: 3px solid #ffffff;
@@ -131,33 +158,33 @@ a {
       display: none; }
     .navbar__mobilMenu {
       display: block; }
-      .navbar__mobilMenu__inner {
-        display: none;
+    .navbar__inner {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(2.548rem);
+      padding: 7.375rem 0 0 2rem;
+      height: 100%;
+      width: 15.875rem;
+      box-sizing: border-box; }
+      .navbar__inner--closed {
         position: absolute;
-        right: 0;
-        top: 0;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(2.548rem);
-        padding: 7.375rem 0 0 2rem;
-        height: 100%;
-        width: 15.875rem;
-        box-sizing: border-box; }
-        .navbar__mobilMenu__inner--closed {
-          position: absolute;
-          right: 1.625rem;
-          top: 2.063rem; }
-        .navbar__mobilMenu__inner--buttons {
-          display: flex;
-          flex-direction: column; }
-          .navbar__mobilMenu__inner--buttons a {
-            margin-bottom: 2rem;
-            color: #ffffff; }
-            .navbar__mobilMenu__inner--buttons a span {
-              padding-right: 0.688rem;
-              font-weight: bold; }
-            .navbar__mobilMenu__inner--buttons a:hover {
-              border-right: 4px solid #ffffff;
-              opacity: 0.5; }
+        right: 1.625rem;
+        top: 2.063rem; }
+      .navbar__inner--buttons {
+        display: flex;
+        flex-direction: column; }
+        .navbar__inner--buttons a {
+          margin-bottom: 2rem;
+          color: #ffffff; }
+          .navbar__inner--buttons a span {
+            padding-right: 0.688rem;
+            font-weight: bold; }
+          .navbar__inner--buttons a:hover {
+            border-right: 4px solid #ffffff;
+            opacity: 0.5; }
 
   .active {
     border-bottom: none;
@@ -169,5 +196,66 @@ a {
 @media only screen and (max-width: 768px) {
   .background {
     background-image: url(../img/home/bg_mobil.jpg); } }
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15.688rem 10.313rem 0px 10.313rem; }
+  .main__promotion {
+    width: 40%;
+    display: flex;
+    flex-direction: column; }
+    .main__promotion h5 {
+      color: #d0d6f9;
+      margin-bottom: 1.5rem; }
+    .main__promotion h1 {
+      color: #ffffff;
+      margin-bottom: 1.5rem; }
+    .main__promotion p {
+      color: #d0d6f9; }
+  .main__explore {
+    border: 5.5rem solid transparent;
+    border-radius: 50%; }
+    .main__explore div {
+      width: 17.125rem;
+      height: 17.125rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      border-radius: 50%; }
+      .main__explore div h4 {
+        color: #0b0d17; }
+    .main__explore:hover {
+      border-color: rgba(255, 255, 255, 0.1); }
+
+@media only screen and (max-width: 1200px) {
+  .main__promotion {
+    width: auto; } }
+@media only screen and (max-width: 768px) {
+  .main {
+    margin: 6.625rem 10rem 0rem 10rem;
+    flex-direction: column; }
+    .main__promotion {
+      text-align: center;
+      margin-bottom: 4.75rem; }
+    .main__explore {
+      border: 5.04rem solid transparent; }
+      .main__explore div {
+        width: 15.125rem;
+        height: 15.125rem; } }
+@media only screen and (max-width: 375px) {
+  .main {
+    margin: 48px 24px 0rem 24px; }
+    .main__promotion h5 {
+      margin-bottom: 1rem; }
+    .main__promotion h1 {
+      margin-bottom: 1rem; }
+    .main__explore {
+      border: 3.125rem solid transparent; }
+      .main__explore div {
+        width: 9.375rem;
+        height: 9.375rem; } }
 
 /*# sourceMappingURL=home.css.map */

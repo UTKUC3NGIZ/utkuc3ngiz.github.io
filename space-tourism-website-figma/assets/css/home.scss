@@ -10,3 +10,94 @@
     background-image: url(../img/home/bg_mobil.jpg);
   }
 }
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15.688rem 10.313rem 0px 10.313rem;
+
+  &__promotion {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    h5 {
+      color: $lilac;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      color: $white;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      color: $lilac;
+    }
+  }
+  &__explore {
+    border: 5.5rem solid transparent;
+    border-radius: 50%;
+    div {
+      width: 17.125rem;
+      height: 17.125rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $white;
+      border-radius: 50%;
+      h4 {
+        color: $black;
+      }
+    }
+    &:hover {
+      border-color: rgba($color: $white, $alpha: 0.1);
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .main {
+    &__promotion {
+      width: auto;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    margin: 6.625rem 10rem 0rem 10rem;
+    flex-direction: column;
+
+    &__promotion {
+      text-align: center;
+      margin-bottom: 4.75rem;
+    }
+    &__explore {
+      border: 5.04rem solid transparent;
+      div {
+        width: 15.125rem;
+        height: 15.125rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main {
+    margin: 48px 24px 0rem 24px;
+
+    &__promotion {
+      h5 {
+        margin-bottom: 1rem;
+      }
+      h1 {
+        margin-bottom: 1rem;
+      }
+    }
+    &__explore {
+      border: 3.125rem solid transparent;
+      div {
+        width: 9.375rem;
+        height: 9.375rem;
+      }
+    }
+  }
+}

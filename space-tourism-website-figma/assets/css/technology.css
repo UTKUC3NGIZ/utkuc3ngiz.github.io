@@ -58,8 +58,35 @@ a {
 .p {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  line-height: 2rem; }
 
+@media only screen and (max-width: 768px) {
+  .h5 {
+    font-size: 1.25rem;
+    letter-spacing: 0.211rem; }
+
+  .nav_text {
+    font-size: 0.875rem;
+    letter-spacing: 0.148rem; }
+
+  .p {
+    font-size: 1rem;
+    line-height: 1.75rem; } }
+@media only screen and (max-width: 375px) {
+  .h1 {
+    font-size: 5rem; }
+
+  .h4 {
+    font-size: 1.25rem; }
+
+  .h5 {
+    font-size: 1rem;
+    letter-spacing: 0.169rem; }
+
+  .p {
+    font-size: 0.938rem;
+    line-height: 1.563rem; } }
 .background {
   background-repeat: no-repeat;
   background-size: cover; }
@@ -87,8 +114,8 @@ a {
         opacity: 0.5; }
   .navbar__mobilMenu {
     display: none; }
-    .navbar__mobilMenu__inner {
-      display: none; }
+  .navbar__inner {
+    display: none; }
 
 .active {
   border-bottom: 3px solid #ffffff;
@@ -131,33 +158,33 @@ a {
       display: none; }
     .navbar__mobilMenu {
       display: block; }
-      .navbar__mobilMenu__inner {
-        display: none;
+    .navbar__inner {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(2.548rem);
+      padding: 7.375rem 0 0 2rem;
+      height: 100%;
+      width: 15.875rem;
+      box-sizing: border-box; }
+      .navbar__inner--closed {
         position: absolute;
-        right: 0;
-        top: 0;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(2.548rem);
-        padding: 7.375rem 0 0 2rem;
-        height: 100%;
-        width: 15.875rem;
-        box-sizing: border-box; }
-        .navbar__mobilMenu__inner--closed {
-          position: absolute;
-          right: 1.625rem;
-          top: 2.063rem; }
-        .navbar__mobilMenu__inner--buttons {
-          display: flex;
-          flex-direction: column; }
-          .navbar__mobilMenu__inner--buttons a {
-            margin-bottom: 2rem;
-            color: #ffffff; }
-            .navbar__mobilMenu__inner--buttons a span {
-              padding-right: 0.688rem;
-              font-weight: bold; }
-            .navbar__mobilMenu__inner--buttons a:hover {
-              border-right: 4px solid #ffffff;
-              opacity: 0.5; }
+        right: 1.625rem;
+        top: 2.063rem; }
+      .navbar__inner--buttons {
+        display: flex;
+        flex-direction: column; }
+        .navbar__inner--buttons a {
+          margin-bottom: 2rem;
+          color: #ffffff; }
+          .navbar__inner--buttons a span {
+            padding-right: 0.688rem;
+            font-weight: bold; }
+          .navbar__inner--buttons a:hover {
+            border-right: 4px solid #ffffff;
+            opacity: 0.5; }
 
   .active {
     border-bottom: none;
