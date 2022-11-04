@@ -1,2 +1,144 @@
 @import ".design_system";
-@import '.main';
+@import ".main";
+@import ".promotional_pages";
+
+.background {
+  background-image: url(../img/destination/bg.jpg);
+}
+
+.main {
+  &__promotion {
+    img {
+      margin-top: 6.063rem;
+    }
+  }
+  &__explore {
+    .explore-menu {
+      margin-bottom: 2.313rem;
+      a {
+        color: $lilac;
+        margin-right: 2.188rem;
+        padding-bottom: 0.75rem;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          border-bottom: 3px solid rgba($color: $white, $alpha: .5);
+        }
+      }
+    }
+    .explore-inner {
+      display: flex;
+      flex-direction: column;
+
+      &__text {
+        h2 {
+          color: $white;
+          margin-bottom: 0.875rem;
+        }
+        p {
+          color: $lilac;
+          padding-bottom: 3.375rem;
+          border-bottom: 1px solid #383b4b;
+        }
+      }
+      &__info {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1.75rem;
+        div {
+          &:nth-child(1) {
+            padding-right: 4.938rem;
+          }
+          h3 {
+            color: $lilac;
+            padding-bottom: 0.75rem;
+          }
+          span {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 993px) {
+  .main {
+    margin: 4.75rem 5rem 0 5rem;
+    &__promotion {
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .main {
+    margin: 4.75rem 2rem 0 2rem;
+    &__promotion {
+      img {
+        max-width: 350px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    &__promotion {
+      img {
+        max-width: 18.75rem;
+        margin-top: 3.75rem;
+      }
+    }
+    &__explore {
+      .explore-inner {
+        align-items: center;
+        text-align: center;
+        &__text {
+          p {
+            margin: 0 auto;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .main {
+    &__promotion {
+      img {
+        max-width: 10.625rem;
+        margin-top: 2rem;
+      }
+    }
+    &__explore {
+      .explore-menu {
+        margin-bottom: 1.25rem;
+      }
+      .explore-inner {
+        &__text {
+          h2 {
+            margin-bottom: 0;
+          }
+          p {
+            padding-bottom: 2rem;
+          }
+        }
+        &__info {
+          padding-top: 2rem;
+          flex-direction: column;
+          text-align: center;
+          div {
+            &:nth-child(1) {
+              padding-right: 0;
+              padding-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

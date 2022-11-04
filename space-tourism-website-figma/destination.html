@@ -6,9 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destination</title>
     <link rel="icon" href="assets/img/main/c3.svg" />
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/destination.css" />
   </head>
-  <body>
+  <body class="background">
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="assets/img/main/icon.svg" alt="icon" />
+      </div>
+      <div class="navbar__desktopMenu">
+        <a href="index.html" class="nav_text"><span>00</span>HOME</a>
+        <a href="destination.html" class="nav_text active"
+          ><span>01</span>DESTINATION</a
+        >
+        <a href="crew.html" class="nav_text"><span>02</span>CREW</a>
+        <a href="technology.html" class="nav_text"><span>03</span>TECHNOLOGY</a>
+      </div>
+      <div class="navbar__mobilMenu">
+        <img src="assets/img/main/mobil_menu.svg" alt="" />
+      </div>
+      <div class="navbar__inner">
+        <span class="navbar__inner--closed"
+          ><img src="assets/img/main/closed.svg" alt="closed"
+        /></span>
+        <div class="navbar__inner--buttons">
+          <a href="index.html" class="nav_text"><span>00</span>HOME</a>
+          <a href="destination.html" class="nav_text active"
+            ><span>01</span>DESTINATION</a
+          >
+          <a href="crew.html" class="nav_text"><span>02</span>CREW</a>
+          <a href="technology.html" class="nav_text"
+            ><span>03</span>TECHNOLOGY</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="main__promotion">
+        <h5 class="h5"><span>01</span> Pick your destination</h5>
+        <img src="assets/img/destination/moon.png" alt="moon" />
+      </div>
+      <div class="main__explore">
+        <div class="explore-menu">
+          <a href="" class="nav_text active">MOON</a>
+          <a href="" class="nav_text">MARS</a>
+          <a href="" class="nav_text">EUROPA</a>
+          <a href="" class="nav_text">TITAN</a>
+        </div>
+        <div class="explore-inner">
+          <div class="explore-inner__text">
+            <h2 class="h2">MOON</h2>
+            <p class="p">
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+          </div>
+          <div class="explore-inner__info">
+            <div>
+              <h3 class="s2">AVG. DISTANCE</h3>
+              <span class="s1">384,400 KM</span>
+            </div>
+            <div>
+              <h3 class="s2">Est. travel time</h3>
+              <span class="s1">3 DAYS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

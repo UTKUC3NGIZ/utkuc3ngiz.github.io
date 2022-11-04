@@ -23,9 +23,11 @@ a {
 .h1,
 .h2,
 .h3,
-.h4 {
+.h4,
+.s1 {
   font-family: "Bellefair", serif;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .h5,
@@ -33,6 +35,7 @@ a {
 .nav_text {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .h1 {
@@ -83,12 +86,8 @@ $lilac: #d0d6f9;
 $white: #ffffff;
 
 @media only screen and (max-width: 768px) {
-  .h1 {
-    // font-size: 9.375rem;
-  }
-
   .h2 {
-    // font-size: 6.25rem;
+    font-size: 5rem;
   }
 
   .h3 {
@@ -99,15 +98,6 @@ $white: #ffffff;
     font-size: 1.25rem;
     letter-spacing: 0.211rem;
   }
-
-  .s1 {
-    // font-size: 1.75rem;
-  }
-
-  .s2 {
-    // font-size: 0.875rem;
-    // letter-spacing: 0.147rem;
-  } 
 
   .nav_text {
     font-size: 0.875rem;
@@ -126,7 +116,7 @@ $white: #ffffff;
   }
 
   .h2 {
-    // font-size: 6.25rem;
+    font-size: 3.5rem;
   }
 
   .h3 {
@@ -140,20 +130,6 @@ $white: #ffffff;
   .h5 {
     font-size: 1rem;
     letter-spacing: 0.169rem;
-  }
-
-  .s1 {
-    // font-size: 1.75rem;
-  }
-
-  .s2 {
-    // font-size: 0.875rem;
-    // letter-spacing: 0.147rem;
-  }
-
-  .nav_text {
-    // font-size: 0.875rem;
-    // letter-spacing: 0.148rem;
   }
 
   .p {
