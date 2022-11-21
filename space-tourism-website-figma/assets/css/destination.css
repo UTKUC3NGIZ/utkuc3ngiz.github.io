@@ -98,8 +98,7 @@ a {
     line-height: 1.563rem; } }
 .background {
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh; }
+  background-size: cover; }
 
 .navbar {
   margin: 2.5rem 0 0 3.438rem;

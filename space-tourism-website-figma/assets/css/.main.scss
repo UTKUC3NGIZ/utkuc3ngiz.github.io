@@ -1,14 +1,14 @@
 .background {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  // height: 100vh;  
 }
 
 .navbar {
   margin: 2.5rem 0 0 3.438rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
   &__logo {
   }
   &__desktopMenu {
