@@ -1,7 +1,7 @@
 .background {
   background-repeat: no-repeat;
   background-size: cover;
-  // height: 100vh;  
+  // height: 100vh; 
 }
 
 .navbar {
@@ -13,6 +13,7 @@
   }
   &__desktopMenu {
     background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(2.548rem);
     backdrop-filter: blur(2.548rem);
     padding: 2.375rem 10.313rem 2.375rem 7.688rem;
     a {
@@ -109,11 +110,13 @@
       right: 0;
       top: 0;
       background: rgba(255, 255, 255, 0.04);
+      -webkit-backdrop-filter: blur(2.548rem);
       backdrop-filter: blur(2.548rem);
       padding: 7.375rem 0 0 2rem;
       height: 100%;
       width: 15.875rem;
       box-sizing: border-box;
+      z-index: 10;
       &--closed {
         position: absolute;
         right: 1.625rem;
