@@ -195,7 +195,7 @@ a {
             border-right: 4px solid rgba(255, 255, 255, 0.5); }
 
   .active {
-    border-bottom: none;
+    border-bottom: none !important;
     border-right: 4px solid #ffffff !important;
     opacity: 1 !important; } }
 .main {

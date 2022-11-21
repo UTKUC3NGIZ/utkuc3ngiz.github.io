@@ -137,7 +137,7 @@
     }
   }
   .active {
-    border-bottom: none;
+    border-bottom: none!important;
     border-right: 4px solid $white!important;
     opacity: 1 !important;
   }

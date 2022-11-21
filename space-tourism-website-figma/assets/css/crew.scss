@@ -1,3 +1,139 @@
 @import ".design_system";
-@import '.main';
+@import ".main";
 @import ".promotional_pages";
+
+.background {
+  background-image: url(../img/crew/bg.png);
+  height: auto;
+}
+
+.main {
+  flex-direction: row-reverse;
+  position: relative;
+  &__promotion {
+    align-items: center;
+    h5 {
+      color: $white;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    img {
+    }
+  }
+  &__explore {
+    flex-direction: column-reverse;
+    .explore-menu {
+      display: flex;
+      margin-top: 7.5rem;
+      a {
+        width: 0.938rem;
+        height: 0.938rem;
+        background-color: $white;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+        opacity: 0.17;
+      }
+    }
+    .explore-inner {
+      &__text {
+        h4 {
+          color: $white;
+          opacity: 0.5;
+          padding-bottom: 0.938rem;
+        }
+        h3 {
+          color: $white;
+          padding-bottom: 1.688rem;
+        }
+        p {
+          color: $lilac;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .main {
+    margin: 4.75rem 5rem 0 5rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .main {
+    align-items: flex-end;
+    &__explore {
+      margin-bottom: 6.063rem;
+    }
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .main {
+    &__promotion {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    &__promotion {
+        img{
+            width: 75%;
+        }
+    }
+    &__explore {
+        .explore-menu {
+            margin-top: 2.5rem;
+            a {
+              width: 0.625rem;
+              height: 0.625rem;
+            }
+          }
+      .explore-inner {
+        &__text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .main {
+    margin: 1.5rem;
+    flex-direction: column;
+    &__promotion {
+  border-bottom: 1px solid #383B4B;
+  h5{
+    position: relative;
+    margin-bottom: 2rem;
+  }
+    }
+    &__explore {
+        flex-direction: column;
+.explore-menu{
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+.explore-inner{
+&__text{
+    h4{
+font-size: 1rem;
+    }
+    h3{
+        font-size: 24px;
+    }
+}
+}
+    }
+  }
+}
