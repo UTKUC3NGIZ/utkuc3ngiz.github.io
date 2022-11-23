@@ -8,3 +8,5 @@ closed.addEventListener("click",() =>{
 openMenu.addEventListener("click",() => {
     mobilMenu.style.display = "block"
 })
+
+
