@@ -52,13 +52,10 @@
   }
 }
 
-@media only screen and (max-width: 1390px) {
-  .main {
-    margin: 4.75rem 5rem 0 5rem;
-  }
-}
 @media only screen and (max-width: 1200px) {
   .main {
+    margin-left: 4.75rem;
+    margin-right: 4.75rem;
     align-items: flex-end;
     &__explore {
       margin-bottom: 6.063rem;
@@ -81,18 +78,18 @@
     flex-wrap: wrap;
     flex-direction: column-reverse;
     &__promotion {
-        img{
-            width: 75%;
-        }
+      img {
+        width: 75%;
+      }
     }
     &__explore {
-        .explore-menu {
-            margin-top: 2.5rem;
-            a {
-              width: 0.625rem;
-              height: 0.625rem;
-            }
-          }
+      .explore-menu {
+        margin-top: 2.5rem;
+        a {
+          width: 0.625rem;
+          height: 0.625rem;
+        }
+      }
       .explore-inner {
         &__text {
           display: flex;
@@ -109,28 +106,28 @@
     margin: 1.5rem;
     flex-direction: column;
     &__promotion {
-  border-bottom: 1px solid #383B4B;
-  h5{
-    position: relative;
-    margin-bottom: 2rem;
-  }
+      border-bottom: 1px solid #383b4b;
+      h5 {
+        position: relative;
+        margin-bottom: 2rem;
+      }
     }
     &__explore {
-        flex-direction: column;
-.explore-menu{
-margin-top: 2rem;
-margin-bottom: 2rem;
-}
-.explore-inner{
-&__text{
-    h4{
-font-size: 1rem;
-    }
-    h3{
-        font-size: 24px;
-    }
-}
-}
+      flex-direction: column;
+      .explore-menu {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      .explore-inner {
+        &__text {
+          h4 {
+            font-size: 1rem;
+          }
+          h3 {
+            font-size: 24px;
+          }
+        }
+      }
     }
   }
 }

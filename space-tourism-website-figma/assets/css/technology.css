@@ -280,6 +280,8 @@ a {
         margin-bottom: 2rem; }
         .main__explore .explore-menu a:last-child {
           margin-bottom: 0; }
+        .main__explore .explore-menu a:hover {
+          border: 1px solid white; }
     .main__explore .explore-inner__text h4 {
       color: #d0d6f9;
       margin-bottom: 0.688rem; }

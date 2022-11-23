@@ -281,11 +281,10 @@ a {
       color: #d0d6f9;
       width: 80%; }
 
-@media only screen and (max-width: 1390px) {
-  .main {
-    margin: 4.75rem 5rem 0 5rem; } }
 @media only screen and (max-width: 1200px) {
   .main {
+    margin-left: 4.75rem;
+    margin-right: 4.75rem;
     align-items: flex-end; }
     .main__explore {
       margin-bottom: 6.063rem; } }
@@ -315,7 +314,7 @@ a {
     margin: 1.5rem;
     flex-direction: column; }
     .main__promotion {
-      border-bottom: 1px solid #383B4B; }
+      border-bottom: 1px solid #383b4b; }
       .main__promotion h5 {
         position: relative;
         margin-bottom: 2rem; }
