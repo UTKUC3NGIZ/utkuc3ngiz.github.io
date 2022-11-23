@@ -241,7 +241,7 @@ a {
     text-align: center; }
     .main__explore {
       margin-top: 1.625rem; } }
-.active {
+.active_transitions {
   border-right: none;
   border-bottom: 3px solid #ffffff; }
 
