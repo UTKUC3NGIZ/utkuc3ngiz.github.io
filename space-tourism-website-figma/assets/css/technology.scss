@@ -36,13 +36,13 @@
         border-radius: 50%;
         color: $white;
         font-size: 2rem;
-        border: 1px solid rgba($color: $white, $alpha: .25);
+        border: 1px solid rgba($color: $white, $alpha: 0.25);
         margin-bottom: 2rem;
         &:last-child {
           margin-bottom: 0;
         }
-        &:hover{
-            border: 1px solid rgba($color: $white, $alpha: 1);
+        &:hover {
+          border: 1px solid rgba($color: $white, $alpha: 1);
         }
       }
     }
@@ -69,10 +69,9 @@
   display: none;
 }
 .active_transitions {
-    background-color: $white!important;
-    color: $black!important;
-
-  }
+  background-color: $white !important;
+  color: $black !important;
+}
 
 @media only screen and (max-width: 1200px) {
   .main {
@@ -83,11 +82,11 @@
       }
     }
     &__explore {
-        .explore-menu {
-      a {
-        margin-bottom: 0!important;
+      .explore-menu {
+        a {
+          margin-bottom: 0 !important;
+        }
       }
-    }
     }
   }
 }
@@ -117,8 +116,8 @@
       h5 {
         position: static;
         margin-bottom: 3.75rem;
-        span{
-            margin-left:2.406rem ;
+        span {
+          margin-left: 2.406rem;
         }
       }
       img {
@@ -166,15 +165,10 @@
 }
 @media only screen and (max-width: 375px) {
   .main {
-    // flex-direction: column;
-    // margin-left: 0;
     &__promotion {
-    //   align-items: center;
       h5 {
-        // position: static;
-        // margin-bottom: 3.75rem;
-        span{
-            margin-left:0 ;
+        span {
+          margin-left: 0;
         }
       }
       img {
@@ -182,11 +176,7 @@
       }
     }
     &__explore {
-    //   flex-direction: column;
-    //   margin-top: 0;
       .explore-menu {
-        // margin-right: 0;
-        // flex-direction: row;
         a {
           width: 2.5rem;
           height: 2.5rem;
@@ -195,12 +185,7 @@
         margin-bottom: 1.625rem;
       }
       .explore-inner {
-        // text-align: center;
-
         &__text {
-        //   display: flex;
-        //   flex-direction: column;
-        //   align-items: center;
           h4 {
             font-size: 0.875rem;
           }
@@ -210,17 +195,9 @@
           p {
             width: 90%;
             font-size: 0.938rem;
-
           }
         }
       }
     }
-  }
-  .tablet_img {
-    // display: block;
-    // width: 100% !important;
-  }
-  .desktop_img {
-    // display: none;
   }
 }
