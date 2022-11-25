@@ -321,6 +321,9 @@ a {
       .main__promotion h5 {
         position: relative;
         margin-bottom: 2rem; }
+      .main__promotion img {
+        height: 240px;
+        width: auto; }
     .main__explore {
       flex-direction: column; }
       .main__explore .explore-menu {

@@ -114,6 +114,10 @@
         position: relative;
         margin-bottom: 2rem;
       }
+      img{
+        height: 240px;
+        width: auto;
+      }
     }
     &__explore {
       flex-direction: column;
