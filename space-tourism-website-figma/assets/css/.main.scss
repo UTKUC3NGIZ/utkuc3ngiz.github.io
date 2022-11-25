@@ -1,21 +1,36 @@
 .background {
   background-repeat: no-repeat;
   background-size: cover;
-  // height: 100vh; 
+  // height: 100vh;
 }
 
 .navbar {
   margin: 2.5rem 0 0 3.438rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
-  &__logo {
+  align-items: center;
+  &__line {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    span {
+      position: absolute;
+      margin: 4rem 0;
+      height: 1px;
+      width: 95%;
+      background-color: $white;
+      opacity: 0.25;
+      z-index: 10;
+      left: 4rem;
+    }
   }
   &__desktopMenu {
     background: rgba(255, 255, 255, 0.04);
     -webkit-backdrop-filter: blur(2.548rem);
     backdrop-filter: blur(2.548rem);
-    padding: 2.375rem 10.313rem 2.375rem 7.688rem;
+    padding: 0 10.313rem 0 7.688rem;
+    display: flex;
     a {
       color: $white;
       margin-right: 3rem;
@@ -42,7 +57,7 @@
 }
 
 .active {
-  border-bottom: 3px solid $white!important;
+  border-bottom: 3px solid $white !important;
   opacity: 1 !important;
 }
 
@@ -59,7 +74,7 @@
   .navbar {
     margin: 0 0 0 2.438rem;
     &__desktopMenu {
-      padding: 2.438rem 0;
+      padding: 0;
       a {
         margin-right: 2.313rem;
         padding: 2.438rem 0;
@@ -74,6 +89,9 @@
           display: none;
         }
       }
+    }
+    &__line {
+      display: none;
     }
   }
 }
@@ -113,10 +131,10 @@
       -webkit-backdrop-filter: blur(2.548rem);
       backdrop-filter: blur(2.548rem);
       padding: 7.375rem 0 0 2rem;
-      height: 100%; 
+      height: 100%;
       width: 15.875rem;
-      box-sizing: border-box; 
-      z-index: 10; 
+      box-sizing: border-box;
+      z-index: 10;
       &--closed {
         position: absolute;
         right: 1.625rem;
@@ -140,12 +158,11 @@
     }
   }
   .active {
-    border-bottom: none!important;
-    border-right: 4px solid $white!important;
+    border-bottom: none !important;
+    border-right: 4px solid $white !important;
     opacity: 1 !important;
   }
 }
-
 
 .loading_animation {
   position: relative;
@@ -154,6 +171,10 @@
 }
 
 @keyframes example {
-  0%   {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

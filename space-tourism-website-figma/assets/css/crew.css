@@ -105,11 +105,26 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .navbar__line {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    .navbar__line span {
+      position: absolute;
+      margin: 4rem 0;
+      height: 1px;
+      width: 95%;
+      background-color: #ffffff;
+      opacity: 0.25;
+      z-index: 10;
+      left: 4rem; }
   .navbar__desktopMenu {
     background: rgba(255, 255, 255, 0.04);
     -webkit-backdrop-filter: blur(2.548rem);
     backdrop-filter: blur(2.548rem);
-    padding: 2.375rem 10.313rem 2.375rem 7.688rem; }
+    padding: 0 10.313rem 0 7.688rem;
+    display: flex; }
     .navbar__desktopMenu a {
       color: #ffffff;
       margin-right: 3rem;
@@ -140,7 +155,7 @@ a {
   .navbar {
     margin: 0 0 0 2.438rem; }
     .navbar__desktopMenu {
-      padding: 2.438rem 0; }
+      padding: 0; }
       .navbar__desktopMenu a {
         margin-right: 2.313rem;
         padding: 2.438rem 0;
@@ -150,7 +165,9 @@ a {
         .navbar__desktopMenu a:last-child {
           margin-right: 3rem; }
         .navbar__desktopMenu a span {
-          display: none; } }
+          display: none; }
+    .navbar__line {
+      display: none; } }
 @media only screen and (max-width: 576px) {
   html {
     font-size: 10px; }
