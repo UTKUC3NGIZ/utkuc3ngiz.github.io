@@ -269,7 +269,8 @@ a {
   .main__explore .explore-inner__text p {
     color: #d0d6f9;
     padding-bottom: 3.375rem;
-    border-bottom: 1px solid #383b4b; }
+    border-bottom: 1px solid #383b4b;
+    min-height: 6rem; }
   .main__explore .explore-inner__info {
     display: flex;
     flex-direction: row;
