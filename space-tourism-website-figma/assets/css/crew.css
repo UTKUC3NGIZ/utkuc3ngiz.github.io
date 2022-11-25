@@ -298,7 +298,8 @@ a {
 @media only screen and (max-width: 768px) {
   .main {
     flex-wrap: wrap;
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+    margin-bottom: 0; }
     .main__promotion img {
       width: 75%; }
     .main__explore .explore-menu {

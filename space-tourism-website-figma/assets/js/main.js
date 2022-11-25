@@ -3,10 +3,12 @@ const mobilMenu = document.getElementsByClassName("navbar__inner")[0];
 const openMenu = document.getElementsByClassName("navbar__mobilMenu")[0];
 closed.addEventListener("click", () => {
   mobilMenu.style.display = "none";
+  document.body.style.overflow = "auto"
 });
 
 openMenu.addEventListener("click", () => {
   mobilMenu.style.display = "block";
+  document.body.style.overflow = "hidden"
 });
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -19,7 +21,7 @@ const data = {
       text: "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
       avg: "384,400 km",
       est: "3 DAYS",
-      img: "/assets/img/destination/moon.png",
+      img: "assets/img/destination/moon.png",
     },
     {
       id: 1,
@@ -27,7 +29,7 @@ const data = {
       text: "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
       avg: "225 MIL. km",
       est: "9 months",
-      img: "/assets/img/destination/mars.png",
+      img: "assets/img/destination/mars.png",
     },
     {
       id: 2,
@@ -35,7 +37,7 @@ const data = {
       text: "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
       avg: "628 MIL. km",
       est: "3 years",
-      img: "/assets/img/destination/europa.png",
+      img: "assets/img/destination/europa.png",
     },
     {
       id: 3,
@@ -43,7 +45,7 @@ const data = {
       text: "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
       avg: "1.6 BIL. km",
       est: "7 years",
-      img: "/assets/img/destination/titan.png",
+      img: "assets/img/destination/titan.png",
     },
   ],
   crew: [

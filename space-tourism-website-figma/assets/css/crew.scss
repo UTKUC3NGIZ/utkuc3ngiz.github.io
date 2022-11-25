@@ -79,6 +79,7 @@
   .main {
     flex-wrap: wrap;
     flex-direction: column-reverse;
+    margin-bottom: 0;
     &__promotion {
       img {
         width: 75%;
