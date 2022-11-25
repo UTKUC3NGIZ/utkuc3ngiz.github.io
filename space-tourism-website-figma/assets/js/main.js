@@ -1,18 +1,19 @@
+// navbar
 const closed = document.getElementsByClassName("navbar__inner--closed")[0];
 const mobilMenu = document.getElementsByClassName("navbar__inner")[0];
 const openMenu = document.getElementsByClassName("navbar__mobilMenu")[0];
 closed.addEventListener("click", () => {
   mobilMenu.style.display = "none";
-  document.body.style.overflow = "auto"
+  document.body.style.overflow = "auto";
 });
 
 openMenu.addEventListener("click", () => {
   mobilMenu.style.display = "block";
-  document.body.style.overflow = "hidden"
+  document.body.style.overflow = "hidden";
 });
 
 /////////////////////////////////////////////////////////////////////////////////
-// JSON
+// JSON content
 const data = {
   destination: [
     {
@@ -83,21 +84,21 @@ const data = {
       id: 0,
       name: "LAUNCH VEHICLE",
       text: "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
-      tabletimg: "assets/img/technology/tablet_1.png",
+      tabletImg: "assets/img/technology/tablet_1.png",
       img: "assets/img/technology/desktop_1.jpg",
     },
     {
       id: 1,
       name: "SPACEPORT",
       text: "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
-      tabletimg: "assets/img/technology/tablet_2.jpg",
+      tabletImg: "assets/img/technology/tablet_2.jpg",
       img: "assets/img/technology/desktop_2.jpg",
     },
     {
       id: 2,
       name: "SPACE CAPSULE",
       text: "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
-      tabletimg: "assets/img/technology/tablet_3.jpg",
+      tabletImg: "assets/img/technology/tablet_3.jpg",
       img: "assets/img/technology/desktop_3.jpg",
     },
   ],
@@ -105,12 +106,15 @@ const data = {
 
 //////////////////////////////////////////////////////////////////////////////////
 
+// content exchange
+
 const crew = document.getElementById("crew");
 const destination = document.getElementById("destination");
 const technology = document.getElementById("technology");
 const exploreInner = document.getElementsByClassName("explore-inner")[0];
 const contentImage = document.getElementById("contentImage");
 const contentImageTablet = document.getElementById("contentImageTablet");
+const mainPromotion = document.getElementsByClassName("main__promotion")[0];
 
 // page name
 var path = window.location.pathname;
@@ -126,35 +130,44 @@ if ((pageName = destination)) {
   addId(technology);
 }
 
+// defining content IDs
 function addId(pageName) {
   for (let i = 0; i < pageName.children.length; i++) {
     pageName.children[i].id = `${i}`;
   }
 }
 
+// content change function
 pageName.addEventListener("click", (e) => {
   event.preventDefault();
   if (pageName === destination) {
     const destinationInfo = `
-<div class="explore-inner__text">
+<div class="explore-inner__text loading_animation">
 <h2 class="h2">${data.destination[e.target.id].name}</h2>
 <p class="p">
 ${data.destination[e.target.id].text}
 </p>
 </div>
-<div class="explore-inner__info">
+<div class="explore-inner__info loading_animation">
 <div>
-  <h3 class="s2">AVG. DISTANCE</h3>
+  <h3 class="s2 loading_animation">AVG. DISTANCE</h3>
   <span class="s1">${data.destination[e.target.id].avg}</span>
 </div>
 <div>
-  <h3 class="s2">Est. travel time</h3>
-  <span class="s1">${data.destination[e.target.id].est}</span>
+  <h3 class="s2 loading_animation">Est. travel time</h3>
+  <span class="s1 loading_animation">${data.destination[e.target.id].est}</span>
 </div>
 </div>
 `;
-    exploreInner.innerHTML = destinationInfo;
-    contentImage.src = data.destination[e.target.id].img;
+exploreInner.innerHTML = destinationInfo;
+
+    const imageChange = `
+<h5 class="h5"><span>01</span> Pick your destination</h5>
+<img src="${data.destination[e.target.id].img}" alt="${
+      data.destination[e.target.id].name
+    }" id="contentImage" class="loading_animation" />
+`;
+    mainPromotion.innerHTML = imageChange;
     for (let i = 0; i < destination.children.length; i++) {
       destination.children[i].classList.remove("active_transitions");
     }
@@ -163,16 +176,28 @@ ${data.destination[e.target.id].text}
     const crewInfo = `
     <div class="explore-inner">
     <div class="explore-inner__text">
-      <h4 class="h4" id="task">${data.crew[e.target.id].task}</h4>
-      <h3 class="h3" id="name">${data.crew[e.target.id].name}</h3>
-      <p class="p" id="text">
+      <h4 class="h4 loading_animation" id="task">${
+        data.crew[e.target.id].task
+      }</h4>
+      <h3 class="h3 loading_animation" id="name">${
+        data.crew[e.target.id].name
+      }</h3>
+      <p class="p loading_animation" id="text">
       ${data.crew[e.target.id].text}
       </p>
     </div>
   </div>
     `;
     exploreInner.innerHTML = crewInfo;
-    contentImage.src = data.crew[e.target.id].img;
+
+    const imageChange = `
+    <h5 class="h5"><span>02</span>  Meet your crew</h5>
+    <img src="${data.crew[e.target.id].img}" alt="${
+      data.crew[e.target.id].name
+    }" id="contentImage" class="loading_animation" />
+    `;
+    mainPromotion.innerHTML = imageChange;
+
     for (let i = 0; i < crew.children.length; i++) {
       crew.children[i].classList.remove("active");
     }
@@ -181,18 +206,31 @@ ${data.destination[e.target.id].text}
     const technologyInfo = `
   <div class="explore-inner__text">
   <h4 class="nav_text">THE TERMINOLOGY…</h4>
-  <h3 class="h3">${data.technology[e.target.id].name}</h3>
-  <p class="p">
+  <h3 class="h3 loading_animation">${data.technology[e.target.id].name}</h3>
+  <p class="p loading_animation">
   ${data.technology[e.target.id].text}
   </p>
 </div>
     `;
     exploreInner.innerHTML = technologyInfo;
-    contentImage.src = data.technology[e.target.id].img;
-    contentImageTablet.src = data.technology[e.target.id].tabletimg;
+
+    const imageChange = `
+    <h5 class="h5"><span>03</span>SPACE LAUNCH 101</h5>
+    <img class="desktop_img loading_animation" src="${
+      data.technology[e.target.id].img
+    }" alt="${data.technology[e.target.id].name}" id="contentImage" />
+    <img class="tablet_img loading_animation" src="${
+      data.technology[e.target.id].tabletImg
+    }" alt="${data.technology[e.target.id].name}" id="contentImageTablet" />
+
+    `;
+    mainPromotion.innerHTML = imageChange;
+
     for (let i = 0; i < technology.children.length; i++) {
       technology.children[i].classList.remove("active_transitions");
     }
     e.target.classList.add("active_transitions");
   }
 });
+
+console.log(mainPromotion.innerHTML);
